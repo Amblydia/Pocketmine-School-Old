@@ -209,8 +209,10 @@ h6 {
 }
 
 p {
+    font-size: 17px;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
 }
 
 h1 .small {
