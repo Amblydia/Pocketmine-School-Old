@@ -1,0 +1,65 @@
+body {
+    background-color: #f2f2f2;
+}
+
+header {
+    height: 100vh;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0.6) 100%), url(../img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.small {
+    font-size: 17px;
+    color: #dedede;
+}
+
+/*Courses*/
+
+.courses {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.tutorial-grid {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
+    grid-gap: 2rem;
+}
+
+.tutorial-box {
+    background: #fff;
+    box-shadow: 0 0px 6px 1px rgb(222, 222, 222);
+    position: relative;
+    border-radius: 6px;
+    height: 200px;
+}
+
+.tutorial-box:hover {
+    box-shadow: 0 0px 12px 1px rgb(197, 197, 197);
+}
+
+.how-to {
+    border-top: 25px solid blue;
+    border-radius: 6px 6px 0px 0px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #222222;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #e2e2e2;
+}
