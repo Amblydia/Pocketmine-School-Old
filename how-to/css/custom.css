@@ -7,7 +7,7 @@ pre {
     color: #fff;
     padding: 10px;
     border-radius: 10px;
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 nav {
