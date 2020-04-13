@@ -10,6 +10,13 @@ pre {
     overflow-y: auto;
 }
 
+kbd {
+    background-color: #222222;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 nav {
     background-color: #333;
     color: #fff;
