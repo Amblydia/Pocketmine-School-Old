@@ -2,9 +2,7 @@ a:hover {
     color: #000;
 }
 
-pre {
-    background-color: #1b1b1b;
-    color: #fff;
+code {
     padding: 10px;
     border-radius: 10px;
     overflow-y: auto;

@@ -14,6 +14,7 @@
 
   <link href="../css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../css/ultra.css" rel="stylesheet" type="text/css">
+  <link href="../../css/tomorrow-night-eighties.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -34,11 +35,30 @@
     <h3>The Basics</h3>
     <hr>
     <p>Here we will teach you all of the items of code that are required in order for the plugin to work.</p>
+    
+    <pre>
+      <code class="php">
+        &lt;?php //All PHP Files must start with this.
 
+        namespace ExampleName; //This should be the subfolder of the src directory. Based off of the folder structure example in the "plugin.yml" section.
+
+        # Next, we add the "use" statements:
+
+        use pocketmine\plugin\PluginBase;
+
+        #Then, we type the class statement:
+        class Main extends PluginBase {  
+        //This has a specific format: class (The File Name) extends PluginBase { The "PluginBase" part differs based on which file it is, but that is very advanced. You will find out more another time.
+		
+      </code>
+    </pre>
+    
 
 </div>
 
 <script src="../js/custom.js"></script>
+<script src="../../js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>

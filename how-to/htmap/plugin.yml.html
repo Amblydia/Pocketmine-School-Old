@@ -14,6 +14,7 @@
 
   <link href="../css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../css/ultra.css" rel="stylesheet" type="text/css">
+  <link href="../../css/tomorrow-night-eighties.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -37,11 +38,37 @@
     <p>In the folder create a file and name it plugin.yml </p>
     <p>In this file you will add:</p>
   
-    <pre class="yaml" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">name</span><span style="font-weight: bold; color: brown;">: </span>Name of Your Plugin</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">author</span><span style="font-weight: bold; color: brown;">: </span>Your Name</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">api</span><span style="font-weight: bold; color: brown;">: </span>3.0.0</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">version</span><span style="font-weight: bold; color: brown;">: </span>1.0  <span style="color: blue;">#This is where you put the version of the plugin</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">main</span><span style="font-weight: bold; color: brown;">: </span>ExampleName/Main</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: blue;"># &quot;ExampleName&quot; will be a folder in the src folder and &quot;Main&quot; will be the file in the &quot;ExampleName&quot; folder</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: blue;"># Commands If ur plugin has commands do this:</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #007F45;">command</span>:</div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">	test</span><span style="font-weight: bold; color: brown;">: </span> <span style="color: blue;">#&quot;test&quot; this is the name of the command</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">		description</span><span style="font-weight: bold; color: brown;">: </span>Put <span style="font-weight: bold;">any</span> description</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">		usage</span><span style="font-weight: bold; color: brown;">: </span>/test</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">	test2</span><span style="font-weight: bold; color: brown;">: </span> <span style="color: blue;">#Second command</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">		description</span><span style="font-weight: bold; color: brown;">: </span>Put <span style="font-weight: bold;">any</span> Description</div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">		usage</span><span style="font-weight: bold; color: brown;">: </span>/test2</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: blue;"># Permissions </span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #007F45;">permissions</span>:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #007F45;">	test.command</span>:</div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">		default</span><span style="font-weight: bold; color: brown;">: </span>true</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #007F45;">	test2.command</span>:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: green;">		default</span><span style="font-weight: bold; color: brown;">: </span>true</div></li></ol></pre>
-    
+    <pre>
+      <code class="yaml">
+        name: Name of Your Plugin
+        author: Your Name
+        api: 3.0.0
+        version: 1.0  #This is where you put the version of the plugin
+        main: ExampleName/Main
+        # "ExampleName" will be a folder in the src folder and "Main" will be the file in the "ExampleName" folder
+ 
+        # Commands If ur plugin has commands do this:
+        command:
+        	test:  #"test" this is the name of the command
+        		description: Put any description
+        		usage: /test
+        	test2:  #Second command
+        		description: Put any Description
+        		usage: /test2
+ 
+        # Permissions 
+        permissions:
+        	test.command:
+        		default: true
+        	test2.command:
+        		default: true
+      </code>
+    </pre>
+
     <p>So after you add your plugin.yml make a folder and name it src, in this folder you will add a new folder called "ExampleName" (were nameing it "ExampleName" because that is what we named it in the plugin.yml).</p>
     <p>Now in the "ExampleName" folder we add a new file and name it "Main.php" (were nameing it "Main.php" because that is what we named it in the plugin.yml and the .php is the extension).</p>
     <p>Now your file structure should look like this:</p>
+    
     <pre>
         <code>
           PluginName 
@@ -54,6 +81,8 @@
 </div>
 
 <script src="../js/custom.js"></script>
+<script src="../../js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>
