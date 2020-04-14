@@ -38,18 +38,21 @@
     
     <pre>
       <code class="php">
-        &lt;?php //All PHP Files must start with this.
+        &lt;?php 
 
-        namespace ExampleName; //This should be the subfolder of the src directory. Based off of the folder structure example in the "plugin.yml" section.
+        namespace ExampleName; 
+        //This should be the subfolder of the src directory. Based off of the folder structure example in "plugin.yml".
 
-        # Next, we add the "use" statements:
+        # Next, we need to add a "use" statement:
 
         use pocketmine\plugin\PluginBase;
 
         #Then, we type the class statement:
         class Main extends PluginBase {  
-        //This has a specific format: class (The File Name) extends PluginBase { The "PluginBase" part differs based on which file it is, but that is very advanced. You will find out more another time.
-		
+        /*
+        * This has a very simple format: 
+        * class (The File Name) extends PluginBase { 
+        */
       </code>
     </pre>
     
