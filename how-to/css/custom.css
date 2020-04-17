@@ -54,6 +54,12 @@ nav a.active {
     padding: 8px 16px;
 }
 
+.mobile-nav {
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
 .sidebar {
     height: 100%; 
     width: 180px;
@@ -93,4 +99,19 @@ hr {
     margin-top: 16px;
     margin-bottom: 16px;
     border: .5px solid rgb(152, 152, 152);
+}
+
+
+@media only screen and (max-width: 425px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .sidebar {
+        margin-left: -180px;
+    }
+
+    .sidemain {
+        margin-left: 0;
+    }
 }

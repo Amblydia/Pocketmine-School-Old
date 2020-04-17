@@ -20,23 +20,25 @@
 <body>
 
 <nav>
+  <a class="mobile-nav"><i class="fas fa-bars"></i></a>
   <div class="navtitle">Pocketmine School</div>
   <a href="../../index.html">Home</a>
 </nav>
 
 <div class="sidebar">
-    <h5>Plugin Tutorial</h5>
-    <a href="introduction.html">Introduction</a>
-    <a href="plugin.yml.html">plugin.yml</a>
-    <a href="the-basics.html">The Basics</a>
-    <a href="Events.html" class="active">Events</a>
+  <h5>Plugin Tutorial</h5>
+  <a href="introduction.html">Introduction</a>
+  <a href="plugin.yml.html">plugin.yml</a>
+  <a href="the-basics.html">The Basics</a>
+  <a href="Events.html" class="active">Events</a>
+  <a href="Commands.html">Commands</a>
 </div>
 
 <div id="Events" class="sidemain">
-    <h3>Events</h3>
-    <hr>
-    <p>Now we are going to learn about something that makes plugins how they are! EVENTS.</p>
-    <p>Before we start were going to add some new "use" statements and changed the "class" statement a bit and add a new line to the onEnable() function because we are using events.</p>
+  <h3>Events</h3>
+  <hr>
+  <p>Now we are going to learn about something that makes plugins how they are! EVENTS.</p>
+  <p>Before we start were going to add some new "use" statements and changed the "class" statement a bit and add a new line to the onEnable() function because we are using events.</p>
     <pre>
         <code>
             &lt;?php
@@ -67,10 +69,9 @@
             }
         </code>
     </pre>
-    <h4>PlayerJoinEvent</h4>
-    <p>PlayerJoinEvent is the event of a player joining.</p>
-    <p>So were going to broadcast a message saying someone joined in a fancy way and give that someone an item.</p>
-
+  <h4>PlayerJoinEvent</h4>
+  <p>PlayerJoinEvent is the event of a player joining.</p>
+  <p>So were going to broadcast a message saying someone joined in a fancy way and give that someone an item.</p>
     <pre>
         <code>
             public function onJoin(PlayerJoinEvent $event) {
@@ -84,9 +85,9 @@
             }             
         </code>
     </pre>
-
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="../js/custom.js"></script>
 <script src="../../js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
