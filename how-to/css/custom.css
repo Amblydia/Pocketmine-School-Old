@@ -6,8 +6,12 @@ a:hover {
     color: rgb(65, 63, 63);
 }
 
+pre {
+    margin: 0;
+}
+
 code {
-    padding: 10px;
+    padding-left: 20px !important;
     border-radius: 10px;
     overflow-y: auto;
 }
