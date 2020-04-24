@@ -15,6 +15,16 @@
   <link href="../css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../css/ultra.css" rel="stylesheet" type="text/css">
   <link href="../../css/tomorrow-night-eighties.css" rel="stylesheet" type="text/css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148602502-2"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148602502-2');
+  </script>
 </head>
 
 <body>
@@ -41,22 +51,22 @@
     <hr>
     <h4>Creating a Simple Plugin Task</h4>
     <p>We'll take our last plugin and adding a simple task to it that tells the user when 10 seconds has past.</p>
-    <p>First, go to your "Inactive-to-ReactiveExample.php" folder and create a new folder called "tasks".</p>
+    <p>First, go to your "Main.php" folder and create a new folder called "tasks".</p>
     <p>Create a new file called "MyTask.php".</p>
     <p>And put those contents inside of it.</p>
     <pre>
         <code>
 &lt;?php // As always when you start a PHP file
 
-namespace Inactive-to-Reactive\tasks; // Use the same namespace as in your first file but add a \tasks who symbolise that this file is in the subfolder "tasks"
+namespace ExampleName\tasks; // Use the same namespace as in your first file but add a \tasks who symbolise that this file is in the subfolder "tasks"
 
 use pocketmine\scheduler\Task; // This is the class that your task will extends to be a plugin task
-use Inactive-to-Reactive\Inactive-to-ReactiveExample; // This will allow us to use our main class. It is a required argument for a plugin task.
+use ExampleName\Main; // This will allow us to use our main class. It is a required argument for a plugin task.
             
 class MyTask extends Task { // Remember that your task must have the same name as your file !
 
 // First we need a __construct function which is used when you create a class to set default variables, ect...
-    public function __construct(Inactive-to-ReactiveExample $main, string $playername) { // The arguments you define here depends on what do you want to do exept for your base.
+    public function __construct(Main $main, string $playername) { // The arguments you define here depends on what do you want to do exept for your base.
        $this->main = $main; //You can retrieve your main class at anytime and use it's methods on your class by using $this->getOwner()
        $this->playername = $playername; // So we can retreive the player for later.
     }
@@ -69,7 +79,7 @@ class MyTask extends Task { // Remember that your task must have the same name a
         }
     }
 // Then we create a getOwner function to return the Main class
-    public function getOwner() :Inactive-to-ReactiveExample {
+    public function getOwner() :Main {
         return $this->main;
     }
 }
