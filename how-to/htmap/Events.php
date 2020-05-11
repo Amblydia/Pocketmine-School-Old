@@ -35,17 +35,8 @@
   <a href="../../index.html">Home</a>
 </nav>
 
-<div class="sidebar">
-  <h5>Plugin Tutorial</h5>
-  <a href="introduction.html">Introduction</a>
-  <a href="plugin.yml.html">plugin.yml</a>
-  <a href="the-basics.html">The Basics</a>
-  <a href="Events.html" class="active">Events</a>
-  <a href="Commands.html">Commands</a>
-  <a href="Permissions.html">Permissions</a>
-  <a href="Config.html">Config</a>
-  <a href="Tasks.html">Tasks</a>
-</div>
+<?php $currentPage = 'Events'; ?>
+<?php include('sidebar.php'); ?>
 
 <div id="Events" class="sidemain">
   <h3>Events</h3>

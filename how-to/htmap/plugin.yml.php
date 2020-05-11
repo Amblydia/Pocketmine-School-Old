@@ -35,76 +35,54 @@
   <a href="../../index.html">Home</a>
 </nav>
 
-<div class="sidebar">
-  <h5>Plugin Tutorial</h5>
-  <a href="introduction.html">Introduction</a>
-  <a href="plugin.yml.html">plugin.yml</a>
-  <a href="the-basics.html" class="active">The Basics</a>
-  <a href="Events.html">Events</a>
-  <a href="Commands.html">Commands</a>
-  <a href="Permissions.html">Permissions</a>
-  <a href="Config.html">Config</a>
-  <a href="Tasks.html">Tasks</a>
-</div>
+<?php $currentPage = 'plugin.yml'; ?>
+<?php include('sidebar.php'); ?>
 
-<div id="the-basics" class="sidemain">
-  <h3>The Basics</h3>
+<div id="plugin.yml" class="sidemain">
+  <h3>plugin.yml</h3>
   <hr>
-  <p>Here we will teach you all of the items of code that are required in order for the plugin to work.</p>
+  <p>First create a folder and name it whatever you want because this folder will be your plugin.</p>
+  <p>In the folder create a file and name it plugin.yml </p>
+  <p>In this file you will add:</p>
     <pre>
-      <code class="php">
+      <code class="yaml">
 
-&lt;?php 
-
-namespace ExampleName; 
-//This should be the subfolder of the src directory. Based off of the folder structure example in "plugin.yml".
-
-# Next, we need to add a "use" statement:
-
-use pocketmine\plugin\PluginBase;
-
-#Then, we type the class statement:
-class Main extends PluginBase {  
-/*
-* This has a very simple format: 
-* class (The File Name) extends PluginBase { 
-*/
-
-}
-
+name: Name of Your Plugin
+author: Your Name
+api: 3.11.7
+version: 1.0  #This is where you put the version of the plugin
+main: ExampleName/Main
+# "ExampleName" will be a folder in the src folder and "Main" will be the file in the "ExampleName" folder
+ 
+# Commands If ur plugin has commands do this:
+command:
+	test:  #"test" this is the name of the command
+		description: Put any description
+		usage: /test
+	test2:  #Second command
+		description: Put any Description
+		usage: /test2
+ 
+# Permissions 
+permissions:
+	test.command:
+		default: true
+	test2.command:
+    default: true
+    
       </code>
     </pre>
-  <h4>onEnable() Function</h4>
-  <hr>
-  <p>After the Class statement we add the onEnable() function and in it we add a message to the console everytime the plugin enables.</p>
+  <p>So after you add your plugin.yml make a folder and name it src, in this folder you will add a new folder called "ExampleName" (were nameing it "ExampleName" because that is what we named it in the plugin.yml).</p>
+  <p>Now in the "ExampleName" folder we add a new file and name it "Main.php" (were nameing it "Main.php" because that is what we named it in the plugin.yml and the .php is the extension).</p>
+  <p>Now your file structure should look like this:</p>
     <pre>
-      <code>
-&lt;?php
-
-namespace ExampleName;
-
-use pocketmine\plugin\PluginBase;
-
-class Main extends PluginBase { 
-
-  public function onEnable() {  // the onEnable() function
-    $this->getLogger()->info("Plugin has been Enabled"); //A message every time the plugin enables
-  }
-
-}
-      </code>
-    </pre>
-  <p>You can also use onLoad() and onDisable() function the same way.</p>
-    <pre>
-      <code>
-  public function onLoad(){
-    $this->getLogger()->info("Loading Plugin");
-  }
-
-  public function onDisable(){
-    $this->getLogger()->info("Plugin Disabled");
-  }
-      </code>
+        <code>
+PluginName 
+    ├── plugin.yml 
+    └── src
+         └── ExampleName
+                  └── Main.php
+        </code>
     </pre>
 </div>
 
