@@ -18,9 +18,10 @@ $(function() {
                 $(_this).addClass("active"); 
                 console.log(_this)
             }
-    });
+        });
 
-}, 50); });
+    }, 1); 
+});
 
 $(document).ready(function() {
 
