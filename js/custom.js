@@ -9,18 +9,15 @@ $(function() {
 
         var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
 
-        console.log(pgurl)
 
         $(".sidebar a").each(function(){
               var _this = this;
-              console.log(_this)
             if($(_this).attr("href") == pgurl || $(_this).attr("href") == '' ) {
                 $(_this).addClass("active"); 
-                console.log(_this)
             }
         });
 
-    }, 1); 
+    }, 50); 
 });
 
 $(document).ready(function() {
