@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/25239cedf1.js" crossorigin="anonymous"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
   <link href="../css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../css/ultra.css" rel="stylesheet" type="text/css">
@@ -36,15 +38,13 @@
 </nav>
 
 <div class="sidebar">
-    <h5>Plugin Tutorial</h5>
-    <a href="introduction.html">Introduction</a>
-    <a href="plugin.yml.html">plugin.yml</a>
-    <a href="the-basics.html">The Basics</a>
-    <a href="Events.html">Events</a>
-    <a href="Commands.html">Commands</a>
-    <a href="Permissions.html" class="active">Permissions</a>
-    <a href="Config.html">Config</a>
-    <a href="Tasks.html">Tasks</a>
+
+  <script>
+  $(function(){
+    $(".sidebar").load("sidebar.html");
+  });
+  </script>
+  
 </div>
 
 <div id="Permissions" class="sidemain">
@@ -99,7 +99,6 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
 
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="../../js/custom.js"></script>
 <script src="../../js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>

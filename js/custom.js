@@ -4,6 +4,24 @@ jQuery.fn.blindLeftToggle = function (duration, easing, complete) {
     }, jQuery.speed(duration, easing, complete));
 };
 
+$(function() {
+    setTimeout(function(){
+
+        var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/")+1);
+
+        console.log(pgurl)
+
+        $(".sidebar a").each(function(){
+              var _this = this;
+              console.log(_this)
+            if($(_this).attr("href") == pgurl || $(_this).attr("href") == '' ) {
+                $(_this).addClass("active"); 
+                console.log(_this)
+            }
+    });
+
+}, 50); });
+
 $(document).ready(function() {
 
     $('.mobile-nav').click(function() {
