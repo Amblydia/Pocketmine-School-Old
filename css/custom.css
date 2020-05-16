@@ -39,14 +39,14 @@ header {
 
 .tutorial-box {
     background: #fff;
-    box-shadow: 0 0px 6px 1px rgb(222, 222, 222);
+    box-shadow: 0 0 20px 8px #dadada;
     position: relative;
     border-radius: 6px;
     height: 200px;
 }
 
 .tutorial-box:hover {
-    box-shadow: 0 0px 12px 1px rgb(197, 197, 197);
+    box-shadow: 0 0 20px 7px #b3b3b3;
 }
 
 .how-to {

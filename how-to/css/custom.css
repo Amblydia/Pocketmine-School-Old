@@ -32,7 +32,29 @@ nav {
     width: 100%;
     z-index: 1;
 }
+
+nav .nav-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    float: right;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    list-style-position: inside;
+}
   
+nav li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
 nav a {
     float: right;
     color: #f2f2f2;
@@ -73,15 +95,14 @@ nav a.active {
     background-color: #f2f2f2; 
     color: #000;
     overflow-x: hidden; 
-    padding: 10px;
+    padding-top: 10px;
 }
 
 .sidebar a {
-    padding: 6px;
+    padding: 10px;
     text-decoration: none !important;
-    font-size: 18px;
+    font-size: 16px;
     display: block;
-    border-radius: 5px;
 }
    
 .sidebar a:hover {
@@ -117,5 +138,9 @@ hr {
 
     .sidemain {
         margin-left: 0;
+    }
+
+    nav .nav-menu {
+        float: none;
     }
 }
