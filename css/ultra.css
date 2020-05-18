@@ -65,64 +65,80 @@ a {
     position: relative;
 }
 
-.col-1 {
-    max-width: 8.33%;
-    flex: 0 0 8.33%;
+@media (min-width: 576px) {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        max-width: none;
+        flex: none;
+    }
 }
 
-.col-2 {
-    max-width: 16.66%;
-    flex: 0 0 16.66%;
+@media (min-width: 768px) {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        max-width: none;
+        flex: none;
+    }
 }
 
-.col-3 {
-    max-width: 24.99%;
-    flex: 0 0 24.99%;
-}
-
-.col-4 {
-    max-width: 33.32%;
-    flex: 0 0 33.32%;
-}
-
-.col-5 {
-    max-width: 41.65%;
-    flex: 0 0 41.65%;
-}
-
-.col-6 {
-    max-width: 49.98%;
-    flex: 0 0 49.98%;
-}
-
-.col-7 {
-    max-width: 58.31%;
-    flex: 0 0 58.31%;
-}
-
-.col-8 {
-    max-width: 66.64%;
-    flex: 0 0 66.64%;
-}
-
-.col-9 {
-    max-width: 74.97%;
-    flex: 0 0 74.97%;
-}
-
-.col-10 {
-    max-width: 83.3%;
-    flex: 0 0 83.3%;
-}
-
-.col-11 {
-    max-width: 91.63%;
-    flex: 0 0 91.63%;
-}
-
-.col-12 {
-    max-width: 99.96%;
-    flex: 0 0 99.96%;
+@media (min-width: 1024px) {
+    .col-1 {
+        max-width: 8.33%;
+        flex: 0 0 8.33%;
+    }
+    
+    .col-2 {
+        max-width: 16.66%;
+        flex: 0 0 16.66%;
+    }
+    
+    .col-3 {
+        max-width: 24.99%;
+        flex: 0 0 24.99%;
+    }
+    
+    .col-4 {
+        max-width: 33.32%;
+        flex: 0 0 33.32%;
+    }
+    
+    .col-5 {
+        max-width: 41.65%;
+        flex: 0 0 41.65%;
+    }
+    
+    .col-6 {
+        max-width: 49.98%;
+        flex: 0 0 49.98%;
+    }
+    
+    .col-7 {
+        max-width: 58.31%;
+        flex: 0 0 58.31%;
+    }
+    
+    .col-8 {
+        max-width: 66.64%;
+        flex: 0 0 66.64%;
+    }
+    
+    .col-9 {
+        max-width: 74.97%;
+        flex: 0 0 74.97%;
+    }
+    
+    .col-10 {
+        max-width: 83.3%;
+        flex: 0 0 83.3%;
+    }
+    
+    .col-11 {
+        max-width: 91.63%;
+        flex: 0 0 91.63%;
+    }
+    
+    .col-12 {
+        max-width: 99.96%;
+        flex: 0 0 99.96%;
+    }
 }
 
 /*Justify-Content & Align-Items*/
@@ -274,8 +290,6 @@ button {
     font-weight: 400;
     text-align: center;
     cursor: pointer;
-    background-color: #e0e0e0;
-    color: #212529;
     padding: 7px 18px;
     font-size: 16px;
     line-height: 1.5;

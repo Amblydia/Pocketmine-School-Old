@@ -1,16 +1,116 @@
 body {
     background-color: #f2f2f2;
+    color: #151d21;
+    overflow-x: hidden;
 }
 
 header {
-    height: 100vh;
-    color: #fff;
-    margin-bottom: 20px;
     position: relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0.6) 100%), url(../img/bg1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
+    background: linear-gradient(165deg,#e0e0e0 50%,#f2f2f2 50%);
+    padding-top: 80px;
+}
+
+.header-title {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+header h1 {
+    font-weight: 500;
+    color: #151d21;
+}
+
+.vscodeimg {
+    height: 30.3rem;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    min-height: 4rem;
+    background-color: #151d21;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+    padding: 14px;
+    align-items: center;
+}
+
+.nav-img-title {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.nav-img-title img {
+    width: 150px;
+    height: 40px;
+}
+
+.nav-menu {
+    color: #fff;
+    float: right;
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu-btn {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.nav-menu-btn:hover {
+    background-color: #ffffff30;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.mobile-nav {
+    float: right;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+}
+
+.sidenavbar {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #f2f2f2;
+    color: #000;
+    overflow-x: hidden;
+    padding-top: 10px;
+    margin-left: -180px;
+}
+
+.sidenavbar a {
+    padding: 10px;
+    text-decoration: none !important;
+    font-size: 16px;
+    display: block;
+}
+   
+.sidenavbar a:hover {
+    background-color:  #b3b3b3;
+    color: #000;
+}
+
+.sidenavbar a.active {
+    background-color: #0044ffbb;
+    color: #fff;
 }
 
 .text-center {
@@ -22,6 +122,16 @@ header {
     color: #dedede;
 }
 
+.btn-black {
+    background-color: #151d21;
+    color: #fff;
+    box-shadow: 0px 0px 5px 0px #151d21;
+}
+
+.btn-black:hover {
+    box-shadow: 0px 0px 10px 0px #151d21;
+}
+
 /*Courses*/
 
 .courses {
@@ -31,26 +141,28 @@ header {
 
 .tutorial-grid {
     list-style-type: none;
-    padding: 0;
+    padding-top: 14px;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
     grid-gap: 2rem;
 }
 
 .tutorial-box {
-    background: #fff;
-    box-shadow: 0 0 20px 8px #dadada;
+    background: #151d21;
+    box-shadow: 0px 0px 20px 0px #0000006e;
     position: relative;
     border-radius: 6px;
+    transition: box-shadow .5s;
     height: 200px;
+    color: #fff;
 }
 
 .tutorial-box:hover {
-    box-shadow: 0 0 20px 7px #b3b3b3;
+    box-shadow: 0px 0px 5px 0px #151d21;
 }
 
 .how-to {
-    border-top: 25px solid blue;
+    border-top: 25px solid #42ade2;
     border-radius: 6px 6px 0px 0px;
     padding: 20px;
 }
@@ -62,4 +174,15 @@ footer {
 
 footer a:hover {
     color: #e2e2e2;
+}
+
+@media only screen and (max-width: 425px) {
+    .mobile-nav {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: none;
+    }
+
 }

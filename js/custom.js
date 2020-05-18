@@ -7,10 +7,11 @@ jQuery.fn.blindLeftToggle = function (duration, easing, complete) {
 $(document).ready(function() {
 
     $('.mobile-nav').click(function() {
-        var nav = $('.sidebar');
-        var icon = $('.mobile-nav i');
+        var nav = $('.sidenavbar');
+        var sidebar = $('.sidebar');
     
         nav.blindLeftToggle(500);
+        sidebar.blindLeftToggle(500);
     
     });
 
