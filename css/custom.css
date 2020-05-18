@@ -143,7 +143,7 @@ ul {
     list-style-type: none;
     padding-top: 14px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(18rem,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(17rem,1fr));
     grid-gap: 2rem;
 }
 
@@ -153,7 +153,7 @@ ul {
     position: relative;
     border-radius: 6px;
     transition: box-shadow .5s;
-    height: 200px;
+    height: 185px;
     color: #fff;
 }
 
@@ -176,6 +176,14 @@ footer a:hover {
     color: #e2e2e2;
 }
 
+@media only screen and (max-width: 768px) {
+
+    header {
+        background: linear-gradient(165deg,#e0e0e0 62%,#f2f2f2 38%);
+    }
+
+}
+
 @media only screen and (max-width: 425px) {
     .mobile-nav {
         display: block;
@@ -183,6 +191,14 @@ footer a:hover {
 
     .nav-menu ul {
         display: none;
+    }
+
+    .vscodeimg {
+        height: 24.8rem;
+    }
+
+    header h1 {
+        font-size: 20px;
     }
 
 }
