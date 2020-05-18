@@ -6,7 +6,7 @@ body {
 
 header {
     position: relative;
-    background: linear-gradient(165deg,#e0e0e0 50%,#f2f2f2 50%);
+    background: linear-gradient(168deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 56%);
     padding-top: 80px;
 }
 
@@ -17,7 +17,7 @@ header {
 
 header h1 {
     font-weight: 500;
-    color: #151d21;
+    color: #222;
 }
 
 .vscodeimg {
@@ -163,7 +163,7 @@ ul {
 
 .how-to {
     border-top: 25px solid #42ade2;
-    border-radius: 6px 6px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
     padding: 20px;
 }
 
@@ -179,7 +179,7 @@ footer a:hover {
 @media only screen and (max-width: 768px) {
 
     header {
-        background: linear-gradient(165deg,#e0e0e0 62%,#f2f2f2 38%);
+        background: linear-gradient(165deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 60%, rgba(242,242,242,1) 61%);
     }
 
 }
