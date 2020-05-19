@@ -155,7 +155,8 @@ ul {
 .tutorials {
     box-shadow: 0 0 10px 1px #00000030;
     background-color: #fff;
-    border-radius: 10px
+    border-radius: 10px;
+    margin: 1rem 0;
 }
 
 .tutorial-grid {
@@ -202,7 +203,7 @@ footer a:hover {
         background: linear-gradient(165deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 60%, rgba(242,242,242,1) 61%);
     }
 
-    section {
+    .mpts {
         background: linear-gradient(345deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 56%);
     }
 
