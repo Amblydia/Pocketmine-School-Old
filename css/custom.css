@@ -6,8 +6,12 @@ body {
 
 header {
     position: relative;
-    background: linear-gradient(168deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 56%);
+    background: linear-gradient(173deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 56%);
     padding-top: 80px;
+}
+
+section {
+    background: linear-gradient(353deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 56%);
 }
 
 .header-title {
@@ -24,7 +28,7 @@ header h1 {
     height: 30.3rem;
     border-radius: 10px;
 }
-
+ 
 nav {
     display: flex;
     position: sticky;
@@ -141,7 +145,7 @@ ul {
 
 .tutorial-grid {
     list-style-type: none;
-    padding-top: 14px;
+    padding: 14px 0;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(17rem,1fr));
     grid-gap: 2rem;
@@ -180,6 +184,10 @@ footer a:hover {
 
     header {
         background: linear-gradient(165deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 60%, rgba(242,242,242,1) 61%);
+    }
+
+    section {
+        background: linear-gradient(345deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 56%);
     }
 
 }
