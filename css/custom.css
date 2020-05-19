@@ -11,6 +11,10 @@ header {
 }
 
 section {
+    margin-top: 3rem;
+}
+
+.mpts {
     background: linear-gradient(353deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 56%);
 }
 
@@ -138,9 +142,10 @@ ul {
 
 /*Courses*/
 
-.courses {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.tutorials {
+    box-shadow: 0 0 10px 1px #00000030;
+    background-color: #fff;
+    border-radius: 10px
 }
 
 .tutorial-grid {
