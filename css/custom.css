@@ -1,7 +1,17 @@
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #f2f2f2;
     color: #151d21;
     overflow-x: hidden;
+}
+
+.wrapper {
+    flex: 1 0 auto;
 }
 
 header {
@@ -179,6 +189,7 @@ ul {
 footer {
     background-color: #222222;
     color: #fff;
+    flex-shrink: 0;
 }
 
 footer a:hover {
