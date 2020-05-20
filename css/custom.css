@@ -16,7 +16,7 @@ body {
 
 header {
     position: relative;
-    background: linear-gradient(173deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 56%);
+    background: linear-gradient(175deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 70%);
     padding-top: 80px;
 }
 
@@ -25,7 +25,7 @@ section {
 }
 
 .mpts {
-    background: linear-gradient(353deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 56%);
+    background: linear-gradient(355deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 70%);
 }
 
 .header-title {
@@ -199,13 +199,6 @@ footer a:hover {
 
 @media only screen and (max-width: 768px) {
 
-    header {
-        background: linear-gradient(165deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 60%, rgba(242,242,242,1) 61%);
-    }
-
-    .mpts {
-        background: linear-gradient(345deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 56%);
-    }
 
 }
 
