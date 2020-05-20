@@ -16,16 +16,12 @@ body {
 
 header {
     position: relative;
-    background: linear-gradient(175deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 70%);
+    background: linear-gradient(180deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 50%, rgba(242,242,242,1) 100%);
     padding-top: 80px;
 }
 
 section {
     margin-top: 3rem;
-}
-
-.mpts {
-    background: linear-gradient(355deg, rgba(124,208,252,1) 0%, rgba(101,175,205,1) 25%, rgba(77,149,159,1) 55%, rgba(242,242,242,1) 70%);
 }
 
 .header-title {
