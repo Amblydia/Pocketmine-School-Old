@@ -24,13 +24,16 @@ kbd {
 }
 
 nav {
-    background-color: #333;
-    color: #fff;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+    min-height: 4rem;
+    background-color: #151d21;
+    box-shadow: 0 5px 10px 0px #00000050;
+    padding: 14px;
+    align-items: center;
     width: 100%;
-    z-index: 1;
 }
 
 nav .nav-menu {
@@ -87,15 +90,15 @@ nav a.active {
 }
 
 .sidebar {
-    height: 100%; 
-    width: 180px;
-    position: fixed; 
-    z-index: 1; 
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
     left: 0;
-    background-color: #f2f2f2; 
+    background-color: #000000;
     color: #000;
-    overflow-x: hidden; 
-    padding-top: 10px;
+    overflow-x: hidden;
+    padding-top: 82px;
 }
 
 .sidebar a {
