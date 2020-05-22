@@ -46,7 +46,6 @@ nav {
     z-index: 2;
     min-height: 4rem;
     background-color: #151d21;
-    box-shadow: 0 5px 10px 0px #00000050;
     padding: 14px;
     align-items: center;
 }
@@ -203,7 +202,6 @@ footer a:hover {
     background-color: #d4d4d4;
     color: #000;
     padding-top: 10px;
-    box-shadow: 0 0 10px #00000055;
     display: block;
 }
 
@@ -269,4 +267,20 @@ kbd {
         font-size: 20px;
     }
 
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
