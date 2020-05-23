@@ -269,6 +269,17 @@ kbd {
 
 }
 
+.dark-toggle {
+    background-color: #222222;
+    border-radius: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    padding: 10px;
+}
+
 ::-webkit-scrollbar {
     width: 6px;
 }

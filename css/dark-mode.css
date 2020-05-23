@@ -1,0 +1,34 @@
+.dark {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark header {
+    background: linear-gradient(#2a5298, #1e3c72, #1e1e1e 85%);
+}
+
+.dark header h1 {
+    color: #e0e0e0;
+}
+
+.dark .tutorials {
+    background-color: #222;
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+    }
+
+    header {
+        background: linear-gradient(#2a5298, #1e3c72, #1e1e1e 85%);
+    }
+
+    header h1 {
+        color: #e0e0e0;
+    }
+
+}

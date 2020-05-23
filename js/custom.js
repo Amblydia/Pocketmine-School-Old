@@ -31,3 +31,12 @@ $(document).ready(function() {
     });
 
 });
+
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark");
+};
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+});
