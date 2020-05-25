@@ -15,6 +15,11 @@
     background-color: #222;
 }
 
+.dark .sidebar {
+    background-color: #2e2e2e;
+    color: #e0e0e0;
+}
+
 
 @media (prefers-color-scheme: dark) {
 
@@ -28,6 +33,15 @@
     }
 
     header h1 {
+        color: #e0e0e0;
+    }
+
+    .tutorials {
+        background-color: #222;
+    }
+    
+    .sidebar {
+        background-color: #2e2e2e;
         color: #e0e0e0;
     }
 
