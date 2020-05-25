@@ -270,7 +270,7 @@ kbd {
 
 }
 
-@media (prefers-color-scheme: light) {
+@media screen and (prefers-color-scheme: light) {
 
     body {
         background-color: #f2f2f2;
