@@ -138,11 +138,12 @@ ul {
 .btn-black {
     background-color: #151d21;
     color: #fff;
-    box-shadow: 0px 0px 5px 0px #151d21;
+    box-shadow: 0px 0px 5px 0px #303030;
+    transition: box-shadow .3s;
 }
 
 .btn-black:hover {
-    box-shadow: 0px 0px 10px 0px #151d21;
+    box-shadow: 0px 0px 20px 0px #303030;
 }
 
 /*Courses*/
@@ -164,7 +165,7 @@ ul {
 
 .tutorial-box {
     background: #151d21;
-    box-shadow: 0px 0px 20px 0px #0000006e;
+    box-shadow: 0px 0px 20px 0px #111;
     position: relative;
     border-radius: 6px;
     transition: box-shadow .5s;
