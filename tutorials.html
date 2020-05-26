@@ -13,6 +13,7 @@
   <script src="https://kit.fontawesome.com/25239cedf1.js" crossorigin="anonymous"></script>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/js/custom.js"></script>
 
   <link href="./css/custom.css" rel="stylesheet" type="text/css">
   <link href="./css/ultra.css" rel="stylesheet" type="text/css">
@@ -34,13 +35,29 @@
 <div class="wrapper">
 
 <nav>
-    <script>
-    $(function(){$("nav").load("nav.html");});
-    </script>
+  <div class="col">
+
+    <a href="index.html" class="nav-img-title">
+        <img src="./img/pocketmineschool-wbg.png">
+    </a>
+    </div>
+    
+    <div class="col">
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="nav-menu-btn">Home</a></li>
+                <li><a href="tutorials.html" class="nav-menu-btn">Tutorials</a></li>
+            </ul>
+            <a class="mobile-nav mn-hidden"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
 </nav>
 
-<div class="sidenavbar">
-    
+<div class="sidebar sidenavbar" id="sidebar">
+    <ul>
+        <li><a href="index.html" class="nav-menu-btn">Home</a></li>
+        <li><a href="tutorials.html" class="nav-menu-btn">Tutorials</a></li>
+    </ul>
 </div>
 
 <section> 
@@ -84,8 +101,8 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="./js/custom.js"></script>
-<script src="./js/waypoint.js"></script>
+<script src="/js/custom.js"></script>
+<script src="/js/waypoint.js"></script>
     
 </body>
 </html>

@@ -1,6 +1,6 @@
 jQuery.fn.blindLeftToggle = function (duration, easing, complete) {
     return this.animate({
-        marginLeft: parseFloat(this.css('marginLeft')) < 200 ? 200 : -0
+        marginLeft: parseFloat(this.css('marginLeft')) < 200 ? 200 : 0
     }, jQuery.speed(duration, easing, complete));
 };
 
@@ -17,6 +17,13 @@ $(document).ready(function() {
         var sidebar = $('.sidebar');
 
         sidemain.blindLeftToggle(200);
+        sidebar.bLT(200);
+    
+    });
+
+    $('nav .mn-hidden').click(function() {
+        var sidebar = $('.sidenavbar');
+        
         sidebar.bLT(200);
     
     });

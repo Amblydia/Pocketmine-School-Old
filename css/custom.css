@@ -97,37 +97,13 @@ ul {
 
 .mn-hidden {
     display: none;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .sidenavbar {
-    height: 100%;
-    width: 180px;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: #f2f2f2;
-    color: #000;
-    overflow-x: hidden;
-    padding-top: 10px;
-    margin-left: -180px;
-}
-
-.sidenavbar a {
-    padding: 10px;
-    text-decoration: none !important;
-    font-size: 16px;
-    display: block;
-}
-   
-.sidenavbar a:hover {
-    background-color:  #b3b3b3;
-    color: #000;
-}
-
-.sidenavbar a.active {
-    background-color: #0044ffbb;
-    color: #fff;
+    margin-left: -200px;
 }
 
 .text-center {
@@ -256,7 +232,7 @@ kbd {
 }
 
 @media only screen and (max-width: 425px) {
-    .mobile-nav {
+    .mn-hidden {
         display: block;
     }
 
@@ -277,7 +253,7 @@ kbd {
     }
 
     .sidemain {
-        margin-left: 0px;
+        margin-left: 0px !important;
     } 
 
 }
