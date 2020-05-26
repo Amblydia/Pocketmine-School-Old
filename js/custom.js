@@ -1,17 +1,23 @@
 jQuery.fn.blindLeftToggle = function (duration, easing, complete) {
     return this.animate({
-        marginLeft: parseFloat(this.css('marginLeft')) < 0 ? 0 : -this.outerWidth()
+        marginLeft: parseFloat(this.css('marginLeft')) < 200 ? 200 : -0
+    }, jQuery.speed(duration, easing, complete));
+};
+
+jQuery.fn.bLT = function (duration, easing, complete) {
+    return this.animate({
+        marginLeft: parseFloat(this.css('marginLeft')) < 0 ? 0 : -200
     }, jQuery.speed(duration, easing, complete));
 };
 
 $(document).ready(function() {
 
-    $('.mobile-nav').click(function() {
-        var nav = $('.sidenavbar');
+    $('nav .mobile-nav').click(function() {
+        var sidemain = $('.sidemain');
         var sidebar = $('.sidebar');
-    
-        nav.blindLeftToggle(500);
-        sidebar.blindLeftToggle(500);
+
+        sidemain.blindLeftToggle(200);
+        sidebar.bLT(200);
     
     });
 
@@ -40,3 +46,4 @@ function darkMode() {
 document.addEventListener('DOMContentLoaded', (event) => {
     ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
 });
+

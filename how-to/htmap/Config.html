@@ -11,12 +11,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/25239cedf1.js" crossorigin="anonymous"></script>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../js/custom.js"></script>
 
   <link href="../../css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../css/ultra.css" rel="stylesheet" type="text/css">
   <link href="../../css/tomorrow-night-eighties.css" rel="stylesheet" type="text/css">
+  <link href="../../css/dark-mode.css" rel="stylesheet" type="text/css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148602502-2"></script>
@@ -34,11 +36,22 @@
 <!------------------>
 
 <nav>
-  <script>
-    $(function(){
-      $("nav").load("../nav.html");
-    });
-  </script>
+    <div class="col">
+        <a href="../../index.html" class="nav-img-title">
+            <img src="../../img/pocketmineschool-wbg.png">
+        </a>
+    </div>
+        
+    <div class="col">
+        <div class="nav-menu">
+            <ul>
+                <li><a href="../../index.html" class="nav-menu-btn">Home</a></li>
+                <li><a href="../../tutorials.html" class="nav-menu-btn">Tutorials</a></li>
+                <li><a class="mobile-nav"><i class="fas fa-bars"></i></a></li>
+            </ul>
+            <a class="mobile-nav mn-hidden"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
 </nav>
 
 <div class="sidebar">
@@ -110,7 +123,8 @@
 
 <!------------------>
 </div>
-<script src="../../js/custom.js"></script>
+
+<script src="../../js/waypoint.js"></script>
 <script src="../../js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 

@@ -13,6 +13,7 @@
   <script src="https://kit.fontawesome.com/25239cedf1.js" crossorigin="anonymous"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../js/custom.js"></script>
 
   <link href="../../css/custom.css" rel="stylesheet" type="text/css">
   <link href="../../css/ultra.css" rel="stylesheet" type="text/css">
@@ -34,24 +35,31 @@
 <!------------------>
 
 <nav>
-  <script>
-    $(function(){
-      $("nav").load("../nav.html");
-    });
-  </script>
+    <div class="col">
+        <a href="../../index.html" class="nav-img-title">
+            <img src="../../img/pocketmineschool-wbg.png">
+        </a>
+    </div>
+        
+    <div class="col">
+        <div class="nav-menu">
+            <ul>
+                <li><a href="../../index.html" class="nav-menu-btn">Home</a></li>
+                <li><a href="../../tutorials.html" class="nav-menu-btn">Tutorials</a></li>
+                <li><a class="mobile-nav"><i class="fas fa-bars"></i></a></li>
+            </ul>
+            <a class="mobile-nav mn-hidden"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
 </nav>
 
-<div class="sidebar">
-
-<script>
-$(function(){
-  $(".sidebar").load("sidebar.html");
-});
-</script>
-
+<div class="sidebar" id="sidebar">
+    <script>
+        $(function(){$(".sidebar").load("sidebar.html");});
+    </script>
 </div>
 
-<div id="Introduction" class="sidemain">
+<div id="sidemain" class="sidemain">
   <div class="row">
     <h2>Introduction</h2>
   </div>
@@ -80,6 +88,7 @@ $(function(){
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="../../js/custom.js"></script>
+<script src="../../js/waypoint.js"></script>
 
 </body>
 </html>
