@@ -83,6 +83,10 @@ nav {
     background-color: #ffffff30;
 }
 
+.nav-menu-btn.active {
+    background-color: #ffffff30;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -118,12 +122,23 @@ ul {
 .btn-black {
     background-color: #151d21;
     color: #fff;
-    box-shadow: 0px 0px 5px 0px #303030;
+    box-shadow: 0px 0px 1px 0px #303030;
     transition: box-shadow .3s;
 }
 
 .btn-black:hover {
-    box-shadow: 0px 0px 20px 0px #303030;
+    box-shadow: 0px 0px 10px 0px #303030;
+}
+
+.edit-icon {
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.edit-icon:hover {
+    background-color: #666;
+    color: #222;
 }
 
 /*Courses*/
