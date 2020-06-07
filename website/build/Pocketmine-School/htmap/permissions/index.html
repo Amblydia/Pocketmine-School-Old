@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Permissions · </title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="___"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Permissions · "/><meta property="og:type" content="website"/><meta property="og:url" content="https://github.com/TeamUltraSoft.github.io/Pocketmine-School/"/><meta property="og:description" content="___"/><meta property="og:image" content="https://github.com/TeamUltraSoft.github.io/Pocketmine-School/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://github.com/TeamUltraSoft.github.io/Pocketmine-School/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/Pocketmine-School/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-eighties.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/Pocketmine-School/js/scrollSpy.js"></script><link rel="stylesheet" href="/Pocketmine-School/css/main.css"/><script src="/Pocketmine-School/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Pocketmine-School/"><img class="logo" src="/Pocketmine-School/img/favicon.ico" alt=""/><h2 class="headerTitleWithLogo"></h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/Pocketmine-School/index" target="_self">Home</a></li><li class=""><a href="/Pocketmine-School/tutorials" target="_self">Tutorials</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>How to make a Plugin</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">How to make a Plugin</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/plugin.yml">plugin.yml</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/thebasics">The Basics</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/events">Events</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/commands">Commands</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Pocketmine-School/htmap/permissions">Permissions</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/config">Config</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/tasks">Tasks</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/TeamUltraSoft/Pocketmine-School/tree/master/docs/htmap/permissions.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Permissions</h1></header><article><div><span><hr>
+<p>You just learned how to add commands but you want only certain group of players to use it.</p>
+<p>Well lets teach you how to add Permissions to your commands, it very simple</p>
+<pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onCommand</span><span class="hljs-params">(CommandSender $sender, Command $cmd, string $label, array $args)</span> : <span class="hljs-title">bool</span> </span>{
+  <span class="hljs-keyword">if</span>($player-&gt;hasPermission(<span class="hljs-string">"test.cmd"</span>)){ <span class="hljs-comment">// we only add this one line just to add Permissions</span>
+    <span class="hljs-keyword">if</span>($cmd-&gt;getName() == <span class="hljs-string">"test"</span>) {
+      <span class="hljs-keyword">if</span>(!$sender <span class="hljs-keyword">instanceof</span> Player){
+        $sender-&gt;sendMessage(<span class="hljs-string">"This Command Only Works for players! Please perform this command IN GAME!"</span>);
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">if</span>(!<span class="hljs-keyword">isset</span>($args[<span class="hljs-number">0</span>]) <span class="hljs-keyword">or</span> (is_int($args[<span class="hljs-number">0</span>]) <span class="hljs-keyword">and</span> $args[<span class="hljs-number">0</span>] &gt; <span class="hljs-number">0</span>)) { 
+          $args[<span class="hljs-number">0</span>] = <span class="hljs-number">4</span>; 
+        }
+        $sender-&gt;getInventory()-&gt;addItem(Item::get(<span class="hljs-number">364</span>,<span class="hljs-number">0</span>,$args[<span class="hljs-number">0</span>]));
+        $sender-&gt;sendMessage(<span class="hljs-string">"You have just recieved"</span> .count($args[<span class="hljs-number">0</span>]). <span class="hljs-string">" steak!"</span>);
+      }
+    }
+  } <span class="hljs-comment">//Don't forget to add this for the command to work</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+}
+</code></pre>
+<p>Want to add a message to the player who doesn't have permission to use the command the here you go.</p>
+<pre><code class="hljs"><span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onCommand</span><span class="hljs-params">(CommandSender $sender, Command $cmd, string $label, array $args)</span> : <span class="hljs-title">bool</span> </span>{
+  <span class="hljs-keyword">if</span>($sender-&gt;hasPermission(<span class="hljs-string">"test.cmd"</span>)){ 
+    <span class="hljs-keyword">if</span>($cmd-&gt;getName() == <span class="hljs-string">"test"</span>) {
+      <span class="hljs-keyword">if</span>(!$sender <span class="hljs-keyword">instanceof</span> Player){
+        $sender-&gt;sendMessage(<span class="hljs-string">"This Command Only Works for players! Please perform this command IN GAME!"</span>);
+      } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">if</span>(!<span class="hljs-keyword">isset</span>($args[<span class="hljs-number">0</span>]) <span class="hljs-keyword">or</span> (is_int($args[<span class="hljs-number">0</span>]) <span class="hljs-keyword">and</span> $args[<span class="hljs-number">0</span>] &gt; <span class="hljs-number">0</span>)) { 
+          $args[<span class="hljs-number">0</span>] = <span class="hljs-number">4</span>; 
+        }
+        $sender-&gt;getInventory()-&gt;addItem(Item::get(<span class="hljs-number">364</span>,<span class="hljs-number">0</span>,$args[<span class="hljs-number">0</span>]));
+        $sender-&gt;sendMessage(<span class="hljs-string">"You have just recieved"</span> .count($args[<span class="hljs-number">0</span>]). <span class="hljs-string">" steak!"</span>);
+      }
+    }
+  } <span class="hljs-keyword">else</span> {
+    $sender-&gt;sendMessage(<span class="hljs-string">"You don't have permission to use this command"</span>);
+  } 
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+}
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Pocketmine-School/htmap/commands"><span class="arrow-prev">← </span><span>Commands</span></a><a class="docs-next button" href="/Pocketmine-School/htmap/config"><span>Config</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Pocketmine-School/" class="nav-home"><img src="/Pocketmine-School/img/favicon.ico" alt="" width="66" height="58"/></a><div><h5>Tutorials</h5><a href="/Pocketmine-School/en/htmap/introduction">How to make a Plugin</a><a href="/Pocketmine-School/en/htufa/introduction">How to use FormAPI</a><a href="/Pocketmine-School/en/doc3.html"></a></div><div><h5>Community</h5><a href="https://discord.gg/EvUyyS7">Discord</a></div><div><h5>More</h5><a href="https://github.com/TeamUltraSoft/Pocketmine-School">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/TeamUltraSoft/Pocketmine-School/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 UltraSoft</section></footer></div></body></html>

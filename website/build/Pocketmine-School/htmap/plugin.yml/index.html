@@ -1,0 +1,99 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>plugin.yml · </title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="___"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="plugin.yml · "/><meta property="og:type" content="website"/><meta property="og:url" content="https://github.com/TeamUltraSoft.github.io/Pocketmine-School/"/><meta property="og:description" content="___"/><meta property="og:image" content="https://github.com/TeamUltraSoft.github.io/Pocketmine-School/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://github.com/TeamUltraSoft.github.io/Pocketmine-School/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/Pocketmine-School/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-eighties.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/Pocketmine-School/js/scrollSpy.js"></script><link rel="stylesheet" href="/Pocketmine-School/css/main.css"/><script src="/Pocketmine-School/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Pocketmine-School/"><img class="logo" src="/Pocketmine-School/img/favicon.ico" alt=""/><h2 class="headerTitleWithLogo"></h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/Pocketmine-School/index" target="_self">Home</a></li><li class=""><a href="/Pocketmine-School/tutorials" target="_self">Tutorials</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>How to make a Plugin</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">How to make a Plugin</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/introduction">Introduction</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Pocketmine-School/htmap/plugin.yml">plugin.yml</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/thebasics">The Basics</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/events">Events</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/commands">Commands</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/permissions">Permissions</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/config">Config</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/tasks">Tasks</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/TeamUltraSoft/Pocketmine-School/tree/master/docs/htmap/plugin.yml.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">plugin.yml</h1></header><article><div><span><hr>
+<p>First create a folder and name it whatever you want because this folder will be your plugin.<br>
+In the folder create a file and name it plugin.yml.</p>
+<p>In this file you will add:</p>
+<pre><code class="hljs">name: Name of Your Plugin
+author: Your Name
+api: <span class="hljs-number">3.11</span><span class="hljs-number">.7</span>
+version: <span class="hljs-number">1.0</span>  <span class="hljs-comment">#This is where you put the version of the plugin</span>
+main: ExampleName/Main
+<span class="hljs-comment"># "ExampleName" will be a folder in the src folder and "Main" will be the file in the "ExampleName" folder</span>
+ 
+<span class="hljs-comment"># Commands If ur plugin has commands do this:</span>
+command:
+    test:  <span class="hljs-comment">#"test" this is the name of the command</span>
+        description: Put any description
+        usage: /test
+    test2:  <span class="hljs-comment">#Second command</span>
+        description: Put any Description
+        usage: /test2
+ 
+<span class="hljs-comment"># Permissions </span>
+permissions:
+    test.command:
+        <span class="hljs-keyword">default</span>: <span class="hljs-keyword">true</span>
+    test2.command:
+        <span class="hljs-keyword">default</span>: <span class="hljs-keyword">true</span>
+</code></pre>
+<p>So after you add your plugin.yml make a folder and name it src, in this folder you will add a new folder called &quot;ExampleName&quot; (were nameing it &quot;ExampleName&quot; because that is what we named it in the plugin.yml).</p>
+<p>Now in the &quot;ExampleName&quot; folder we add a new file and name it &quot;Main.php&quot; (were nameing it &quot;Main.php&quot; because that is what we named it in the plugin.yml and the .php is the extension).</p>
+<p>Now your file structure should look like this:</p>
+<pre><code class="hljs">PluginName 
+    ├── plugin.yml 
+    └── src
+         └── ExampleName
+                  └── Main.php
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Pocketmine-School/htmap/introduction"><span class="arrow-prev">← </span><span>Introduction</span></a><a class="docs-next button" href="/Pocketmine-School/htmap/thebasics"><span>The Basics</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Pocketmine-School/" class="nav-home"><img src="/Pocketmine-School/img/favicon.ico" alt="" width="66" height="58"/></a><div><h5>Tutorials</h5><a href="/Pocketmine-School/en/htmap/introduction">How to make a Plugin</a><a href="/Pocketmine-School/en/htufa/introduction">How to use FormAPI</a><a href="/Pocketmine-School/en/doc3.html"></a></div><div><h5>Community</h5><a href="https://discord.gg/EvUyyS7">Discord</a></div><div><h5>More</h5><a href="https://github.com/TeamUltraSoft/Pocketmine-School">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/TeamUltraSoft/Pocketmine-School/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 UltraSoft</section></footer></div></body></html>

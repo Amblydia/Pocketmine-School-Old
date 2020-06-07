@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Tasks · </title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="___"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Tasks · "/><meta property="og:type" content="website"/><meta property="og:url" content="https://github.com/TeamUltraSoft.github.io/Pocketmine-School/"/><meta property="og:description" content="___"/><meta property="og:image" content="https://github.com/TeamUltraSoft.github.io/Pocketmine-School/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://github.com/TeamUltraSoft.github.io/Pocketmine-School/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/Pocketmine-School/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-eighties.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><script src="/Pocketmine-School/js/scrollSpy.js"></script><link rel="stylesheet" href="/Pocketmine-School/css/main.css"/><script src="/Pocketmine-School/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Pocketmine-School/"><img class="logo" src="/Pocketmine-School/img/favicon.ico" alt=""/><h2 class="headerTitleWithLogo"></h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/Pocketmine-School/index" target="_self">Home</a></li><li class=""><a href="/Pocketmine-School/tutorials" target="_self">Tutorials</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>How to make a Plugin</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">How to make a Plugin</h3><ul class=""><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/introduction">Introduction</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/plugin.yml">plugin.yml</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/thebasics">The Basics</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/events">Events</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/commands">Commands</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/permissions">Permissions</a></li><li class="navListItem"><a class="navItem" href="/Pocketmine-School/htmap/config">Config</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Pocketmine-School/htmap/tasks">Tasks</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><a class="edit-page-link button" href="https://github.com/TeamUltraSoft/Pocketmine-School/tree/master/docs/htmap/tasks.md" target="_blank" rel="noreferrer noopener">Edit</a><h1 id="__docusaurus" class="postHeaderTitle">Tasks</h1></header><article><div><span><hr>
+<p>Creating a Simple Plugin Task
+We'll take our last plugin and adding a simple task to it that tells the user when 10 seconds has past.</p>
+<p>First, go to your &quot;Main.php&quot; folder and create a new folder called &quot;tasks&quot;.</p>
+<p>Create a new file called &quot;MyTask.php&quot;.</p>
+<p>And put those contents inside of it.</p>
+<pre><code class="hljs"><span class="hljs-meta">&lt;?php</span> <span class="hljs-comment">// As always when you start a PHP file</span>
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">ExampleName</span>\<span class="hljs-title">tasks</span>; <span class="hljs-comment">// Use the same namespace as in your first file but add a \tasks who symbolise that this file is in the subfolder "tasks"</span>
+
+<span class="hljs-keyword">use</span> <span class="hljs-title">pocketmine</span>\<span class="hljs-title">scheduler</span>\<span class="hljs-title">Task</span>; <span class="hljs-comment">// This is the class that your task will extends to be a plugin task</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">ExampleName</span>\<span class="hljs-title">Main</span>; <span class="hljs-comment">// This will allow us to use our main class. It is a required argument for a plugin task.</span>
+            
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyTask</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Task</span> </span>{ <span class="hljs-comment">// Remember that your task must have the same name as your file !</span>
+
+<span class="hljs-comment">// First we need a __construct function which is used when you create a class to set default variables, ect...</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">__construct</span><span class="hljs-params">(Main $main, string $playername)</span> </span>{ <span class="hljs-comment">// The arguments you define here depends on what do you want to do exept for your base.</span>
+       <span class="hljs-keyword">$this</span>-&gt;main = $main; <span class="hljs-comment">//You can retrieve your main class at anytime and use it's methods on your class by using $this-&gt;getOwner()</span>
+       <span class="hljs-keyword">$this</span>-&gt;playername = $playername; <span class="hljs-comment">// So we can retreive the player for later.</span>
+    }
+
+<span class="hljs-comment">// Then we'll create an onRun funtion wich will be called when the time has past to the execution of the task</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">onRun</span><span class="hljs-params">(int $tick)</span> </span>{ <span class="hljs-comment">// $tick is the current server tick when the task executes</span>
+        $player = <span class="hljs-keyword">$this</span>-&gt;getOwner()-&gt;getServer()-&gt;getPlayer(<span class="hljs-keyword">$this</span>-&gt;playername()); <span class="hljs-comment">// This retreive the main class with $this-&gt;getOwner() then asks the server for the player with the name $this-&gt;playername</span>
+        <span class="hljs-keyword">if</span>($player <span class="hljs-keyword">instanceof</span> Player) { <span class="hljs-comment">// Basicly checks if the player we retreive is online.</span>
+            $player-&gt;sendMessage(<span class="hljs-string">"10 seconds has past!"</span>); <span class="hljs-comment">// Sends him a message !</span>
+        }
+    }
+<span class="hljs-comment">// Then we create a getOwner function to return the Main class</span>
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getOwner</span><span class="hljs-params">()</span> :<span class="hljs-title">Main</span> </span>{
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">$this</span>-&gt;main;
+    }
+}
+</code></pre>
+<p>That's it you created a task ! Now we'll see how to execute it.</p>
+<p>First we will make it execute 1 time, but delayed</p>
+<p>In your main class, where you did your &quot;test&quot; command.</p>
+<pre><code class="hljs">    $task = <span class="hljs-keyword">new</span> tasks\MyTask(<span class="hljs-keyword">$this</span>, $sender-&gt;getName()); <span class="hljs-comment">// Create the new class Task by calling</span>
+    <span class="hljs-keyword">$this</span>-&gt;getScheduler()-&gt;scheduleDelayedTask($task, <span class="hljs-number">10</span>*<span class="hljs-number">20</span>); <span class="hljs-comment">// Counted in ticks (1 second = 20 ticks)</span>
+</code></pre>
+<p>So the player will receive a message 10 seconds after he executed the command /test !</p>
+<p>But now, what if we want the player to receive a message each 10 seconds?</p>
+<p>Well, there's a special function for that! We don't even need to change the task!</p>
+<pre><code class="hljs">    $task = <span class="hljs-keyword">new</span> tasks\MyTask(<span class="hljs-keyword">$this</span>, $sender-&gt;getName()); <span class="hljs-comment">// Create the new class Task by calling</span>
+    <span class="hljs-keyword">$this</span>-&gt;getScheduler()-&gt;scheduleRepeatingTask($task, <span class="hljs-number">10</span>*<span class="hljs-number">20</span>); <span class="hljs-comment">// Counted in ticks (1 second = 20 ticks)</span>
+</code></pre>
+<p>Don't forget to import pocketmine\scheduler\TaskScheduler</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Pocketmine-School/htmap/config"><span class="arrow-prev">← </span><span>Config</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/Pocketmine-School/" class="nav-home"><img src="/Pocketmine-School/img/favicon.ico" alt="" width="66" height="58"/></a><div><h5>Tutorials</h5><a href="/Pocketmine-School/en/htmap/introduction">How to make a Plugin</a><a href="/Pocketmine-School/en/htufa/introduction">How to use FormAPI</a><a href="/Pocketmine-School/en/doc3.html"></a></div><div><h5>Community</h5><a href="https://discord.gg/EvUyyS7">Discord</a></div><div><h5>More</h5><a href="https://github.com/TeamUltraSoft/Pocketmine-School">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/TeamUltraSoft/Pocketmine-School/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2020 UltraSoft</section></footer></div></body></html>
