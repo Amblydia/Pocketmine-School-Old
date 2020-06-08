@@ -22,11 +22,13 @@ const users = [
 
 const siteConfig = {
   title: '',
-  tagline: 'A website for testing',
-  url: 'https://github.com/TeamUltraSoft.github.io',
+  tagline: 'Pocketmine School',
+  url: 'https://github.com/TeamUltraSoft',
   baseUrl: '/Pocketmine-School/',
   projectName: 'Pocketmine-School',
   organizationName: 'teamultrasoft',
+
+  noIndex: false,
 
   headerLinks: [
     {page: 'index', label: 'Home'},
@@ -37,7 +39,7 @@ const siteConfig = {
 
   headerIcon: 'img/favicon.ico',
   footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  favicon: '',
 
   colors: {
     primaryColor: '#151d21',
@@ -71,9 +73,8 @@ const siteConfig = {
 
   onPageNav: 'separate',
   cleanUrl: true,
-  ogImage: 'img/undraw_online.svg',
   twitterImage: 'img/undraw_tweetstorm.svg',
-  // docsSideNavCollapsible: true,
+  docsSideNavCollapsible: true,
   enableUpdateBy: true,
   enableUpdateTime: true,
   editUrl: 'https://github.com/TeamUltraSoft/Pocketmine-School/tree/master/docs/',
