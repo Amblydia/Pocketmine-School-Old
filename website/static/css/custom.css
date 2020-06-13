@@ -12,6 +12,11 @@ body {
     color: #151d21;
 }
 
+a:hover {
+    color: #005aff;
+    text-decoration: none;
+}
+
 .header {
     position: relative;
     background: linear-gradient(180deg, #002538 0%, #00527b 25%, #0086ca 65%, #f2f2f2 100%);

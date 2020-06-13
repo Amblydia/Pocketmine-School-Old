@@ -1,5 +1,5 @@
 {
-  "docs": {
+  "docs/htmap": {
     "How to make a Plugin": [
       "htmap/introduction",
       "htmap/plugin.yml",
@@ -9,6 +9,15 @@
       "htmap/permissions",
       "htmap/config",
       "htmap/tasks"
+    ]
+  },
+  "docs/htufa": {
+    "How to use FormAPI": [
+      "htufa/introduction",
+      "htufa/simpleform",
+      "htufa/modalform",
+      "htufa/customform",
+      "htufa/howtosend"
     ]
   }
 }

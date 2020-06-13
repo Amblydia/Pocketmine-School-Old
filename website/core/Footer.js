@@ -37,10 +37,10 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Tutorials</h5>
-            <a href={this.docUrl('htmap/introduction', this.props.language)}>
+            <a href={this.docUrl('htmap/introduction', this.props.doc)}>
               How to make a Plugin
             </a>
-            <a href={this.docUrl('htufa/introduction', this.props.language)}>
+            <a href={this.docUrl('htufa/introduction', this.props.doc)}>
               How to use FormAPI
             </a>
             <a href={this.docUrl('doc3.html', this.props.language)}>
