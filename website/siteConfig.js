@@ -21,7 +21,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: '',
+  title: 'Pocketmine School',
   tagline: 'Pocketmine School',
   url: 'https://github.com/TeamUltraSoft',
   baseUrl: '/Pocketmine-School/',
