@@ -26,7 +26,7 @@ const siteConfig = {
   url: 'https://teamultrasoft.github.io',
   baseUrl: '/Pocketmine-School/',
   projectName: 'Pocketmine-School',
-  organizationName: 'teamultrasoft',
+  organizationName: 'TeamUltraSoft',
 
   noIndex: false,
 
