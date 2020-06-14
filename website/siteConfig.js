@@ -23,7 +23,7 @@ const users = [
 const siteConfig = {
   title: 'Pocketmine School',
   tagline: 'Pocketmine School',
-  url: 'https://github.com/TeamUltraSoft',
+  url: 'https://teamultrasoft.github.io',
   baseUrl: '/Pocketmine-School/',
   projectName: 'Pocketmine-School',
   organizationName: 'teamultrasoft',
