@@ -12,8 +12,6 @@
 const users = [
   {
     caption: 'User1',
-    // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/image.jpg'.
     image: '/img/undraw_open_source.svg',
     infoLink: 'https://www.facebook.com',
     pinned: true,
@@ -22,7 +20,7 @@ const users = [
 
 const siteConfig = {
   title: 'Pocketmine School',
-  tagline: 'Pocketmine School',
+  tagline: 'A Website That Teaches You About PocketMine Plugin Development',
   organizationName: 'TeamUltraSoft',
   projectName: 'Pocketmine-School',
   url: 'https://teamultrasoft.github.io',
@@ -46,20 +44,6 @@ const siteConfig = {
     secondaryColor: '#33464f',
   },
 
-  /* Custom fonts for website */
-  /*
-  fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },
-  */
-
   copyright: `Copyright © ${new Date().getFullYear()} UltraSoft`,
 
   highlight: {
@@ -67,19 +51,17 @@ const siteConfig = {
     defaultLang: 'php',
   },
 
-
-  // Add custom scripts here that would be placed in <script> tags.
   scripts: ['https://buttons.github.io/buttons.js'],
 
   onPageNav: 'separate',
   cleanUrl: true,
   twitterImage: 'img/undraw_tweetstorm.svg',
-  docsSideNavCollapsible: true,
-  enableUpdateBy: true,
-  enableUpdateTime: true,
   editUrl: 'https://github.com/TeamUltraSoft/Pocketmine-School/tree/master/docs/',
   docsUrl: '',
   scrollToTop: true,
+  docsSideNavCollapsible: true,
+  enableUpdateBy: true,
+  enableUpdateTime: true,
 };
 
 module.exports = siteConfig;

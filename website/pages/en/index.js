@@ -78,6 +78,22 @@ class Index extends React.Component {
       </Container>
     );
 
+    const Header = () => (
+      <div className="header">
+        <div className="container">
+          <div className="row">
+            <div className="col col-6 header-title">
+              <h1>A Website That Teaches You About PocketMine Plugin Development</h1>
+              <a href="tutorials" className="btn btn-black">Tutorials</a>
+            </div>
+            <div className="col col-6">
+              <img src="./img/vscode.png" className="vscodeimg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+
     const Section = () => (
     <div className="section">
       <div className="mpts">
@@ -103,27 +119,11 @@ class Index extends React.Component {
             </a>
           </div>
           <div className="col text-center">
-            <a href="tutorials.html" className="btn btn-black">More Tutorials >></a>
+            <a href="tutorials" className="btn btn-black">More Tutorials &gt;</a>
           </div>
         </div>
       </div>
     </div>
-    );
-
-    const Header = () => (
-      <div className="header">
-        <div className="container">
-          <div className="row">
-            <div className="col col-6 header-title">
-              <h1>A Website That Teaches You About PocketMine Plugin Development</h1>
-              <a href="tutorials" className="btn btn-black">Tutorials</a>
-            </div>
-            <div className="col col-6">
-              <img src="./img/vscode.png" className="vscodeimg"/>
-            </div>
-          </div>
-        </div>
-      </div>
     );
 
     return (
