@@ -29,7 +29,7 @@ public function testForm($player) {
     $form->addStepSlider("Step Slider", ["5", "10", "15"]); //This adds a Step Slider, 5, 10 & 15
     $form->addDropdown("Dropdown", ["1", "2", "3"]); //This adds a Dropdowm, Options 1, 2 & 3
     $form->addInput("Input", "Ghost Text", "Text"); //This adds a Input, Text already entered
-    $form->sendToPlayer($player); //This sends it to the player
+    $player->sendForm($form); //This sends it to the player
 }
 ```  
 And thats it you just made your first Custom Form.  

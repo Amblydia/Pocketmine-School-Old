@@ -31,7 +31,7 @@ public function testForm($player) {
     $form->setContent("Text inside the form"); //This sets the content inside the form
     $form->setButton1("Button 1"); //This sets the button 
     $form->setButton2("Button 2"); 
-    $form->sendToPlayer($player); //This sends it to the player
+    $player->sendForm($form); //This sends it to the player
 }
 ```  
 And thats it you just made your first Modal Form.  

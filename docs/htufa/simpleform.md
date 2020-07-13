@@ -21,6 +21,7 @@ In the function we will add our form
 public function testForm($player) {
     $form = new SimpleForm(function (Player $player, $data) {
         if($data === null) {
+            //The form has been closed by the player
             return true;
         }
         switch($data) {
@@ -39,7 +40,7 @@ public function testForm($player) {
     $form->setTitle("Title of the form"); //This sets the title of the form
     $form->addButton("First Button"); //This adds a button
     $form->addButton("Second Button");
-    $form->sendToPlayer($player); //This sends it to the player
+    $player->sendForm($form); //This sends it to the player
 }
 ```  
 And thats it you just made your first Simple Form.  
