@@ -29,7 +29,7 @@ const siteConfig = {
   noIndex: false,
 
   headerLinks: [
-    {page: ' ', label: 'Home'},
+    {page: 'index', label: 'Home'},
     {page: 'tutorials', label: 'Tutorials'},
   ],
 
