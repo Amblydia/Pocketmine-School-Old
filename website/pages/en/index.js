@@ -96,33 +96,36 @@ class Index extends React.Component {
 
     const Section = () => (
     <div className="section">
-      <div className="mpts">
-        <div className="container" id="goto">
-          <div className="text-center"><h2>Tutorials</h2></div>
-          <hr></hr>
-          <div className="tutorial-grid">
-            <a href="htmap/introduction" className="tutorial-box">
-              <div className="how-to">
-                <h5>How To Make a Plugin?</h5>
-                <p>Learn on how to make a pocketmine plugin.</p>
-              </div>
-            </a>
-            <a href="htufa/introduction" className="tutorial-box">
-              <div className="how-to">
-                <h5>How to use FormAPI</h5>
-              </div>
-            </a>
-            <a href="" className="tutorial-box">
-              <div className="how-to">
-                <h5>Coming Soon</h5>  
-              </div>
-            </a>
-          </div>
-          <div className="col text-center">
-            <a href="tutorials" className="btn btn-black">More Tutorials &gt;</a>
-          </div>
+        <div className="mpts">
+            <div className="container" id="goto">
+                <div className="text-center"><h2>Tutorials</h2></div>
+                <hr></hr>
+                <div className="tutorial-grid">
+                    <a href="htmap/introduction" className="tutorial-box">
+                        <div className="how-to">
+                            <h5>How To Make a Plugin?</h5>
+                            <hr></hr>
+                            <p>Learn on how to make a pocketmine plugin.</p>
+                        </div>
+                    </a>
+                    <a href="htufa/introduction" className="tutorial-box">
+                        <div className="how-to">
+                            <h5>How to use FormAPI</h5>
+                            <hr></hr>
+                            <p>Ever wanted to create forms? Here is a guide.</p>
+                        </div>
+                    </a>
+                    <a href="" className="tutorial-box">
+                        <div className="how-to">
+                            <h5>Coming Soon</h5>  
+                        </div>
+                    </a>
+                </div>
+                <div className="col text-center">
+                    <a href="tutorials" className="btn btn-black">More Tutorials &gt;</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     );
 

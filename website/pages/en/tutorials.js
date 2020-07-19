@@ -12,7 +12,7 @@ const CompLibrary = require('../../core/CompLibrary.js');
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
-function Help(props) {
+function Tutorials(props) {
   const {config: siteConfig, language = ''} = props;
   const {baseUrl, docsUrl} = siteConfig;
   const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
@@ -20,7 +20,7 @@ function Help(props) {
   const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
   return (
-    <div className="docMainWrapper wrapper">
+    <div className="section">
       <Container className="mainContainer documentContainer postContainer">
         <div className="post">
           <header className="postHeader t-header">
@@ -31,13 +31,15 @@ function Help(props) {
             <a href="htmap/introduction" className="tutorial-box">
                 <div className="how-to">
                     <h5>How To Make a Plugin?</h5>
+                    <hr></hr>
                     <p>Learn on how to make a pocketmine plugin.</p>
                 </div>
             </a>
             <a href="htufa/introduction" className="tutorial-box">
                 <div className="how-to">
                     <h5>How to use FormAPI</h5>
-                    <p>Ever wanted to create forms?Here is a guide.</p>
+                    <hr></hr>
+                    <p>Ever wanted to create forms? Here is a guide.</p>
                 </div>
             </a>
             <a href="" className="tutorial-box">
@@ -52,4 +54,4 @@ function Help(props) {
   );
 }
 
-module.exports = Help;
+module.exports = Tutorials;

@@ -7,11 +7,6 @@
  
 /* your custom css */
 
-body {
-    background-color: #f2f2f2;
-    color: #151d21;
-}
-
 a:hover {
     color: #005aff;
     text-decoration: none;
@@ -19,13 +14,14 @@ a:hover {
 
 .header {
     position: relative;
-    background: linear-gradient(180deg, #002538 0%, #00527b 25%, #0086ca 65%, #f2f2f2 100%);
+    background: linear-gradient(0deg, #002538 5%, #00527b 50%, #0086ca 100%);
     padding-top: 80px;
     overflow: hidden;
 }
 
 .section {
-    margin-top: 3rem;
+    background-color: #002538;
+    color: #f2f2f2;
 }
 
 .header-title {
@@ -90,15 +86,22 @@ a:hover {
     color: #fff;
 }
 
+.tutorial-box a {
+    color: #f2f2f2;
+}
+
 .tutorial-box:hover {
     box-shadow: 0px 0px 5px 0px #151d21;
     color: #fff;
 }
 
 .how-to {
-    border-top: 25px solid #42ade2;
     border-radius: 5px 5px 0px 0px;
     padding: 20px;
+}
+
+.how-to hr {
+    margin: 0.5rem 0;
 }
 
 .btn {
