@@ -37,6 +37,7 @@ function Help(props) {
             <a href="htufa/introduction" className="tutorial-box">
                 <div className="how-to">
                     <h5>How to use FormAPI</h5>
+                    <p>Ever wanted to create forms?Here is a guide.</p>
                 </div>
             </a>
             <a href="" className="tutorial-box">
