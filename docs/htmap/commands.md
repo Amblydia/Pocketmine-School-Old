@@ -64,8 +64,8 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
     if(!$sender instanceof Player){
        $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
     } else {
-       $sender->getInventory()->addItem(Item::get(364,0,$args[0])); // We choose the first argument as the count !
-        $sender->sendMessage("You have just recieved". count($args[0]) . " steak!");
+       $sender->getInventory()->addItem(Item::get(364,0,(int)$args[0])); // We choose the first argument as the count !
+        $sender->sendMessage("You have just recieved" . $args[0] . " steak!");
     }
   }
   return true;
@@ -85,8 +85,8 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
       if(!isset($args[0])) { // Check if argument 0 isn't defined.
         $args[0] = 4; // Defining $args[0] with value 4 this means giving the player 4 steaks
       }
-      $sender->getInventory()->addItem(Item::get(364,0,$args[0]));
-      $sender->sendMessage("You have just recieved" .count($args[0]). " steak!");
+      $sender->getInventory()->addItem(Item::get(364,0,(int)$args[0]));
+      $sender->sendMessage("You have just recieved" . $args[0] . " steak!");
     }
   }
   return true;
@@ -105,7 +105,7 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
         $args[0] = 4; // Defining $args[0] with value 4 this means giving the player 4 steaks
       }
       $sender->getInventory()->addItem(Item::get(364,0,$args[0]));
-      $sender->sendMessage("You have just recieved" .count($args[0]). " steak!");
+      $sender->sendMessage("You have just recieved" . $args[0] . " steak!");
     }
   }
   return true;
