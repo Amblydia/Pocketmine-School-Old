@@ -17,7 +17,7 @@ use pocketmine\command\CommandSender;
 To setup the command we going to use a public function and inside the function we will add the command, like this:
 ```
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
-  switch ($cmd->getName()) { // Use switch to get the command input
+  switch($cmd->getName()) { // Use switch to get the command input
     case "test": // In this case, we will make the command "/test"
       $sender->sendMessage("This Is A Test!"); // when the sender execute the command it sends the sender a message that says "This Is A Test".
     break; // Use break to stop the operations
@@ -28,7 +28,7 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
 Here is another example of a command instead of sending a message it gives the sender 4 steaks and a message!
 ```
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
-  switch ($cmd->getName()) {
+  switch($cmd->getName()) {
     case "test":
       $sender->getInventory()->addItem(Item::get(364,0,4)); //364 = Item ID Value (in this case, 364 is steak)
       $sender->sendMessage("You have just recieved 4 steak!");
@@ -42,7 +42,7 @@ What would happen if the CONSOLE was the command sender? How do we prevent the C
 To prevent the situation above we are going to use an if statement including "instanceof"  
 ```
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
-  switch ($cmd->getName()) {
+  switch($cmd->getName()) {
     case "test":
       if(!$sender instanceof Player) { // Basically this checks if the Command Sender is NOT a player
         $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!"); // For Console Command Sender
@@ -66,7 +66,7 @@ It basicly stores every single arguments you use in an array. But how is it stor
 Warning: Arrays always starts from 0 !
 ```
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
-  switch ($cmd->getName()) {
+  switch($cmd->getName()) {
     case "test":
       if(!$sender instanceof Player){
         $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
@@ -86,7 +86,7 @@ But wait, what if the user doesn't enter the argument? The command won't work! T
 We'll use function isset which allows us to check if a variable is defined. Let's what this give use in our code !  
 ```
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
-  switch ($cmd->getName()) {
+  switch($cmd->getName()) {
     case "test":
       if(!$sender instanceof Player) {
         $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
@@ -107,7 +107,7 @@ But what if the user don't enter a number? And even if it's a number, what if it
 We also need to check this in our code! We will use a new function is_int which will allow us to check if a variable is an integer.  
 ```
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
-  switch ($cmd->getName()) {
+  switch($cmd->getName()) {
     case "test":
       if(!$sender instanceof Player){
         $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
