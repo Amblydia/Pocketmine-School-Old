@@ -10,48 +10,43 @@ const React = require('react');
 const CompLibrary = require('../../core/CompLibrary.js');
 
 const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
 
-function Tutorials(props) {
-  const {config: siteConfig, language = ''} = props;
-  const {baseUrl, docsUrl} = siteConfig;
-  const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-  const langPart = `${language ? `${language}/` : ''}`;
-  const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+function Tutorials() {
 
-  return (
-    <div className="section">
-      <Container className="mainContainer documentContainer postContainer">
-        <div className="post">
-          <header className="postHeader t-header">
-            <h1>Tutorials</h1>
-            <hr></hr>
-          </header>
-          <div className="tutorial-grid">
-            <a href="htmap/introduction" className="tutorial-box">
-                <div className="how-to">
-                    <h5>How To Make a Plugin?</h5>
-                    <hr></hr>
-                    <p>Learn on how to make a pocketmine plugin.</p>
-                </div>
-            </a>
-            <a href="htufa/introduction" className="tutorial-box">
-                <div className="how-to">
-                    <h5>How to use FormAPI</h5>
-                    <hr></hr>
-                    <p>Ever wanted to create forms? Here is a guide.</p>
-                </div>
-            </a>
-            <a href="" className="tutorial-box">
-                <div className="how-to">
-                    <h5>Coming Soon</h5>  
-                </div>
-            </a>
-          </div>
-        </div>
-      </Container>
-    </div>
+  const TutorialBox = props => (
+    <a href={props.link} className="tutorial-box">
+      <div className="how-to">
+        <h5>{props.title}</h5>
+        <hr></hr>
+        <p>{props.des}</p>
+      </div>
+    </a>
   );
+
+    return (
+        <div className="section">
+            <Container className="mainContainer documentContainer postContainer">
+                <div className="post">
+                    <header className="postHeader t-header">
+                        <h1>Tutorials</h1>
+                        <hr></hr>
+                    </header>
+                    <div className="tutorial-grid">
+                        <TutorialBox
+                        link="htmap/introduction"
+                        title="How to make a Plugin?"
+                        des="Learn on how to make a pocketmine plugin." 
+                        />
+                        <TutorialBox
+                        link="htufa/introduction"
+                        title="How to use FormAPI"
+                        des="Ever wanted to create forms? Here is a guide." 
+                        />
+                    </div>
+                </div>
+            </Container>
+        </div>
+    );
 }
 
 module.exports = Tutorials;
