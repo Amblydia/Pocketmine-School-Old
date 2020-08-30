@@ -18,7 +18,7 @@ main: ExampleName/Main
 # "ExampleName" will be a folder in the src folder and "Main" will be the file in the "ExampleName" folder
  
 # Commands If ur plugin has commands do this:
-command:
+commands:
 	test:  #"test" this is the name of the command
 		description: Put any description
 		usage: /test
