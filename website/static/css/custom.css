@@ -19,6 +19,17 @@ a:hover {
     overflow: hidden;
 }
 
+.ads {
+    background-color: #002538;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+
+.ads img {
+    width: 100%;
+    border: 1px solid #f2f2f2;
+}
+
 .section {
     background-color: #002538;
     color: #f2f2f2;
@@ -313,13 +324,26 @@ h1, h2, h3, h4, h5, h6 {
     background: #555; 
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 580px) {
     .vscodeimg {
         height: 24.8rem;
+        display: none;
     }
 
     .header h1 {
         font-size: 20px;
+    }
+
+    .header-title {
+        padding-top: 0;
+    }
+
+    .col {
+        flex-basis: auto;
+    }
+
+    .col-6 {
+        max-width: 100%;
     }
 }
 

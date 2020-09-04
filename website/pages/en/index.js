@@ -38,6 +38,19 @@ class Index extends React.Component {
         </div>
     );
 
+    const Ads = () => (
+        <div className="ads">
+            <div className="row">
+                <div className="col align-center jus-center">
+                    <img src="./img/server-banner.png"/>
+                </div>
+                <div className="col align-center jus-center">
+                    <a href="minecraft://?addExternalServer=LunaNetwork|lunamc.me:19132" className="btn btn-black">lunamc.me:19132</a>
+                </div>
+            </div>
+        </div>
+    );
+
     const Section = () => (
         <div className="section">
             <div className="mpts">
@@ -67,6 +80,7 @@ class Index extends React.Component {
     return (
       <div>
           <Header />
+          <Ads />
           <Section />
       </div>
     );
