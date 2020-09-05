@@ -42,7 +42,7 @@ class Index extends React.Component {
         <div className="ads">
             <div className="row">
                 <div className="col align-center jus-center">
-                    <img src="./img/server-banner.png"/>
+                    <img src="./img/server-banner.jpg"/>
                 </div>
                 <div className="col align-center jus-center">
                     <a href="minecraft://?addExternalServer=LunaNetwork|lunamc.me:19132" className="btn btn-black">lunamc.me:19132</a>
