@@ -41,7 +41,7 @@ class Index extends React.Component {
     const Ads = () => (
         <div className="ads">
             <div className="row">
-                <div className="col align-center jus-center">
+                <div className="col align-center">
                     <img src="./img/server-banner.jpg"/>
                 </div>
                 <div className="col align-center jus-center">

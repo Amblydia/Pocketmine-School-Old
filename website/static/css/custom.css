@@ -26,7 +26,8 @@ a:hover {
 }
 
 .ads img {
-    width: 80%;
+    width: 100%;
+    height: 20vh;
     border: 1px solid #f2f2f2;
 }
 
