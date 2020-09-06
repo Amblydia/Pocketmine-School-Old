@@ -2,7 +2,7 @@ module.exports = {
   title: 'Pocketmine School',
   tagline: 'A Website That Teaches You About PocketMine Plugin Development',
   url: 'https://teamultrasoft.netlify.app',
-  baseUrl: '/',
+  baseUrl: '/Pocketmine-School',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'TeamUltraSoft', // Usually your GitHub org/user name.
