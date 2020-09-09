@@ -66,7 +66,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`${siteConfig.title}`}
+      title={`Home`}
       description="A Website That Teaches You About PocketMine Plugin Development">
         <header className="main">
             <div className="container align-center">
