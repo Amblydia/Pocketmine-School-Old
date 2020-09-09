@@ -18,29 +18,29 @@ const TutorialBox = props => (
 
 const features = [
   {
-    title: "Really don't know what to add here",
+    title: "Easy To Understand!",
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Null
+        Our tutorials are very well written to provide the user knowledge to understand about Pocketmine-API.
       </>
     ),
   },
   {
-    title: 'more null',
+    title: 'Our Website is easy to use',
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        null
+        Pocketmine School is built using Docusaurus that make it easier for us to write you guys tutorials.
       </>
     ),
   },
   {
-    title: 'some more null',
+    title: 'Discord Support',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        null
+        If you couldn't find what your looking for you can go to our discord server to ask for support.
       </>
     ),
   },
