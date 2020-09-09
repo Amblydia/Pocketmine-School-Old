@@ -33,7 +33,7 @@ module.exports = {
       },
       items: [
         
-        {to: 'tutorials', label: 'Tutorials', position: 'right'},
+        {to: 'tutorials/', label: 'Tutorials', position: 'right'},
       ],
     },
     footer: {
