@@ -32,7 +32,7 @@ module.exports = {
         src: 'img/pocketmineschool-wbg.png',
       },
       items: [
-        {to: '/', label: 'Home', position: 'right'},
+        
         {to: 'tutorials', label: 'Tutorials', position: 'right'},
       ],
     },
@@ -44,11 +44,11 @@ module.exports = {
           items: [
             {
               label: 'How to make a Plugin',
-              to: 'htmap/introduction',
+              to: 'tutorials/htmap/introduction',
             },
             {
               label: 'How to use FormAPI',
-              to: 'htufa/introduction',
+              to: 'tutorials/htufa/introduction',
             },
           ],
         },
@@ -70,9 +70,9 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/tutorials',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/TeamUltraSoft/Pocketmine-School/tree/master/website-v2',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },

@@ -102,12 +102,12 @@ function Home() {
                     <hr></hr>
                     <div className="tutorial-grid">
                         <TutorialBox
-                        link="htmap/introduction"
+                        link="tutorials/htmap/introduction"
                         title="How to make a Plugin?"
                         des="Learn on how to make a pocketmine plugin." 
                         />
                         <TutorialBox
-                        link="htufa/introduction"
+                        link="tutorials/htufa/introduction"
                         title="How to use FormAPI"
                         des="Ever wanted to create forms? Here is a guide." 
                         />
