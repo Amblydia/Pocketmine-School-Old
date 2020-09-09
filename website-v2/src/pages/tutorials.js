@@ -19,7 +19,7 @@ function Tutorials() {
     return (
         <Layout 
             title={`Tutorials`}
-            description="A Website That Teaches You About PocketMine Plugin Development">
+            description="A Website That Teaches You About PocketMine Plugin Development"
         >
             <div className="section">
                 <div className="container">

@@ -67,7 +67,8 @@ function Home() {
   return (
     <Layout
       title={`Home`}
-      description="A Website That Teaches You About PocketMine Plugin Development">
+      description="A Website That Teaches You About PocketMine Plugin Development"
+    >
         <header className="main">
             <div className="container align-center">
                 <div className="row">
