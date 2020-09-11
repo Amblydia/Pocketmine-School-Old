@@ -4,8 +4,6 @@ title: plugin.yml
 sidebar_label: plugin.yml
 ---
 ___
-First create a folder and name it whatever you want because this folder will be your plugin.  
-In the folder create a file and name it plugin.yml.  
 
 In this file you will add:  
 
