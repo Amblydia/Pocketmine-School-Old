@@ -64,6 +64,9 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} UltraSoft.`,
     },
+    prism: {
+      theme: require('prism-react-renderer/themes/tomorrow-night'),
+    },
   },
   presets: [
     [
@@ -72,7 +75,7 @@ module.exports = {
         docs: {
           routeBasePath: '/tutorials',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/TeamUltraSoft/Pocketmine-School/tree/master/website-v2',
+          editUrl: 'https://github.com/TeamUltraSoft/Pocketmine-School/tree/master',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },

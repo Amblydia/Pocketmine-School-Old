@@ -24,3 +24,12 @@ ___
 In your Pocketmine Server folder you would find a folder called `plugins` in there create a new folder and that folder will be your plugin, rename that folder to your plugin name, we will be renaming it to TestPlugin.   
 
 In the plugin folder or TestPlugin create a file named `plugin.yml` and a folder named `src`.
+
+Now your file structure should look like this:  
+```yml title="/Pocketmine-Server*/plugins/"
+TestPlugin 
+    ├── plugin.yml 
+    └── src
+```
+
+`*` Pocketmine-Server is the folder where you have your server setup at.

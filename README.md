@@ -4,6 +4,6 @@
 
 A school that teach you everything about Pocketmine-MP
 
-netlify link: https://teamultrasoft.netlify.app/pocketmine-school/
+netlify link: https://pocketmineschool.netlify.app/
 
 Our Discord: https://discord.gg/EvUyyS7
