@@ -64,9 +64,6 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} UltraSoft.`,
     },
-    prism: {
-      theme: require('prism-react-renderer/themes/tomorrow-night'),
-    },
   },
   presets: [
     [
