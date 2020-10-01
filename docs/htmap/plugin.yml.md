@@ -71,7 +71,7 @@ description: YourPluginDesc
 ```
 
 ## `commands:`
-If you plugin uses commands you need to register the commands here.  
+If your plugin uses commands you need to register the commands here.  
 Example:
 ```yml
 commands:
