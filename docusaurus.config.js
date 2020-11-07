@@ -29,7 +29,8 @@ module.exports = {
       title: '',
       logo: {
         alt: 'Pocketmine School',
-        src: 'img/pocketmineschool-wbg.png',
+        src: 'img/pocketmineschool.png',
+        srcDark: 'img/pocketmineschool-wbg.png',
       },
       items: [
         
