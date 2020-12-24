@@ -112,7 +112,7 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
       if(!$sender instanceof Player){
         $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
       } else {
-        if(!isset($args[0]) or (is_int($args[0]) and $args[0] > 0)) { // Check if argument 0 is an integer and is more than 0.
+        if(!isset($args[0]) or !is_int($args[0]) and $args[0] <= 0)) { // Check if argument 0 is an integer and is more than 0.
           $args[0] = 4; // Defining $args[0] with value 4 this means giving the player 4 steaks
         }
         $sender->getInventory()->addItem(Item::get(364,0,$args[0]));
