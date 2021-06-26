@@ -91,7 +91,7 @@ permissions:
     default: true
 ```
 **Note**:  
-There are 4 types of `default`:  
+There are 4 possible values for the `default` key:  
 1. `true` - Anyone can use the command.
 2. `op` - Only OP-ped players can use the command.
 2. `notop` - Only not OP-ped players can use the command.
