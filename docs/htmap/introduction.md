@@ -6,15 +6,15 @@ sidebar_label: Introduction
 ___
 ## What's a Pocketmine Plugin?
 
-A plugin is an external module which can be “plugged in” to your server to add custom features, change default behaviours and more.
+A plugin is an external module which can be added to your server to add custom features, change default behaviours and more.
 
 ## Before You Start
 
-1. You should know the PHP language.
-2. You should have a working Pocketmine server.
-3. You should have the DevTools plugin.
+1. **You must know the PHP language (including OOP).**
+2. You should have a working PocketMine-MP server.
+3. You should have the DevTools plugin installed in your server.
 
-Ok lets start.
+This tutorial assumes you have done the above prerequisites.
 
 ## Plugin Structure
 There are two ways to create your plugin structure: Automatic Method and Manual Method
