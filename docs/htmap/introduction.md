@@ -16,6 +16,17 @@ A plugin is an external module which can be added to your server to add custom f
 
 This tutorial assumes you have done the above prerequisites.
 
+## What You'll Learn in this Tutorial
+
+- Plugin structure
+- The `plugin.yml` file
+- Main class basics
+- Adding events
+- Adding commands
+- Using permissions
+- Using configuration file (for user settings)
+- Adding tasks
+
 ## Plugin Structure
 There are two ways to create your plugin structure: Automatic Method and Manual Method
 
