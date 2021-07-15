@@ -24,7 +24,7 @@ Yaml works like array:
 Saving the config when the plugins enables after you succefully made your config, go to your main file and add to your onEnable function:
 ```
     $this->saveDefaultConfig(); // Saves config.yml if not created.
-    $this->reloadConfig(); // Fix bugs sometimes by getting configs values
+    $this->reloadConfig(); // Reloads the config.yml file internally
 ```
 ## 3- Taking data from the config: 
 
