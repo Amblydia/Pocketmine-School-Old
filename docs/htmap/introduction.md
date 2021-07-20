@@ -28,3 +28,7 @@ This tutorial assumes you have done these things:
 3. You should have the DevTools plugin installed in your server.
 
 Click the "Next" button to start learning when you're ready!
+
+___
+Thanks to [Sites4Code](https://sites4code.github.io/MCPE/) for making there website first, some of the stuff written here is from them.
+___

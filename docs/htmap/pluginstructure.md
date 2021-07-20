@@ -28,7 +28,3 @@ TestPlugin
 ```
 
 `*` Pocketmine-Server is the folder where you have your server setup at.
-
-___
-Thanks to [Sites4Code](https://sites4code.github.io/MCPE/) for making there website first, some of the stuff written here is from them.
-___
