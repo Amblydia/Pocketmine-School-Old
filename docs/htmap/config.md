@@ -22,18 +22,18 @@ Yaml works like array:
 ``` 
 ## 2- Saving the config:
 Saving the config when the plugins enables after you succefully made your config, go to your main file and add to your onEnable function:
-```
+```php
     $this->saveDefaultConfig(); // Saves config.yml if not created.
     $this->reloadConfig(); // Reloads the config.yml file internally
 ```
 ## 3- Taking data from the config: 
 
 If you wanna get the data from your config, add this line:      
-```
+```php
     $keyFromConfig = $this->getConfig()->get("key"); // This will return the element "key" from the config.
 ```       
 Its also a good practive to reload your config before to be sure to get the last user choice.  
-```
+```php
     $this->reloadConfig();
 ```
 ## 4- Setting data to the config: 
@@ -41,10 +41,10 @@ Its also a good practive to reload your config before to be sure to get the last
 Setting data to the config helps you to save data for games, or to correct wrong values inputed by the user.  
 
 To set data to the config, add this line to your code when you want to set the data to the config.  
-```
+```php
     $this->getConfig()->set("key", "example"); // This will set the element "key" of the config.to example.
 ```
 But remember that you need to save the config to apply changes in the file.  
-```
+```php
     $this->getConfig()->save(); // Saves the config
 ```

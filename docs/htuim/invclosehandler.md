@@ -12,7 +12,7 @@ use pocketmine\inventory\Inventory;
 ```
 The code in this CloseListener with the previous Listener is quite different
 ```PHP
-$menu->setInventoryCloseListener(function(Player $player, Inventory $inventory) : void {
+$menu->setInventoryCloseListener(function(Player $player, Inventory $inventory) : void{
     //do something
 });
 ```

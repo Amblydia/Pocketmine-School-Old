@@ -5,21 +5,21 @@ sidebar_label: CustomForm
 ---
 ___
 Now the last one how to make a Custom Form, first we need to add the custom form "use" statement.  
-```
+```php
 use jojoe77777\FormAPI\CustomForm;
 ```
 
 Now lets make a function to add our form in it.  
-```
-public function testForm($player) {
+```php
+public function testForm($player){
     //This is where we will add our form.
 }
 ```
 
 In the function we will add our form
-```
-public function testForm($player) {
-    $form = new CustomForm(function (Player $player, $data) {
+```php
+public function testForm($player){
+    $form = new CustomForm(function(Player $player, $data){
         var_dump($data); // Sends all data to console
     });
     $form->setTitle("Form Title"); //This sets the title of the form

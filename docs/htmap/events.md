@@ -7,7 +7,7 @@ ___
 Now we are going to learn about something that makes plugins how they are! EVENTS.  
 
 Before we start were going to add some new "use" statements and changed the "class" statement a bit and add a new line to the onEnable() function because we are using events.
-```
+```php
 <?php
 
 namespace ExampleName;
@@ -26,9 +26,9 @@ use pocketmine\Server;
 // Event Listener
 use pocketmine\event\Listener;
 
-class Main extends PluginBase implements Listener { //Added "implements Listener" because of the Listener event
+class Main extends PluginBase implements Listener{ //Added "implements Listener" because of the Listener event
 
-    public function onEnable() {
+    public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this,$this); // This is the new line 
         $this->getLogger()->info("Plugin Enabled");
     }
@@ -41,8 +41,8 @@ PlayerJoinEvent is the event of a player joining.
 
 So were going to broadcast a message saying someone joined in a fancy way and give that someone an item.
 
-```
-public function onJoin(PlayerJoinEvent $event) {
+```php
+public function onJoin(PlayerJoinEvent $event){
     $player = $event->getPlayer();  //This gets the player
     $name = $player->getName();  //Gets the Name of the player
     $inv = $player->getInventory();  //Gets the player Inventory
