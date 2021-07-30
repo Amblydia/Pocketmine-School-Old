@@ -1,7 +1,7 @@
 ---
 id: createinventory
-title: CreateInventory
-sidebar_label: CreateInventory
+title: Create Inventory
+sidebar_label: Create Inventory
 ---
 ___
 first, we need to add "use" statement to get the InvMenu and Item we want to use

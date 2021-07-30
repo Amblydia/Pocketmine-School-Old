@@ -1,7 +1,7 @@
 ---
 id: inventoryhandler
-title: InventoryHandler
-sidebar_label: InventoryHandler
+title: Inventory Handler
+sidebar_label: Inventory Handler
 ---
 ___
 To create a Fake Inventory Handler we need to first add "use" statement

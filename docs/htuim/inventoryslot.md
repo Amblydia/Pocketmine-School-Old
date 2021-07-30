@@ -1,7 +1,7 @@
 ---
 id: inventoryslot
-title: InventorySlot
-sidebar_label: InventorySlot
+title: Inventory Slot
+sidebar_label: Inventory Slot
 ---
 ___
 ![ChestInventory](Chest-slots.png)

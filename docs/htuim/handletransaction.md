@@ -1,7 +1,7 @@
 ---
 id: handletransaction
-title: HandlingTransaction
-sidebar_label: HandlingTransaction
+title: Handling Transaction
+sidebar_label: Handling Transaction
 ---
 ___
 of course, we have to add the "use" statement first

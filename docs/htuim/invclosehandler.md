@@ -1,7 +1,7 @@
 ---
 id: invclosehandler
-title: InvCloseHandler
-sidebar_label: InvCloseHandler
+title: Inventory Close Handler
+sidebar_label: Inventory Close Handler
 ---
 ___
 This is the same as Listener from the previous page, but the code from InvCloseListener will be executed when Inventory is closed
