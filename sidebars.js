@@ -1,8 +1,18 @@
 module.exports = {
-  someSidebar: {
-    "How to make a Plugin": ['htmap/introduction', 'htmap/plugin.yml', 'htmap/thebasics', 'htmap/events', 'htmap/commands', 'htmap/permissions', 'htmap/config', 'htmap/tasks'],
+  htmap: {
+    "How to make a Plugin": [
+      'htmap/introduction',
+      'htmap/pluginstructure',
+      'htmap/plugin.yml',
+      'htmap/thebasics',
+      'htmap/events',
+      'htmap/commands',
+      'htmap/permissions',
+      'htmap/config',
+      'htmap/tasks'
+    ],
   },
-  someotherSide: {
+  htufa: {
     "How to use FormAPI": [
       'htufa/introduction',
       'htufa/simpleform',
@@ -11,7 +21,7 @@ module.exports = {
       'htufa/howtosend'
     ],
   },
-  someAnotherSide: {
+  htuim: {
     "How to use InvMenu": [
       'htuim/introduction',
       'htuim/inventoryhandler',
