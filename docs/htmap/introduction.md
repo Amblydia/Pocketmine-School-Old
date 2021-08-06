@@ -26,6 +26,7 @@ This tutorial assumes you have done these things:
 1. **You must know the PHP language (including OOP).**
 2. You should have a working PocketMine-MP server.
 3. You should have the DevTools plugin installed in your server.
+   - If you haven't already, you can download the plugin from [Poggit](https://poggit.pmmp.io/p/DevTools).
 
 Click the "Next" button to start learning when you're ready!
 
