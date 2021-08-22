@@ -1,5 +1,7 @@
 ![pocketmineschool](website-v2/static/img/pocketmineschool.png)
 
+### PocketMineSchool.netlify.app is currently being revamped. Please visit https://pocketmineschool.kygekteam.org for now, until the revamp process has completed.
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/490fb54c-7019-48db-99a6-c63f648e863e/deploy-status)](https://app.netlify.com/sites/teamultrasoft/deploys)
 
 A school that teach you everything about Pocketmine-MP
