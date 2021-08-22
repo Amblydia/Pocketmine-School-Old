@@ -19,7 +19,7 @@ function Tutorials() {
     return (
         <Layout 
             title={`Tutorials`}
-            description="A Website That Teaches You About PocketMine Plugin Development"
+            description="A Website To Teach Everything About PocketMine-MP"
         >
             <div className="section">
                 <div className="container">
@@ -30,14 +30,19 @@ function Tutorials() {
                         </header>
                         <div className="tutorial-grid">
                             <TutorialBox
-                            link="htmap/introduction"
+                            link="tutorials/htmap/introduction"
                             title="How to make a Plugin?"
                             des="Learn on how to make a pocketmine plugin." 
                             />
                             <TutorialBox
-                            link="htufa/introduction"
+                            link="tutorials/htufa/introduction"
                             title="How to use FormAPI"
                             des="Ever wanted to create forms? Here is a guide." 
+                            />
+                            <TutorialBox
+                            link="tutorials/htuim/introduction"
+                            title="How to use InvMenu"
+                            des="Do you want to make inventory menus? Learn how to do it here." 
                             />
                         </div>
                     </div>

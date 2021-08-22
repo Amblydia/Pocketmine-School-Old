@@ -18,30 +18,42 @@ const TutorialBox = props => (
 
 const features = [
   {
-    title: "Easy To Understand!",
+    title: (
+      <center>
+        Easy To Understand
+      </center>
+    ),
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
-      <>
-        Our tutorials are very well written to provide the user knowledge to understand about Pocketmine-API.
-      </>
+      <center>
+        Our tutorials are very well written to provide the user knowledge to understand all about PocketMine-MP
+      </center>
     ),
   },
   {
-    title: 'Our Website is easy to use',
+    title: (
+      <center>
+        User-Friendly
+      </center>
+    ),
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
-      <>
-        Pocketmine School is built using Docusaurus that make it easier for us to write you guys tutorials.
-      </>
+      <center>
+        Our website is built using Docusaurus to make it more user-friendly and easier to manage
+      </center>
     ),
   },
   {
-    title: 'Discord Support',
+    title: (
+      <center>
+        Discord Support
+      </center>
+    ),
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
-      <>
-        If you couldn't find what your looking for you can go to our discord server to ask for support.
-      </>
+      <center>
+        We offer support in our Discord servers, helping you to understand and solve your issues
+      </center>
     ),
   },
 ];
@@ -67,14 +79,14 @@ function Home() {
   return (
     <Layout
       title={`Home`}
-      description="A Website That Teaches You About PocketMine Plugin Development"
+      description="A Website To Teach Everything About PocketMine-MP"
     >
         <header className="main">
             <div className="container align-center">
                 <div className="row">
                     <div className="col header-title">
                         <div className="jus-center"><img src="./img/pocketmineschool.png" className="header-img"/></div>
-                        <h1>A Website That Teaches You About PocketMine Plugin Development</h1>
+                        <h1>A Website To Teach Everything About PocketMine-MP</h1>
                         <a href="tutorials" className="btn btn-black">Tutorials</a>
                     </div>
                     <div className="col">
@@ -87,6 +99,8 @@ function Home() {
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">
+              <div className="text-center"><h2>Why PocketMine School?</h2></div>
+              <hr></hr>
               <div className="row">
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />
@@ -111,6 +125,11 @@ function Home() {
                         link="tutorials/htufa/introduction"
                         title="How to use FormAPI"
                         des="Ever wanted to create forms? Here is a guide." 
+                        />
+                        <TutorialBox
+                        link="tutorials/htuim/introduction"
+                        title="How to use InvMenu"
+                        des="Do you want to make inventory menus? Learn how to do it here." 
                         />
                     </div>
                     <div className="col text-center">
