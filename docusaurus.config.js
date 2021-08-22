@@ -1,13 +1,24 @@
 module.exports = {
-  title: 'Pocketmine School',
-  tagline: 'A Website That Teaches You About PocketMine Plugin Development',
-  url: 'https://pocketmineschool.netlify.app',
+  title: 'PocketMine School',
+  tagline: 'A Website To Teach Everything About PocketMine-MP',
+  url: 'https://pocketmineschool.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'TeamUltraSoft', // Usually your GitHub org/user name.
+  organizationName: 'PocketMine School', // Usually your GitHub org/user name.
   projectName: 'Pocketmine-School', // Usually your repo name.
+  plugins: [
+    [require.resolve("@easyops-cn/docusaurus-search-local"), {
+      docsRouteBasePath: "/tutorials",
+      docsDir: "tutorials",
+    }]
+  ],
   themeConfig: {
+    image: 'img/pocketmineschool.png',
+    googleAnalytics: {
+      trackingID: 'UA-179045405-3',
+      anonymizeIP: true,
+    },
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
@@ -25,6 +36,13 @@ module.exports = {
         },
       },
     },
+    announcementBar: {
+      id: 'contribute',
+      content: 'We are looking for anyone to contribute in order to make PocketMine School. If you\'re interested, consider <a target="_blank" href="https://github.com/PocketMine-School/Pocketmine-School">forking the GitHub repository</a>, then <a target="_blank" href="https://github.com/PocketMine-School/Pocketmine-School/pulls">submit a pull request</a> and wait for a staff to review and merge your pull request.',
+      backgroundColor: '#fff',
+      textColor: '#000',
+      isCloseable: true,
+    },
     navbar: {
       title: '',
       logo: {
@@ -33,8 +51,8 @@ module.exports = {
         srcDark: 'img/pocketmineschool-wbg.png',
       },
       items: [
-        
         {to: 'tutorials/', label: 'Tutorials', position: 'right'},
+        {href: 'https://github.com/PocketMine-School/Pocketmine-School', label: 'Source Code', position: 'right'},
       ],
     },
     footer: {
@@ -51,19 +69,40 @@ module.exports = {
               label: 'How to use FormAPI',
               to: 'tutorials/htufa/introduction',
             },
+            {
+              label: 'How to use InvMenu',
+              to: 'tutorials/htuim/introduction',
+            },
           ],
         },
         {
-          title: 'Communtiy ',
+          title: 'Community',
           items: [
             {
-              label: 'Discord',
+              label: 'PocketMine School Discord',
+              href: '#',
+            },
+            {
+              label: 'UltraSoft Discord',
               href: 'https://discord.gg/EvUyyS7',
+            },
+            {
+              label: 'KygekTeam Discord',
+              href: 'https://discord.gg/CXtqUZv',
+            },
+          ],
+        },
+        {
+          title: 'Other Links',
+          items: [
+            {
+              label: 'Source Code',
+              href: 'https://github.com/PocketMine-School/Pocketmine-School',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} UltraSoft.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <strong><a href="https://github.com/PocketMine-School">PocketMine School</a></strong>.`,
     },
   },
   presets: [
@@ -73,9 +112,10 @@ module.exports = {
         docs: {
           routeBasePath: '/tutorials',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/TeamUltraSoft/Pocketmine-School/tree/master',
-          showLastUpdateAuthor: true,
+          editUrl: 'https://github.com/PocketMine-School/Pocketmine-School/tree/master',
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
+          sidebarCollapsible: false,
         },
         blog: {
           showReadingTime: true,
