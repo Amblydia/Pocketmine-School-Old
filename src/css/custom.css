@@ -479,6 +479,13 @@ a:hover {
   text-align: center;
 }
 
+.footer--dark {
+    --ifm-footer-background-color: #1c1e21;
+    --ifm-footer-color: var(--ifm-footer-link-color);
+    --ifm-footer-link-color: var(--ifm-color-secondary);
+    --ifm-footer-title-color: var(--ifm-color-white);
+}
+
 .fixedHeaderContainer header .headerTitleWithLogo {
   display: none;
 }

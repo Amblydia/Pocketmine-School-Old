@@ -15,6 +15,7 @@ module.exports = {
   ],
   themeConfig: {
     image: 'img/pocketmineschool.png',
+    hideableSidebar: true,
     googleAnalytics: {
       trackingID: 'UA-179045405-3',
       anonymizeIP: true,
@@ -56,6 +57,7 @@ module.exports = {
       ],
     },
     footer: {
+      style: 'dark',
       links: [
         {
           title: 'Tutorials',

@@ -87,7 +87,7 @@ function Home() {
                 <div className="col">
                     
                     <h1>A Website To Teach You Everything About PocketMine-MP</h1>
-                    <a href="tutorials" className="btn">Tutorials</a>
+                    <a href="tutorials/" className="btn">Tutorials</a>
                 </div>
                 <div className="col">
                     <img src="./img/vscode.png" className="vscodeimg"/>
@@ -133,7 +133,7 @@ function Home() {
                     />
                 </div>
                 <div className="col text-center">
-                    <a href="tutorials" className="btn btn-black">More Tutorials &gt;</a>
+                    <a href="tutorials/" className="btn btn-black">More Tutorials &gt;</a>
                 </div>
             </div>
         </div>
