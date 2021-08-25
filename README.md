@@ -32,5 +32,5 @@ We're open for any contributions! You can contribute by submitting [pull request
 - Currently maintained by [**TeamUltraSoft**](https://github.com/TeamUltraSoft) and [**KygekTeam**](https://github.com/KygekTeam) under the [**PocketMine School**](https://github.com/PocketMine-School) organization. 
 - Licensed under the [**MIT License**](/LICENSE).
 
-**Discord:** https://discord.gg/EvUyyS7
+**Discord:** https://discord.gg/5e7PFEXgF3
 

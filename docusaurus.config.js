@@ -80,7 +80,7 @@ module.exports = {
           items: [
             {
               label: 'PocketMine School Discord',
-              href: '#',
+              href: 'https://discord.gg/5e7PFEXgF3',
             },
             {
               label: 'UltraSoft Discord',
