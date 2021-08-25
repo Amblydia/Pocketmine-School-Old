@@ -79,65 +79,65 @@ function Home() {
   return (
     <Layout
       title={`Home`}
-      description="A Website To Teach Everything About PocketMine-MP"
+      description="A Website To Teach You Everything About PocketMine-MP"
     >
-        <header className="main">
-            <div className="container align-center">
-                <div className="row">
-                    <div className="col header-title">
-                        <div className="jus-center"><img src="./img/pocketmineschool.png" className="header-img"/></div>
-                        <h1>A Website To Teach Everything About PocketMine-MP</h1>
-                        <a href="tutorials" className="btn btn-black">Tutorials</a>
-                    </div>
-                    <div className="col">
-                        <img src="./img/vscode.png" className="vscodeimg"/>
-                    </div>
+    <header className="main">
+        <div className="container">
+            <div className="row align-center">
+                <div className="col">
+                    
+                    <h1>A Website To Teach You Everything About PocketMine-MP</h1>
+                    <a href="tutorials" className="btn">Tutorials</a>
                 </div>
-            </div>
-        </header>
-      <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="text-center"><h2>Why PocketMine School?</h2></div>
-              <hr></hr>
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-      </main>
-      <div className="section">
-            <div className="mpts">
-                <div className="container">
-                    <div className="text-center"><h2>Tutorials</h2></div>
-                    <hr></hr>
-                    <div className="tutorial-grid">
-                        <TutorialBox
-                        link="tutorials/htmap/introduction"
-                        title="How to make a Plugin?"
-                        des="Learn on how to make a pocketmine plugin." 
-                        />
-                        <TutorialBox
-                        link="tutorials/htufa/introduction"
-                        title="How to use FormAPI"
-                        des="Ever wanted to create forms? Here is a guide." 
-                        />
-                        <TutorialBox
-                        link="tutorials/htuim/introduction"
-                        title="How to use InvMenu"
-                        des="Do you want to make inventory menus? Learn how to do it here." 
-                        />
-                    </div>
-                    <div className="col text-center">
-                        <a href="tutorials" className="btn btn-black">More Tutorials &gt;</a>
-                    </div>
+                <div className="col">
+                    <img src="./img/vscode.png" className="vscodeimg"/>
                 </div>
             </div>
         </div>
+    </header>
+    <main>
+        {features && features.length > 0 && (
+            <section className={styles.features}>
+            <div className="container">
+                <div className="text-center"><h2>Why PocketMine School?</h2></div>
+                <hr></hr>
+                <div className="row">
+                {features.map((props, idx) => (
+                    <Feature key={idx} {...props} />
+                ))}
+                </div>
+            </div>
+            </section>
+        )}
+    </main>
+    <div className="section">
+        <div className="mpts">
+            <div className="container">
+                <div className="text-center"><h2>Tutorials</h2></div>
+                <hr></hr>
+                <div className="tutorial-grid">
+                    <TutorialBox
+                    link="tutorials/htmap/introduction"
+                    title="How to make a Plugin?"
+                    des="Learn on how to make a pocketmine plugin." 
+                    />
+                    <TutorialBox
+                    link="tutorials/htufa/introduction"
+                    title="How to use FormAPI"
+                    des="Ever wanted to create forms? Here is a guide." 
+                    />
+                    <TutorialBox
+                    link="tutorials/htuim/introduction"
+                    title="How to use InvMenu"
+                    des="Do you want to make inventory menus? Learn how to do it here." 
+                    />
+                </div>
+                <div className="col text-center">
+                    <a href="tutorials" className="btn btn-black">More Tutorials &gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
     </Layout>
   );
 }
