@@ -40,8 +40,8 @@ module.exports = {
     announcementBar: {
       id: 'contribute',
       content: 'We are looking for anyone to contribute in order to make PocketMine School. If you\'re interested, consider <a target="_blank" href="https://github.com/PocketMine-School/Pocketmine-School">forking the GitHub repository</a>, then <a target="_blank" href="https://github.com/PocketMine-School/Pocketmine-School/pulls">submit a pull request</a> and wait for a staff to review and merge your pull request.',
-      backgroundColor: '#fff',
-      textColor: '#000',
+      backgroundColor: '#f3f3f3',
+      textColor: '#222',
       isCloseable: true,
     },
     navbar: {
@@ -57,13 +57,7 @@ module.exports = {
         {
           type: 'docsVersionDropdown',
           position: 'right',
-          dropdownActiveClassDisabled: true,
-          dropdownItemsAfter: [
-            {
-              href: '../',
-              label: 'PM4',
-            },
-          ],
+          dropdownActiveClassDisabled: false,
         },
       ],
     },
@@ -128,6 +122,18 @@ module.exports = {
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           sidebarCollapsible: false,
+          lastVersion: "current",
+          versions: {
+            current: {
+                label: "PM3",
+                path: ""
+            },
+            PM4: {
+                label: "PM4",
+                path: "PM4",
+                banner: "unreleased"
+            }
+          },
         },
         blog: {
           showReadingTime: true,
