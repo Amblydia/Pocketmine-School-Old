@@ -4,9 +4,9 @@ title: Plugin Structure
 sidebar_label: Plugin Structure
 ---
 ___
-To make a PocketMine-MP plugin, you need a structure for your plugin. You can [generate them automatically](#automatic-method) using DevTools or [make your own](#manual-method) plugin structure.
+To make a PocketMine-MP plugin, you need a structure for your plugin. You can [generate them automatically](#generating-automatically) using DevTools or [make your own](#making-manually) plugin structure.
 
-### Automatic Method
+## Generating Automatically
 Start your PocketMine-MP server and type the command below in the console to create a plugin structure automatically:
 ```
 genplugin <YourPluginName> <YourName>
@@ -15,7 +15,7 @@ genplugin <YourPluginName> <YourName>
 
 It will generate a folder that is named your plugin name inside the `plugins` folder where your server is located. Inside it you have all the essential files and folders for your plugin.
 
-### Manual Method
+## Making Manually
 In your PocketMine-MP server folder, you would find a folder called `plugins` in there create a new folder and that folder will be your plugin, rename that folder to your plugin name, we will be renaming it to TestPlugin.   
 
 In the plugin folder or TestPlugin create a file named `plugin.yml` and a folder named `src`.
