@@ -2,6 +2,7 @@
     <a href="https://pocketmineschool.ml"><img src="https://raw.githubusercontent.com/PocketMine-School/Pocketmine-School/master/static/img/pocketmineschool-ntp.png"></a><br><br>
     <b>A Website To Teach Everything About PocketMine-MP</b><br><br>
     <a href="https://app.netlify.com/sites/teamultrasoft/deploys"><img src="https://api.netlify.com/api/v1/badges/490fb54c-7019-48db-99a6-c63f648e863e/deploy-status"></a>
+    <a href="https://discord.gg/5e7PFEXgF3"><img alt="Discord" src="https://img.shields.io/discord/878969253955510342?label=Discord&style=flat-square"></a>
 </p>
 
 ---
@@ -18,6 +19,7 @@ PocketMine School is a website where you can learn about PocketMine-MP. PocketMi
 - Search Bar!\
   ![Search Bar](/static/img/searchbar.png)
 - Includes FormAPI & InvMenu Tutorial
+- Tutorials for PocketMine-MP 4 (Currently being worked on)
 - Light & Dark Mode
 
 ## Can I contribute to PocketMine School?
