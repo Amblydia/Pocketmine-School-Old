@@ -31,17 +31,17 @@ function Tutorials() {
                         <div className="tutorial-grid">
                             <TutorialBox
                             link="htmap/introduction"
-                            title="How to make a Plugin?"
+                            title="How to Make a Plugin"
                             des="Learn on how to make a pocketmine plugin." 
                             />
                             <TutorialBox
                             link="htufa/introduction"
-                            title="How to use FormAPI"
+                            title="How to Use FormAPI"
                             des="Ever wanted to create forms? Here is a guide." 
                             />
                             <TutorialBox
                             link="htuim/introduction"
-                            title="How to use InvMenu"
+                            title="How to Use InvMenu"
                             des="Do you want to make inventory menus? Learn how to do it here." 
                             />
                         </div>

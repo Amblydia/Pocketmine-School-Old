@@ -68,15 +68,15 @@ module.exports = {
           title: 'Tutorials',
           items: [
             {
-              label: 'How to make a Plugin',
+              label: 'How to Make a Plugin',
               to: 'tutorials/htmap/introduction',
             },
             {
-              label: 'How to use FormAPI',
+              label: 'How to Use FormAPI',
               to: 'tutorials/htufa/introduction',
             },
             {
-              label: 'How to use InvMenu',
+              label: 'How to Use InvMenu',
               to: 'tutorials/htuim/introduction',
             },
           ],

@@ -1,6 +1,6 @@
 module.exports = {
   htmap: {
-    "How to make a Plugin": [
+    "How to Make a Plugin": [
       'htmap/introduction',
       'htmap/pluginstructure',
       'htmap/plugin.yml',
@@ -13,7 +13,7 @@ module.exports = {
     ],
   },
   htufa: {
-    "How to use FormAPI": [
+    "How to Use FormAPI": [
       'htufa/introduction',
       'htufa/simpleform',
       'htufa/modalform',
@@ -22,7 +22,7 @@ module.exports = {
     ],
   },
   htuim: {
-    "How to use InvMenu": [
+    "How to Use InvMenu": [
       'htuim/introduction',
       'htuim/inventoryhandler',
       'htuim/createinventory',
