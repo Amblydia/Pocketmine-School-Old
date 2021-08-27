@@ -62,7 +62,7 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
+      //style: 'dark',
       links: [
         {
           title: 'Tutorials',

@@ -309,6 +309,7 @@
     --ifm-tutorialbox-background-color: #f5f6f7;
     --ifm-tutorialbox-background-color-hover: #e0e0e0;
     --ifm-tutorialbox-color: #151d21;
+    --ifm-border-color: #151d21;
 }
 
 html[data-theme='dark'] {
@@ -354,6 +355,7 @@ html[data-theme='dark'] {
     --ifm-tutorialbox-background-color: #151d21;
     --ifm-tutorialbox-background-color-hover: #232e34;
     --ifm-tutorialbox-color: #f5f6f7;
+    --ifm-border-color: #f5f6f7;
 }
 
 .docusaurus-highlight-code-line {
@@ -432,9 +434,10 @@ a:hover {
   background: var(--ifm-tutorialbox-background-color);
   position: relative;
   border-radius: 6px;
-  transition: box-shadow .5s;
+  transition: box-shadow 200ms ease, transform 200ms ease;
   height: 185px;
   color: var(--ifm-tutorialbox-color);
+  border: var(--ifm-border-color) solid 1px;
 }
 
 .tutorial-box a {
@@ -442,8 +445,10 @@ a:hover {
 }
 
 .tutorial-box:hover {
-  background-color: var(--ifm-tutorialbox-background-color-hover);
+  background-color: var(--ifm-tutorialbox-background-color);
   color: var(--ifm-tutorialbox-color);
+  transform: translate(5px, -5px);
+  box-shadow: -5px 5px var(--ifm-tutorialbox-background-color-hover);
 }
 
 .how-to {

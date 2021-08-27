@@ -87,7 +87,7 @@ function Home() {
                 <div className="col">
                     
                     <h1>A Website To Teach You Everything About PocketMine-MP</h1>
-                    <a href="tutorials/" className="btn">Tutorials</a>
+                    <a href="tutorials/" className="btn">Tutorials ></a>
                 </div>
                 <div className="col">
                     <img src="./img/vscode.png" className="vscodeimg"/>
