@@ -16,8 +16,8 @@ PocketMine School is a website where you can learn about PocketMine-MP. PocketMi
 ## Features
 
 - Fast and Responsive Website
-- Search Bar!\
-  ![Search Bar](/static/img/searchbar.png)
+- Search Bar!
+  ![Search Bar](static/img/searchbar.png)
 - Includes FormAPI & InvMenu Tutorial
 - Tutorials for PocketMine-MP 4 (Currently being worked on)
 - Light & Dark Mode
