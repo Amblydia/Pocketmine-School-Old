@@ -15,7 +15,7 @@ PocketMine School là một trang web nơi bạn có thể tìm hiểu về Pock
 ## Tính năng
 
 - Trang web Nhanh và Dễ đáp ứng
-- Thanh tìm kiếm!
+- Thanh tìm kiếm!<br>
   ![Search Bar](../../static/img/searchbar.png)
 - Hướng dẫn về PHP căn bản và PocketMine-MP (Đang được hoàn thiện)
 - Chế độ Sáng / Tối
