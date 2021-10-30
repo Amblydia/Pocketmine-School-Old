@@ -10,7 +10,7 @@ const TutorialBox = props => (
     <a href={props.link} className="tutorial-box">
       <div className="how-to">
         <h5>{props.title}</h5>
-        <hr></hr>
+        <hr/>
         <p>{props.des}</p>
       </div>
     </a>
@@ -20,39 +20,39 @@ const features = [
   {
     title: (
       <center>
-        Easy To Understand
+        Dễ hiểu
       </center>
     ),
     imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <center>
-        Our tutorials are very well written to provide the user knowledge to understand all about PocketMine-MP
+        Các hướng dẫn của chúng tôi được viết rất tốt và dễ hiểu để truyền đạt cho mọi người những kiến thức về PocketMine-MP
       </center>
     ),
   },
   {
     title: (
       <center>
-        User-Friendly
+        Thân thiện
       </center>
     ),
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <center>
-        Our website is built using Docusaurus to make it more user-friendly and easier to manage
+        Trang web của chúng tôi được xây dựng bằng Docusaurus để thân thiện hơn với người dùng hơn và dễ quản lý hơn
       </center>
     ),
   },
   {
     title: (
       <center>
-        Discord Support
+        Hỗ trợ Discord
       </center>
     ),
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <center>
-        We offer support in our Discord servers, helping you to understand and solve your issues
+        Chúng tôi sẵn sàng giúp đỡ bạn trong máy chủ Discord, giúp bạn hiểu và sửa chữa vấn đề
       </center>
     ),
   },
@@ -78,19 +78,19 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Home`}
-      description="A Website To Teach You Everything About PocketMine-MP"
+      title={`Trang chủ`}
+      description="Trang Web Hướng Dẫn Mọi Thứ Về PocketMine-MP"
     >
     <header className="main">
         <div className="container">
             <div className="row align-center">
                 <div className="col">
                     
-                    <h1>A Website To Teach You Everything About PocketMine-MP</h1>
-                    <a href="tutorials/" className="btn">Tutorials ></a>
+                    <h1>Trang Web Hướng Dẫn Mọi Thứ Về PocketMine-MP</h1>
+                    <a href="tutorials/" className="btn">Hướng dẫn ></a>
                 </div>
                 <div className="col">
-                    <img src="./img/vscode.png" className="vscodeimg"/>
+                    <img src="./img/vscode.png" className="vscodeimg" alt=""/>
                 </div>
             </div>
         </div>
@@ -99,8 +99,8 @@ function Home() {
         {features && features.length > 0 && (
             <section className={styles.features}>
             <div className="container">
-                <div className="text-center"><h2>Why PocketMine School?</h2></div>
-                <hr></hr>
+                <div className="text-center"><h2>Tạo sao lại nên chọn PocketMine School?</h2></div>
+                <hr/>
                 <div className="row">
                 {features.map((props, idx) => (
                     <Feature key={idx} {...props} />
@@ -113,8 +113,8 @@ function Home() {
     <div className="section">
         <div className="mpts">
             <div className="container">
-                <div className="text-center"><h2>Tutorials</h2></div>
-                <hr></hr>
+                <div className="text-center"><h2>Hướng dẫn</h2></div>
+                <hr/>
                 <div className="tutorial-grid">
                     <TutorialBox
                     link="tutorials/htmap/introduction"

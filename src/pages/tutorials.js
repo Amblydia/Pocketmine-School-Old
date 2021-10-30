@@ -10,7 +10,7 @@ function Tutorials() {
     <a href={props.link} className="tutorial-box">
       <div className="how-to">
         <h5>{props.title}</h5>
-        <hr></hr>
+        <hr/>
         <p>{props.des}</p>
       </div>
     </a>
@@ -26,7 +26,7 @@ function Tutorials() {
                     <div className="post">
                         <header className="postHeader t-header">
                             <h1>Tutorials</h1>
-                            <hr></hr>
+                            <hr/>
                         </header>
                         <div className="tutorial-grid">
                             <TutorialBox

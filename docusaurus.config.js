@@ -1,11 +1,11 @@
 module.exports = {
   title: 'PocketMine School',
-  tagline: 'A Website To Teach Everything About PocketMine-MP',
+  tagline: 'Trang Web Hướng Dẫn Mọi Thứ Về PocketMine-MP',
   url: 'https://pocketmineschool.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'PocketMine School', // Usually your GitHub org/user name.
+  organizationName: 'PocketMine-MP VN Group', // Usually your GitHub org/user name. Original: PocketMine School
   projectName: 'Pocketmine-School', // Usually your repo name.
   plugins: [
     [require.resolve("@easyops-cn/docusaurus-search-local"), {
@@ -39,7 +39,7 @@ module.exports = {
     },
     announcementBar: {
       id: 'contribute',
-      content: 'We are looking for anyone to contribute in order to make PocketMine School. If you\'re interested, consider <a target="_blank" href="https://github.com/PocketMine-School/Pocketmine-School">forking the GitHub repository</a>, then <a target="_blank" href="https://github.com/PocketMine-School/Pocketmine-School/pulls">submit a pull request</a> and wait for a staff to review and merge your pull request.',
+      content: 'Đang trong quá trình phát triển...',
       backgroundColor: '#f3f3f3',
       textColor: '#222',
       isCloseable: true,
@@ -52,8 +52,8 @@ module.exports = {
         srcDark: 'img/pocketmineschool-wbg.png',
       },
       items: [
-        {to: 'tutorials/', label: 'Tutorials', position: 'right'},
-        {href: 'https://github.com/PocketMine-School/Pocketmine-School', label: 'Source Code', position: 'right'},
+        {to: 'tutorials/', label: 'Hướng dẫn', position: 'right'},
+        {href: 'https://github.com/PocketMine-MP-VN-Group/Pocketmine-School', label: 'Mã nguồn', position: 'right'},
         {
           type: 'docsVersionDropdown',
           position: 'right',
@@ -61,7 +61,7 @@ module.exports = {
         },
         {
           type: 'dropdown',
-          label: 'Language',
+          label: 'Ngôn ngữ',
           items: [
             {
               label: 'Tiếng Việt',
@@ -80,7 +80,7 @@ module.exports = {
       //style: 'dark',
       links: [
         {
-          title: 'Tutorials',
+          title: 'Hướng dẫn',
           items: [
             {
               label: 'How to Make a Plugin',
@@ -97,8 +97,12 @@ module.exports = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Cộng đồng',
           items: [
+            {
+              label: 'PocketMine-MP VN Group Discord',
+              href: 'https://discord.gg/UpM96PSrJk'
+            },
             {
               label: 'PocketMine School Discord',
               href: 'https://discord.gg/5e7PFEXgF3',
@@ -114,16 +118,16 @@ module.exports = {
           ],
         },
         {
-          title: 'Other Links',
+          title: 'Liên kết khác',
           items: [
             {
-              label: 'Source Code',
-              href: 'https://github.com/PocketMine-School/Pocketmine-School',
+              label: 'Mã nguồn',
+              href: 'https://github.com/PocketMine-MP-VN-School/Pocketmine-School',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} <strong><a href="https://github.com/PocketMine-School">PocketMine School</a></strong>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <strong><a href="https://github.com/PocketMine-MP-VN-School">PocketMine-MP-VN-School</a></strong>.`,
     },
   },
   presets: [
@@ -133,7 +137,7 @@ module.exports = {
         docs: {
           routeBasePath: '/tutorials',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/PocketMine-School/Pocketmine-School/tree/master',
+          editUrl: 'https://github.com/PocketMine-MP-VN-School/Pocketmine-School/tree/master',
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           sidebarCollapsible: false,
