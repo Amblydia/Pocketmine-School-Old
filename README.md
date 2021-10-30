@@ -33,5 +33,5 @@ We're open for any contributions! You can contribute by submitting [pull request
 - Vietnamese version by [**PocketMine-MPVNGroup**](https://github.com/PocketMine-MP-VN-Group).
 - Licensed under the [**MIT License**](/LICENSE).
 
-**Discord:** https://discord.gg/UpM96PSrJk
+**Discord:** [https://discord.gg/UpM96PSrJk](https://discord.gg/UpM96PSrJk)_
 
