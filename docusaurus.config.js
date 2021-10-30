@@ -59,6 +59,21 @@ module.exports = {
           position: 'right',
           dropdownActiveClassDisabled: false,
         },
+        {
+          type: 'dropdown',
+          label: 'Language',
+          items: [
+            {
+              label: 'Tiếng Việt',
+              to: '/'
+            },
+            {
+              label: 'English',
+              to: 'https://pocketmineschool.ml',
+              target: '_self'
+            }
+          ]
+        }
       ],
     },
     footer: {
