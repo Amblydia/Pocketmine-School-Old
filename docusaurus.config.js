@@ -127,7 +127,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} <strong><a href="https://github.com/PocketMine-MP-VN-School">PocketMine-MP-VN-School</a></strong>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <strong><a href="https://github.com/PocketMine-School">PocketMine-MP School</a></strong> | <strong><a href="https://github.com/PocketMine-MP-VN-Group">PocketMine-MP-VN Group</a></strong>.`,
     },
   },
   presets: [
