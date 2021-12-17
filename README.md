@@ -22,11 +22,30 @@ PocketMine School is a website where you can learn about PocketMine-MP. PocketMi
 - Tutorials for PocketMine-MP 4 (Currently being worked on)
 - Light & Dark Mode
 
+## Building and Testing Locally for Development Purposes
+
+Before starting, make sure you already have Node.js version 14 or newer as well as npm installed. You can check by running `node --version` and `npm --version` in your terminal.
+
+1. Clone the Git repository
+   ```bash
+   $ git clone https://github.com/PocketMine-School/Pocketmine-School
+   ```
+2. Install Yarn
+   ```bash
+   $ npm install -g yarn
+   ```
+3. Install the required dependencies using Yarn
+   ```bash
+   $ yarn install
+   ```
+4. Build and open the site in your default browser
+   ```bash
+   $ yarn start
+   ```
+
 ## Can I contribute to PocketMine School?
 
 We're open for any contributions! You can contribute by submitting [pull requests](https://github.com/PocketMine-School/Pocketmine-School/pulls) or [issues](https://github.com/PocketMine-School/Pocketmine-School/issues) and waiting for a response from us.
-
-<!-- TODO: Add tutorial for building and testing PocketMine School locally -->
 
 ## Additional Notes
 
