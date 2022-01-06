@@ -23,7 +23,7 @@ const features = [
         Easy To Understand
       </center>
     ),
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    //imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <center>
         Our tutorials are very well written to provide the user knowledge to understand all about PocketMine-MP
@@ -36,7 +36,7 @@ const features = [
         User-Friendly
       </center>
     ),
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    //imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <center>
         Our website is built using Docusaurus to make it more user-friendly and easier to manage
@@ -49,7 +49,7 @@ const features = [
         Discord Support
       </center>
     ),
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    //imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <center>
         We offer support in our Discord servers, helping you to understand and solve your issues

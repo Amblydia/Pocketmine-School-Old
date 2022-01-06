@@ -37,6 +37,10 @@ module.exports = {
         },
       },
     },
+    prism: {
+      additionalLanguages: ['php', 'yaml'],
+      theme: require('prism-react-renderer/themes/vsDark'),
+    },
     announcementBar: {
       id: 'contribute',
       content: 'We are looking for anyone to contribute in order to make PocketMine School. If you\'re interested, consider <a target="_blank" href="https://github.com/PocketMine-School/Pocketmine-School">forking the GitHub repository</a>, then <a target="_blank" href="https://github.com/PocketMine-School/Pocketmine-School/pulls">submit a pull request</a> and wait for a staff to review and merge your pull request.',
@@ -125,13 +129,13 @@ module.exports = {
           lastVersion: "current",
           versions: {
             current: {
-                label: "PM3",
-                path: ""
+              label: "PM4",
+              path: ""
             },
-            PM4: {
-                label: "PM4",
-                path: "PM4",
-                banner: "unreleased"
+            PM3: {
+              label: "PM3",
+              path: "PM3",
+              banner: "unreleased"
             }
           },
         },

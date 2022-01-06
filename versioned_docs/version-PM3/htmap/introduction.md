@@ -4,11 +4,11 @@ title: Introduction
 sidebar_label: Introduction
 ---
 ___
-## What's a Pocketmine Plugin? (Test)
+## What is a PocketMine-MP Plugin?
 
-A plugin is an external module which can be added to your server to add custom features, change default behaviours and more.
+A plugin is an external module which can be added to your server to add custom features, change default behaviours and more. PocketMine-MP supports plugins to customize and/or modify PocketMine-MP servers for better experience and customization. Plugins allows server owners to achieve certain tasks or behaviors in their servers that are not officially implemented in PocketMine-MP. There are many interesting and useful plugins that already exists, such as world editing, automatic restarts, and economy system.
 
-## What You'll Learn in this Tutorial
+## What You'll Learn
 
 - Plugin structure
 - The `plugin.yml` file

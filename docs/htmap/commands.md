@@ -7,14 +7,29 @@ ___
 Using commands in a plugin enchants your Plugin! Commands can automatically and easily do things for you!  
 
 Ok lets start by adding the "use" statements for you can use commands.  
-```php title="./test/test.php"
+```php
 // The Command
 use pocketmine\command\Command;
       
 // Person who does command
 use pocketmine\command\CommandSender;
 ```
-To setup the command we going to use a public function and inside the function we will add the command, like this:
+To set up the command we're going to use a public function and inside the function we will add the command, like this:
+
+```php
+public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
+    switch($command->getName()){
+        case "example":
+            $sender->sendMessage("Hello " . $sender->getName() . "!");
+
+            return true;
+        default:
+            throw new \AssertionError("This line will never be executed");
+    }
+}
+```
+
+<!-- Thinking of making a separate tutorial on Commands and only putting a simple tutorial here.
 ```php
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
   switch($cmd->getName()){ // Use switch to get the command input
@@ -25,18 +40,7 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
   return true;
 }
 ```
-Here is another example of a command instead of sending a message it gives the sender 4 steaks and a message!
-```php
-public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
-  switch($cmd->getName()){
-    case "test":
-      $sender->getInventory()->addItem(Item::get(364,0,4)); //364 = Item ID Value (in this case, 364 is steak)
-      $sender->sendMessage("You have just recieved 4 steak!");
-    break;
-  }
-  return true;
-}
-```
+
 What would happen if the CONSOLE was the command sender? How do we prevent the Console?  
 
 To prevent the situation above we are going to use an if statement including "instanceof"  
@@ -124,3 +128,4 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
 }
 ```
 And that's it! You made your first command with arguments!
+-->

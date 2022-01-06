@@ -5,7 +5,13 @@ sidebar_label: plugin.yml
 ---
 ___
 
-plugin.yml is a YAML file that contains general information of the plugin.  
+<!-- TODO: Improve English explanation -->
+
+Every plugin needs a `plugin.yml` file to function. The `plugin.yml` file contains properties and rules which needs to be satisfied for plugins to load properly. For example, if a plugin specifies specific protocol versions in `plugin.yml`, PocketMine-MP will only load the plugin if one of the protocol versions matches the server protocol version.
+
+By default, PocketMine-MP searches for a `plugin.yml` inside every plugin and loads them based on the specified properities and rules inside the `plugin.yml` file. PocketMine-MP will not load a plugin if the server configuration doesn't satisfy with a plugin rule, for example if a plugin depends on another plugin and the other plugin doesn't exists in the server.
+
+In this page, you'll learn how to make a basic functioning `plugin.yml` file in your plugin, alongside with other advanced and optional rules. 
 
 ## `name:`
 This is where you add the name of your plugin.  

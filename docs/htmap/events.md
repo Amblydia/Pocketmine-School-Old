@@ -4,51 +4,17 @@ title: Events
 sidebar_label: Events
 ---
 ___
-Now we are going to learn about something that makes plugins how they are! EVENTS.  
+<!-- TODO LATER
+PocketMine-MP has an events' system which allows plugins to react to, modify the outcome of, and prevent the result of events.
 
-Before we start were going to add some new "use" statements and changed the "class" statement a bit and add a new line to the onEnable() function because we are using events.
-```php
-<?php
+## How it works
+1. Something registers a handler for a given event.
+2. Just before the event takes place, the handler is called and passed an object containing information about the event. This allows handlers to react to, modify (and in some cases prevent) an event from taking place.
+3. The event takes place (or does not take place if cancelled) as defined by the object which contains the event information.
 
-namespace ExampleName;
+:::note
+All event handlers are currently executed before the event takes place. This is a common pitfall of PocketMine-MP plugin developers - when an event handler is executed, the actual event has not yet taken place.
+:::
+-->
 
-use pocketmine\plugin\PluginBase;
-
-// Event
-use pocketmine\event\player\PlayerJoinEvent;  //This is the event 
-
-// Player "class"
-use pocketmine\Player;
-
-// Server "class"
-use pocketmine\Server;
-
-// Event Listener
-use pocketmine\event\Listener;
-
-class Main extends PluginBase implements Listener{ //Added "implements Listener" because of the Listener event
-
-    public function onEnable(){
-        $this->getServer()->getPluginManager()->registerEvents($this,$this); // This is the new line 
-        $this->getLogger()->info("Plugin Enabled");
-    }
-
-}
-```
-
-## PlayerJoinEvent
-PlayerJoinEvent is the event of a player joining.  
-
-So were going to broadcast a message saying someone joined in a fancy way and give that someone an item.
-
-```php
-public function onJoin(PlayerJoinEvent $event){
-    $player = $event->getPlayer();  //This gets the player
-    $name = $player->getName();  //Gets the Name of the player
-    $inv = $player->getInventory();  //Gets the player Inventory
-
-    $this->getServer()->broadcastMessage("Welcome $name to my server");  //This broadcast a Message to the whole server  
-    $item = Item::get(345, 0, 1); //The item that you want to give
-    $inv->setItem(0, $item);  //This gives the item to the player, '0' means the first slot of the players hotbar so you can change to any slot
-}             
-```
+Go to the [Docs](https://doc.pmmp.io/en/rtfd/developer-reference/events.html). This will be updated in the future.
