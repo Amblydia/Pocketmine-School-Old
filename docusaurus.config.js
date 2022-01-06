@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'A Website To Teach Everything About PocketMine-MP',
   url: 'https://pocketmineschool.netlify.app/',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   favicon: 'img/favicon.ico',
   organizationName: 'PocketMine School', // Usually your GitHub org/user name.
   projectName: 'Pocketmine-School', // Usually your repo name.
