@@ -34,7 +34,6 @@ function Tutorials() {
                             title="How to Make a Plugin"
                             des="Learn on how to make a pocketmine plugin." 
                             />
-                            <!--
                             <TutorialBox
                             link="htufa/introduction"
                             title="How to Use FormAPI"
@@ -45,7 +44,6 @@ function Tutorials() {
                             title="How to Use InvMenu"
                             des="Do you want to make inventory menus? Learn how to do it here." 
                             />
-                            -->
                         </div>
                     </div>
                 </div>

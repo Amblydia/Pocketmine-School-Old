@@ -121,18 +121,16 @@ function Home() {
                     title="How to Make a Plugin"
                     des="Learn on how to make a pocketmine plugin." 
                     />
-                    <!--
                     <TutorialBox
                     link="tutorials/htufa/introduction"
                     title="How to Use FormAPI"
-                    des="Ever wanted to create forms? Here is a guide."
+                    des="Ever wanted to create forms? Here is a guide." 
                     />
                     <TutorialBox
                     link="tutorials/htuim/introduction"
                     title="How to Use InvMenu"
-                    des="Do you want to make inventory menus? Learn how to do it here."
+                    des="Do you want to make inventory menus? Learn how to do it here." 
                     />
-                    -->
                 </div>
                 <div className="col text-center">
                     <a href="tutorials/" className="btn btn-black">More Tutorials &gt;</a>
