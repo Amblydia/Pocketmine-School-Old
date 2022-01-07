@@ -32,16 +32,16 @@ function Tutorials() {
                             <TutorialBox
                             link="htmap/introduction"
                             title="How to Make a Plugin"
-                            des="Learn on how to make a pocketmine plugin." 
+                            des="Learn on how to make a PocketMine plugin." 
                             />
                             <TutorialBox
-                            link="htufa/introduction"
-                            title="How to Use FormAPI"
+                            link="pm3/htufa/introduction"
+                            title="How to Use FormAPI (PM3)"
                             des="Ever wanted to create forms? Here is a guide." 
                             />
                             <TutorialBox
-                            link="htuim/introduction"
-                            title="How to Use InvMenu"
+                            link="pm3/htuim/introduction"
+                            title="How to Use InvMenu (PM3)"
                             des="Do you want to make inventory menus? Learn how to do it here." 
                             />
                         </div>

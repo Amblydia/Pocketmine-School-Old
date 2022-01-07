@@ -76,12 +76,12 @@ module.exports = {
               to: 'tutorials/htmap/introduction',
             },
             {
-              label: 'How to Use FormAPI',
-              to: 'tutorials/htufa/introduction',
+              label: 'How to Use FormAPI (PM3)',
+              to: 'tutorials/pm3/htufa/introduction',
             },
             {
-              label: 'How to Use InvMenu',
-              to: 'tutorials/htuim/introduction',
+              label: 'How to Use InvMenu (PM3)',
+              to: 'tutorials/pm3/htuim/introduction',
             },
           ],
         },
