@@ -100,6 +100,11 @@ Example:
 ```yaml
 author: YourName
 ```
+If you want to add multiple authors, use `authors` instead.\
+Example:
+```yaml
+authors: [Author1, Author2]
+```
 
 ### `description:`
 This is where you  declare your plugin description.  
