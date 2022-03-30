@@ -20,18 +20,6 @@ module.exports = {
       defaultMode: 'dark',
       disableSwitch: false,
       respectPrefersColorScheme: true,
-      switchConfig: {
-        darkIcon: '🌙',
-        lightIcon: '\u2600',
-        // React inline style object
-        // see https://reactjs.org/docs/dom-elements.html#style
-        darkIconStyle: {
-          marginLeft: '2px',
-        },
-        lightIconStyle: {
-          marginLeft: '1px',
-        },
-      },
     },
     prism: {
       additionalLanguages: ['php', 'yaml'],
