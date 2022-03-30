@@ -16,10 +16,6 @@ module.exports = {
   themeConfig: {
     image: 'img/pocketmineschool.png',
     hideableSidebar: true,
-    googleAnalytics: {
-      trackingID: 'UA-179045405-3',
-      anonymizeIP: true,
-    },
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
@@ -138,6 +134,10 @@ module.exports = {
               banner: "unreleased"
             }
           },
+        },
+        googleAnalytics: {
+          trackingID: 'UA-179045405-3',
+          anonymizeIP: true,
         },
         blog: {
           showReadingTime: true,
