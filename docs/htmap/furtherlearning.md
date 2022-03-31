@@ -1,5 +1,5 @@
 ---
-id: futherlearning
+id: furtherlearning
 title: Further Learning
 sidebar_label: Further Learning
 ---
