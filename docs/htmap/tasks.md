@@ -29,7 +29,7 @@ class MyTask extends Task{ // Remember that your task must have the same name as
     }
 
 // Then we'll create an onRun funtion wich will be called when the time has past to the execution of the task
-    public function onRun(int $tick){ // $tick is the current server tick when the task executes
+    public function onRun(){
         $player = $this->getOwner()->getServer()->getPlayer($this->playername()); // This retreive the main class with $this->getOwner() then asks the server for the player with the name $this->playername
         if($player instanceof Player){ // Basicly checks if the player we retreive is online.
             $player->sendMessage("10 seconds has past!"); // Sends him a message !

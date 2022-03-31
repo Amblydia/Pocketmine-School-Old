@@ -7,7 +7,8 @@ module.exports = {
       'htmap/main',
       'htmap/events',
       'htmap/commands',
-      'htmap/tasks'
+      'htmap/tasks',
+      'htmap/furtherlearning'
     ],
   },
 };
