@@ -119,7 +119,7 @@ module.exports = {
             PM3: {
               label: "PM3",
               path: "PM3",
-              banner: "unreleased"
+              banner: "unmaintained"
             }
           },
         },
