@@ -17,11 +17,9 @@ All event handlers are currently executed before the event takes place. This is 
 :::
 -->
 
-### NOTICE
-
+:::note
 Please see the [PMMP Docs](https://doc.pmmp.io/en/rtfd/developer-reference/events.html) for explanation on how events works. This section currently only explains an example on how to create an event. This will be updated in the future.
-
-___
+:::
 
 ## Creating an Event Listener Class
 
