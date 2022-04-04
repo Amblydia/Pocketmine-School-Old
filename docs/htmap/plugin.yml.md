@@ -13,109 +13,95 @@ By default, PocketMine-MP searches for a `plugin.yml` inside every plugin and lo
 
 In this page, you'll learn how to make a basic functioning `plugin.yml` file in your plugin, alongside with other advanced and optional rules.
 
-### `name:`
-This is where you add the name of your plugin.  
-Example:
+## Adding Required Information
+
+Before we start, please open the `plugin.yml` file you created in the previous topic.
+
+Now we're going to add our plugin name and version in the `plugin.yml` file. We're also going to add the supported API version as well as the path to our plugin's main class, because it's required for the plugin to load.
+
+Add this code into your `plugin.yml` file, replacing `YourPluginName` with a plugin name you want to use, and `YourName` with your name:
+
 ```yaml
 name: YourPluginName
+version: 1.0.0
+api: 4.0.0
+nain: YourPluginName\YourName\Main
 ```
 
-### `main:`
-This is where you declare the path to the main file in the src folder.  
-Here's an example:
-```yaml
-main: YourPluginName\YourName\Main
-```
+::note
+Always try to use `UpperCamelCase` for plugin names.
+::
+
+Now I'm going to explain what each keys means.
+
+### `name:`
+
+This is where you add the name of your plugin.
 
 ### `version:`
-This is where you declare your plugin version. It is recommended to use semantic versioning (x.x/x.x.x).  
-Example:
-```yaml
-version: 1.0.0
-#or
-version: 1.0
-```
+
+This is where you declare your plugin version. It is recommended to always use semantic versioning (visit [this website](https://semver.org) for more information).
 
 ### `api:`
-This is where you declare your PocketMine-MP API version(s) which is compatible with your plugin.  
-It should contain the minimum API minor and patch version for every major API version supported by the plugin.  
-Example:
-```yaml
-api: 4.0.0
-```
-You can declare multiple API versions by using `[ ]`.  
-Example:
-```yaml
-api: [3.0.0, 4.0.0]
-```
 
-:::note
-`name`, `main`, `version` and `api` are required.
-:::
+This is where you declare your PocketMine-MP API version(s) which is compatible with your plugin. It should contain the minimum API minor and patch version for every major API version supported by the plugin.
 
-### `commands:`
-If your plugin uses commands you need to register the commands here.  
-Example:
-```yaml
-commands:
-  example:
-    description: Example command
-    usage: "/example"
-    permission: exampleplugin.command.example
-```
+For now we'll just use `4.0.0`, but if you want to support other API versions (e.g. API 3), you can add something like `[3.0.0, 4.0.0]`.
 
-### `permissions:`
-If you registered commands (either in plugin.yml or code), you need to declare the permission usage.  
-Example:
-```yaml
-permissions:
-  yourpluginname.command.example:
-    description: "Allows the user to run the example command"
-    default: true
-```
-:::note 
-There are 4 possible values for the `default` key:
-1. `true` - Anyone can use the command.
-2. `op` - Only OP-ped players can use the command.
-3. `notop` - Only not OP-ped players can use the command.
-4. `false` - Nobody can use the command (except from console).
-:::
+### `main:`
 
-:::note
-The rest of the Keys are optional.
-:::
+This is where you declare the path to the Main class in the `src` folder. This will be explained in the next topic.
 
-### `mcpe-protocol:`
-This is where you can declare your minecraft protocol version supported by your plugin.  
-Usually you don't need this, but it is recommended to declare it if you use classes from `pocketmine\network\mcpe` for compatibility reasons.  
-You may need to update this if a new Minecraft version released.
-Example:
-```yaml
-mcpe-protocol: 408
-```
+## Adding Optional Information
 
-### `author:`
-This is where you declare your name as the plugin author.  
-Example:
+Do you want to add your name, plugin description, plugin website, permissions as well as commands in your `plugin.yml` file? Fortunately, all of them are supported by PocketMine-MP.
+
+This time we're going to add the plugin author, description and website in the `plugin.yml` file. The other two information will be explained in upcoming topics.
+
+Add this code into your `plugin.yml` file, replacing `YourName` with your name, `Description` with a plugin description you want to use, and `Website` with your website:
+
 ```yaml
 author: YourName
+description: Description
+website: Website
 ```
-If you want to add multiple authors, use `authors` instead.\
-Example:
-```yaml
-authors: [Author1, Author2]
-```
+
+::note
+You can remove `website:` if you don't have a website.
+::
+
+Now I'm going to explain what each keys means.
+
+### `author:`
+
+This is where you declare your name as the plugin author.
+
+You can add more than one author by using `authors: [Author1, Author2]` instead.
 
 ### `description:`
-This is where you  declare your plugin description.  
-Example:
-```yaml
-description: YourPluginDesc
-```
+
+This is where you declare your plugin description.
 
 ### `website:`
+
 This is where you declare your website.
-Example:
+
+## Further Learning and Conclusion
+
+There are a plenty of `plugin.yml` options I won't mention in this topic, but you can learn more about all the possible `plugin.yml` options in [this website](https://doc.pmmp.io/en/rtfd/developer-reference/plugin-manifest.html).
+
+Anyways, after following this topic, your final `plugin.yml` file should look something like these (remember, you don't have to add `website:` if you don't have a website):
+
 ```yaml
-website: https://github.com/YourGithub/YourPluginName
+name: YourPluginName
+version: 1.0.0
+api: 4.0.0
+nain: YourPluginName\YourName\Main
+author: YourName
+description: Description
+website: Website
 ```
+
+___
+
+Congratulations, you've created your first `plugin.yml` file. Now you're ready to continue into the next topic!
