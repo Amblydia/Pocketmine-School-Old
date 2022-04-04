@@ -26,7 +26,7 @@ const features = [
     //imageUrl: 'img/undraw_docusaurus_mountain.svg',
     description: (
       <center>
-        Our tutorials are very well written to provide the user knowledge to understand all about PocketMine-MP
+        Our tutorials are very well written to help the user understand everything about PocketMine-MP
       </center>
     ),
   },
@@ -39,7 +39,7 @@ const features = [
     //imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <center>
-        Our website is built using Docusaurus to make it more user-friendly and easier to manage
+        Our website uses Docusaurus to make it more user-friendly and easier to manage
       </center>
     ),
   },
