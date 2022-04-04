@@ -28,9 +28,9 @@ api: 4.0.0
 nain: YourPluginName\YourName\Main
 ```
 
-::note
+:::note
 Always try to use `UpperCamelCase` for plugin names.
-::
+:::
 
 Now I'm going to explain what each keys means.
 
@@ -66,9 +66,9 @@ description: Description
 website: Website
 ```
 
-::note
+:::note
 You can remove `website:` if you don't have a website.
-::
+:::
 
 Now I'm going to explain what each keys means.
 
