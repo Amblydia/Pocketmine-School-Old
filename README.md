@@ -1,7 +1,7 @@
 <p align="center">
     <a href="https://pocketmineschool.ml"><img src="https://raw.githubusercontent.com/PocketMine-School/Pocketmine-School/master/static/img/pocketmineschool-ntp.png"></a><br><br>
     <b>A Website To Teach Everything About PocketMine-MP</b><br><br>
-    <a href="https://app.netlify.com/sites/teamultrasoft/deploys"><img src="https://api.netlify.com/api/v1/badges/490fb54c-7019-48db-99a6-c63f648e863e/deploy-status"></a>
+    <img src="https://api.netlify.com/api/v1/badges/490fb54c-7019-48db-99a6-c63f648e863e/deploy-status">
     <a href="https://discord.gg/5e7PFEXgF3"><img alt="Discord" src="https://img.shields.io/discord/878969253955510342?label=Discord&style=flat-square"></a>
 </p>
 
