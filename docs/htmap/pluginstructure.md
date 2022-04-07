@@ -11,7 +11,9 @@ Start your PocketMine-MP server and type the command below in the console to cre
 ```
 genplugin <YourPluginName> <YourName>
 ```
-**Note:** Don't use `/` when typing commands in console!
+:::note
+Don't use `/` when typing commands in console!
+:::
 
 It will generate a folder that is named your plugin name inside the `plugins` folder where your server is located. Inside it you have all the essential files and folders for your plugin.
 
@@ -26,8 +28,9 @@ TestPlugin
     ├── plugin.yml 
     └── src
 ```
-
-`*` Pocketmine-Server is the folder where you have your server setup at.
+:::note
+`Pocketmine-Server` is the folder where you have your server setup at.
+:::
 ___
 Now you've made a structure for your PocketMine-MP plugin! In the next page, you'll learn how to configure `plugin.yml` file to give your plugin a name, version, author, and much more!
 
