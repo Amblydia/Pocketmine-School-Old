@@ -21,7 +21,7 @@ Now we're going to add our plugin name and version in the `plugin.yml` file. We'
 
 Add this code into your `plugin.yml` file, replacing `YourPluginName` with a plugin name you want to use, and `YourName` with your name:
 
-```yaml
+```yml title="plugin.yml"
 name: YourPluginName
 version: 1.0.0
 api: 4.0.0
@@ -60,7 +60,7 @@ This time we're going to add the plugin author, description and website in the `
 
 Add this code into your `plugin.yml` file, replacing `YourName` with your name, `Description` with a plugin description you want to use, and `Website` with your website:
 
-```yaml
+```yml title="plugin.yml"
 author: YourName
 description: Description
 website: Website
@@ -92,7 +92,7 @@ There are a plenty of `plugin.yml` options I won't mention in this topic, but yo
 
 Anyways, after following this topic, your final `plugin.yml` file should look something like these (remember, you don't have to add `website:` if you don't have a website):
 
-```yaml
+```yml title="plugin.yml"
 name: YourPluginName
 version: 1.0.0
 api: 4.0.0

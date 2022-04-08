@@ -7,7 +7,7 @@ ___
 You just learned how to add commands but you want only certain group of players to use it.  
 
 Well lets teach you how to add Permissions to your commands, it very simple
-```php
+```php title="Main.php"
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
   switch($cmd->getName()){
     case "test":
@@ -29,7 +29,7 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
 }
 ```
 You can do this if you want to add a message to the player who doesn't have the permission to use the command:
-```php
+```php title="Main.php"
 public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
    switch($cmd->getName()){
      case "test":

@@ -25,7 +25,7 @@ Please see the [PMMP Docs](https://doc.pmmp.io/en/rtfd/developer-reference/event
 
 Create a new file named `EventListener.php` inside the directory where your Main class file is located at. Then open the file and add this code (replace the namespace with your plugin's namespace):
 
-```php
+```php title="EventListener.php"
 <?php
 
 namespace YourPluginName\YourName;
@@ -43,13 +43,13 @@ We're going to use `PlayerMoveEvent` as an example.
 
 First, import the `PlayerMoveEvent` class:
 
-```php
+```php title="EventListener.php"
 use pocketmine\event\player\PlayerMoveEvent;
 ```
 
 Second, add a method with `PlayerMoveEvent $event` as its argument. You can use any method name you like, but the method must be public and must return `void` This time we're going to use `onPlayerMove`:
 
-```php
+```php title="EventListener.php"
 public function onPlayerMove(PlayerMoveEvent $event): void{
 
 }
@@ -61,7 +61,7 @@ In this example, we want to print the player's origin and target location in the
 
 Before that, we need to check if the event has been cancelled by another plugin. If it's indeed has been cancelled, we'd like to stop the event handling. To do that, add this code into the method we've just created:
 
-```php
+```php title="EventListener.php"
 if($event->isCancelled()){ // Checks if the event has been cancelled by another plugin
     return; // Stops the event handling
 }
@@ -69,7 +69,7 @@ if($event->isCancelled()){ // Checks if the event has been cancelled by another 
 
 Now we can do what we wanted safely. Please add this code under the code we've just added:
 
-```php
+```php title="EventListener.php"
 $player = $event->getPlayer(); // Saves the player instance as a variable to make the code a bit cleaner
 $player->sendMessage("From: " . $event->getFrom()); // This should call the Location->__toString() method
 $player->sendMessage("To: " . $event->getTo());
@@ -81,7 +81,7 @@ ___
 
 After doing the three sections above, your `EventListener` class should look like these:
 
-```php
+```php title="EventListener.php"
 <?php
 
 namespace YourPluginName\YourName;
@@ -112,7 +112,7 @@ To make our `EventListener` class work, we need to register it in our Main class
 
 To do that, please open your Main class, then add this code in your `onEnable` method:
 
-```php
+```php title="Main.php"
 $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
 ```
 

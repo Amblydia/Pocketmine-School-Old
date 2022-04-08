@@ -7,7 +7,7 @@ ___
 Using commands in a plugin enchants your Plugin! Commands can automatically and easily do things for you!  
 
 Ok lets start by adding the "use" statements for you can use commands.  
-```php
+```php title="Main.php"
 // The Command
 use pocketmine\command\Command;
       
@@ -16,7 +16,7 @@ use pocketmine\command\CommandSender;
 ```
 To set up the command we're going to use a public function and inside the function we will add the command, like this:
 
-```php
+```php title="Main.php"
 public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
     switch($command->getName()){
         case "example":

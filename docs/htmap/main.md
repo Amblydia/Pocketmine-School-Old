@@ -11,7 +11,7 @@ Now lets start adding some code to `Main.php`.
 
 ## Namespace
 Here you would add the sub-folders of the src dictionary. Based off `main` path in [plugin.yml](plugin.yml.md#main).
-```php
+```php title="Main.php"
 <?php
 
 namespace YourPluginName\YourName;
@@ -19,20 +19,20 @@ namespace YourPluginName\YourName;
 
 ## Use Statement
 In a new line you will now add a `use` statement.
-```php
+```php title="Main.php"
 use pocketmine\plugin\PluginBase;
 ```
 This statement is used to enable our plugin.
 
 ## Class
 We will now add the `class`. In the `class` we will be able to enable your plugin. But to enable your plugin you need to extend your `class`.
-```php
+```php title="Main.php"
 class Main extends PluginBase { }
 ```
 
 ## Function
 In the `class` we will add a function to enable your plugin and to do so we will be using the `onEnable()` function like so:
-```php
+```php title="Main.php"
 class Main extends PluginBase { 
 
     protected function onEnable() : void{  
@@ -43,7 +43,7 @@ class Main extends PluginBase {
 ```
 
 At the end your `Main.php` file should look like this:
-```php
+```php title="Main.php"
 <?php
 
 namespace YourPluginName\YourName;
