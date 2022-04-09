@@ -4,9 +4,10 @@ title: Commands
 sidebar_label: Commands
 ---
 ___
-Using commands in a plugin enchants your Plugin! Commands can automatically and easily do things for you!  
+Using commands in a plugin enchants your plugin! Commands can automatically and easily do things for you!  
 
-Ok lets start by adding the "use" statements for you can use commands.  
+Ok lets start by importing the `Command` and `CommandSender` classes using the `use` statement.
+
 ```php title="Main.php"
 // The Command
 use pocketmine\command\Command;
@@ -14,7 +15,8 @@ use pocketmine\command\Command;
 // Person who does command
 use pocketmine\command\CommandSender;
 ```
-To set up the command we're going to use a public function and inside the function we will add the command, like this:
+
+To set up the command we're going to use the default `onCommand` method and inside the method we will add the code, like this:
 
 ```php title="Main.php"
 public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
@@ -28,6 +30,14 @@ public function onCommand(CommandSender $sender, Command $command, string $label
     }
 }
 ```
+
+It will send a message to the command sender when the command sender executes the `/example` command.
+
+:::note
+A separate tutorial on commands with detailed explanation is planned, so we temporarily remove the rest of the topic. However you still can find it commented in the [source file](https://github.com/PocketMine-School/Pocketmine-School/blob/master/docs/htmap/commands.md?plain=1).
+
+We apologize for the inconvenience.
+:::
 
 <!-- Thinking of making a separate tutorial on Commands and only putting a simple tutorial here.
 ```php
