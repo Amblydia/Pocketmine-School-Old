@@ -55,3 +55,4 @@ We're open for any contributions! You can contribute by submitting [pull request
 
 **Join our Discord server for help or to contact our maintainers:** https://discord.gg/5e7PFEXgF3
 
+
