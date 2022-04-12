@@ -11,15 +11,15 @@
 
 ## About PocketMine School
 
-PocketMine School is a website where you can learn about PocketMine-MP. PocketMine School is currently being maintained by [**TeamUltraSoft**](https://github.com/TeamUltraSoft) and [**KygekTeam**](https://github.com/KygekTeam).
+PocketMine School is a website where you can learn about PocketMine-MP. PocketMine School is currently being maintained by [**UltraSoft**](https://github.com/TeamUltraSoft) and [**KygekTeam**](https://github.com/KygekTeam).
 
 ## Features
 
+- PocketMine-MP 4 tutorial
 - Fast and Responsive Website
 - Search Bar!\
   ![Search Bar](/static/img/searchbar.png)
-- Includes FormAPI & InvMenu Tutorial
-- Tutorials for PocketMine-MP 4 (Currently being worked on)
+- Includes FormAPI & InvMenu Tutorial (PocketMine-MP 3 only)
 - Light & Dark Mode
 
 ## Building and Testing Locally for Development Purposes
@@ -30,7 +30,7 @@ Before starting, make sure you already have Node.js version 14 or newer as well 
    ```bash
    $ git clone https://github.com/PocketMine-School/Pocketmine-School
    ```
-2. Install Yarn
+2. Install Yarn (If you haven't already)
    ```bash
    $ npm install -g yarn
    ```
@@ -50,8 +50,8 @@ We're open for any contributions! You can contribute by submitting [pull request
 ## Additional Notes
 
 **PocketMine School is:**
-- Currently maintained by [**TeamUltraSoft**](https://github.com/TeamUltraSoft) and [**KygekTeam**](https://github.com/KygekTeam) under the [**PocketMine School**](https://github.com/PocketMine-School) organization. 
+- Currently maintained by [**UltraSoft**](https://github.com/TeamUltraSoft) and [**KygekTeam**](https://github.com/KygekTeam) under the [**PocketMine School**](https://github.com/PocketMine-School) organization. 
 - Licensed under the [**MIT License**](/LICENSE).
 
-**Discord:** https://discord.gg/5e7PFEXgF3
+**Join our Discord server for help or to contact our maintainers:** https://discord.gg/5e7PFEXgF3
 
