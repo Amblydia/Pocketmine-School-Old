@@ -55,6 +55,12 @@ public function onPlayerMove(PlayerMoveEvent $event): void{
 }
 ```
 
+:::tip
+You can set the event priority when multiple handlers from different plugins needs to execute at the same time. For more information, please visit the [PMMP Docs page](https://doc.pmmp.io/en/rtfd/developer-reference/events/priority.html).
+
+**Note:** As of April 13, the documentation is incomplete, so if you want to know more about it, please ask in PMMP's Discord server.
+:::
+
 ## Handling the Event
 
 In this example, we want to print the player's origin and target location in the player's chat, and cancel the event to prevent the player from moving.
