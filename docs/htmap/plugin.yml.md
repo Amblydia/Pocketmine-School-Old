@@ -25,7 +25,7 @@ Add this code into your `plugin.yml` file, replacing `YourPluginName` with a plu
 name: YourPluginName
 version: 1.0.0
 api: 4.0.0
-nain: YourPluginName\YourName\Main
+main: YourPluginName\YourName\Main
 ```
 
 :::note
@@ -96,7 +96,7 @@ Anyways, after following this topic, your final `plugin.yml` file should look so
 name: YourPluginName
 version: 1.0.0
 api: 4.0.0
-nain: YourPluginName\YourName\Main
+main: YourPluginName\YourName\Main
 author: YourName
 description: Description
 website: Website
