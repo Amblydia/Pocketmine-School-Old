@@ -41,12 +41,12 @@ module.exports = {
       },
       items: [
         {to: 'tutorials/', label: 'Tutorials', position: 'right'},
-        {href: 'https://github.com/PocketMine-School/Pocketmine-School', label: 'Source Code', position: 'right'},
         {
           type: 'docsVersionDropdown',
           position: 'right',
           dropdownActiveClassDisabled: false,
         },
+        {href: 'https://github.com/PocketMine-School/Pocketmine-School', label: 'Source Code', position: 'right'},
       ],
     },
     footer: {
