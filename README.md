@@ -47,7 +47,7 @@ Before starting, make sure you already have Node.js version 14 or newer as well 
 
 We're open for any contributions! You can contribute by submitting [pull requests](https://github.com/PocketMine-School/Pocketmine-School/pulls) or [issues](https://github.com/PocketMine-School/Pocketmine-School/issues) and waiting for a response from us.
 
-## Additional Notes
+## Notes
 
 **The PocketMine School project** is maintained by [**UltraSoft**](https://github.com/TeamUltraSoft) and [**KygekTeam**](https://github.com/KygekTeam) under the [**PocketMine School**](https://github.com/PocketMine-School) organization, and licensed under the [**MIT License**](/LICENSE).
 
