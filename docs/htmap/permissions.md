@@ -51,3 +51,28 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
   return true;
 }
 ```
+
+Next the `plugin.yml` needs to be added to for the command to work.
+
+```yml title="plugin.yml"
+#This enrolls the command into the server to show in the /help menu
+commands:
+  test:
+    description: Test command
+    usage: "/test"
+    aliases:
+      - tt
+      - tst
+    permission: YourPluginName.YourName.command.test
+    
+#This is used to set permissions your command
+permissions:
+  testplugin.myxxmikeyxx.command.test:
+    description: "Defualt only allow OP players to use test command"
+    default: op
+    # Default value options:
+    # op: only op players have this permission by default
+    # true: everyone has this permission by default
+    # false: no one has this permission by default
+
+```
