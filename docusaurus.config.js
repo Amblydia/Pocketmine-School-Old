@@ -15,11 +15,15 @@ module.exports = {
   ],
   themeConfig: {
     image: 'img/pocketmineschool.png',
-    hideableSidebar: true,
     colorMode: {
       defaultMode: 'dark',
       disableSwitch: false,
       respectPrefersColorScheme: true,
+    },
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
     },
     prism: {
       additionalLanguages: ['php', 'yaml'],
