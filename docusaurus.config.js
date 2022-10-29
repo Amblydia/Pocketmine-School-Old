@@ -1,7 +1,7 @@
 module.exports = {
   title: 'PocketMine School',
   tagline: 'A Website To Teach Everything About PocketMine-MP',
-  url: 'https://pocketmineschool.netlify.app/',
+  url: 'https://pocketmineschool.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   favicon: 'img/favicon.ico',
@@ -44,13 +44,17 @@ module.exports = {
         srcDark: 'img/pocketmineschool-wbg.png',
       },
       items: [
-        {to: 'tutorials/', label: 'Tutorials', position: 'right'},
         {
-          type: 'docsVersionDropdown',
-          position: 'right',
-          dropdownActiveClassDisabled: false,
+          to: 'tutorials/', 
+          label: 'Tutorials', 
+          position: 'right'
         },
-        {href: 'https://github.com/PocketMine-School/Pocketmine-School', label: 'Source Code', position: 'right'},
+        {
+          href: 'https://github.com/PocketMine-School/Pocketmine-School', 
+          label: 'Source Code', 
+          position: 'right',
+          className: 'github-icon',
+        },
       ],
     },
     footer: {
@@ -114,18 +118,6 @@ module.exports = {
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
           sidebarCollapsible: false,
-          lastVersion: "current",
-          versions: {
-            current: {
-              label: "PM4",
-              path: ""
-            },
-            PM3: {
-              label: "PM3",
-              path: "PM3",
-              banner: "unmaintained"
-            }
-          },
         },
         googleAnalytics: {
           trackingID: 'UA-179045405-3',
