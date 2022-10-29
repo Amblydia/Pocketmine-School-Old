@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import { Section } from '../components/SectionComponents';
 import { Card } from '../components/CardComponents';
+import { Button } from '../components/ButtonComponents';
 
 export default function Home() {
 
@@ -14,25 +15,25 @@ export default function Home() {
 				<div id="hero">
 					<h2>Pocketmine School</h2>
 					<p>
-						Explore our guides and examples to integrate Dyte easily into your
-						apps.
+						dummy description 
 					</p>
+					<Button title="Get Started"></Button>
 				</div>
 
 				<Section title="Get to know Pocketmine">
 					<Card
-					title="How Dyte works"
-					description="Essential reading for a better understanding of how to best use Dyte SDKs"
+					title="How to make a Pocketmine"
+					description="another dummy description"
 					to="/"
 					/>
 					<Card
-					title="Guides"
-					description="Take a look at all the available guides"
+					title="How to use Api"
+					description="another dummy description"
 					to="/"
 					/>
 					<Card
-					title="Guides"
-					description="Take a look at all the available guides"
+					title="how to use"
+					description="another dummy description"
 					to="/"
 					/>
 				</Section>

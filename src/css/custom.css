@@ -11,13 +11,25 @@
     /*Hero*/
     --hero-border-color: ;
 
+    --tutorial-card-border-color: #1b1b1d;
+    --tutorial-card-border-hover-color: #3578e5;
+
+    /* */
+    --button-background-color: #3578e5;
+    --button-color: #fefefe;
+    --button-background-hover-color: transparent;
+    --button-hover-color: #3578e5;
+    --button-border-color: #3578e5;
+}
+
+[data-theme="dark"]:root {
     /*Tutorial Card*/
-    --ifm-tutorial-card-background-color: #1b1b1d;
-    --ifm-tutorial-card-color: #fefefe;
-    --ifm-tutorial-card-description-color: #ccc;
-    --ifm-tutorial-card-border-color: #fefefe;
-    --ifm-tutorial-card-border-hover-color: #3578e5;
-    --ifm-tutorial-card-link-hover-color: #fefefe;
+    --tutorial-card-background-color: transparent;
+    --tutorial-card-color: #fefefe;
+    --tutorial-card-description-color: #ccc;
+    --tutorial-card-border-color: #fefefe;
+    --tutorial-card-border-hover-color: #3578e5;
+    --tutorial-card-link-hover-color: #fefefe;
 }
 
 .center {
@@ -52,9 +64,9 @@
 }
 
 .tutorial-card {
-    background-color: var(--ifm-tutorial-card-background-color);
-    border: 1px solid var(--ifm-tutorial-card-border-color);
-    color: var(--ifm-tutorial-card-color);
+    background-color: var(--tutorial-card-background-color);
+    border: 1px solid var(--tutorial-card-border-color);
+    color: var(--tutorial-card-color);
     border-radius: 6px;
     position: relative;
     transition: box-shadow .2s,transform .2s,-webkit-transform .2s;
@@ -65,8 +77,8 @@
     -webkit-transform: translate(5px,-5px);
     transform: translate(5px,-5px);
     text-decoration: none;
-    color: var(--ifm-tutorial-card-link-hover-color);
-    border-color: var(--ifm-tutorial-card-border-hover-color);
+    color: var(--tutorial-card-link-hover-color);
+    border-color: var(--tutorial-card-border-hover-color);
 }
 
 .card-content {
@@ -84,5 +96,17 @@
 .card-content .description {
     font-size: 14px;
     line-height: 1.5;
-    color: var(--ifm-tutorial-card-description-color);
+    color: var(--tutorial-card-description-color);
+}
+
+.button {
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    border: 1px solid var(--button-border-color);
+}
+
+.button:hover {
+    background-color: var(--button-background-hover-color);
+    color: var(--button-hover-color);
+    text-decoration: none;
 }
