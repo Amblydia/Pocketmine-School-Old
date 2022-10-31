@@ -10,7 +10,10 @@ export default function Tutorials() {
             title={`Tutorials`}
             description="A Website To Teach Everything About PocketMine-MP"
         >
-            <div className="center">
+            <div className="container">
+			    <div id="hero">
+					<h2>List of Tutorials</h2>
+				</div>
             	<Section>
 					<Card
 					title="How Dyte works"

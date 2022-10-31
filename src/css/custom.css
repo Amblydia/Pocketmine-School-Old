@@ -32,13 +32,6 @@
     --tutorial-card-link-hover-color: #fefefe;
 }
 
-.center {
-    margin: 1rem auto;
-    max-width: 1080px;
-    min-height: 400px;
-    width: 100%;
-}
-
 #hero {
     margin-bottom: 4rem;
     padding: 2rem 0 1.5rem;
@@ -109,4 +102,14 @@
     background-color: var(--button-background-hover-color);
     color: var(--button-hover-color);
     text-decoration: none;
+}
+
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .section-content {
+        grid-template-columns: repeat(1,minmax(0,1fr));
+    }
 }

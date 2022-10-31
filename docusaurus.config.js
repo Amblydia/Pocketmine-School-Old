@@ -67,14 +67,6 @@ module.exports = {
               label: 'How to Make a Plugin',
               to: 'tutorials/htmap/introduction',
             },
-            {
-              label: 'How to Use FormAPI (PM3)',
-              to: 'tutorials/pm3/htufa/introduction',
-            },
-            {
-              label: 'How to Use InvMenu (PM3)',
-              to: 'tutorials/pm3/htuim/introduction',
-            },
           ],
         },
         {

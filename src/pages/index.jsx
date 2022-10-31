@@ -11,7 +11,7 @@ export default function Home() {
 			title={`Home`}
 			description="A Website To Teach You Everything About PocketMine-MP"
 		>
-			<div className="center home">
+			<div className="container">
 				<div id="hero">
 					<h2>Pocketmine School</h2>
 					<p>
@@ -39,7 +39,6 @@ export default function Home() {
 				</Section>
 
 			</div>
-
 		</Layout>
 	);
 }
