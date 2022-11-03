@@ -20,21 +20,21 @@ export default function Home() {
 					<Button title="Get Started"></Button>
 				</div>
 
-				<Section title="Get to know Pocketmine">
+				<Section title="Tutorials">
 					<Card
-					title="How to make a Pocketmine"
-					description="another dummy description"
-					to="/"
+						title="Creating Plugins"
+						description="Learn how to make a Pocketmine Plugin"
+						to="/tutorials/htmap/introduction"
 					/>
 					<Card
-					title="How to use Api"
-					description="another dummy description"
-					to="/"
+						title="How to use Api"
+						description="another dummy description"
+						to="/"
 					/>
 					<Card
-					title="how to use"
-					description="another dummy description"
-					to="/"
+						title="how to use"
+						description="another dummy description"
+						to="/"
 					/>
 				</Section>
 

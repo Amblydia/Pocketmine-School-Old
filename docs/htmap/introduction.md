@@ -11,7 +11,7 @@ A plugin is an external module which can be added to your server to add custom f
 
 ## What You'll Learn
 
-:::note
+:::caution
 Some tutorials are incomplete or not available yet. However, we're expecting all tutorials will be finished in the coming months.
 :::
 
@@ -21,7 +21,6 @@ Some tutorials are incomplete or not available yet. However, we're expecting all
 - Adding events
 - Adding commands
 - Using permissions
-- Using configuration file (for user settings)
 - Adding tasks
 
 ## Before You Start
@@ -34,8 +33,6 @@ This tutorial assumes you have done the following:
    - If you haven't already, you can download the plugin from [Poggit](https://poggit.pmmp.io/p/DevTools).
 
 ___
-
-Click the "Next" button to start learning when you're ready!
 
 :::note
 Thanks to [Sites4Code](https://sites4code.github.io/MCPE/) for making there website first, some stuff written here is from them.

@@ -25,6 +25,10 @@ module.exports = {
         hideable: true,
       },
     },
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 5,
+    },
     prism: {
       additionalLanguages: ['php', 'yaml'],
       theme: require('prism-react-renderer/themes/vsDark'),
@@ -58,17 +62,7 @@ module.exports = {
       ],
     },
     footer: {
-      //style: 'dark',
       links: [
-        {
-          title: 'Tutorials',
-          items: [
-            {
-              label: 'How to Make a Plugin',
-              to: 'tutorials/htmap/introduction',
-            },
-          ],
-        },
         {
           title: 'Community',
           items: [

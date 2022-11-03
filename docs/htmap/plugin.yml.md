@@ -13,7 +13,7 @@ By default, PocketMine-MP searches for a `plugin.yml` inside every plugin and lo
 
 In this page, you'll learn how to make a basic functioning `plugin.yml` file in your plugin, alongside with other advanced and optional rules.
 
-## Adding Required Information
+## Required fields
 
 Before we start, please open the `plugin.yml` file you created in the previous topic.
 
@@ -32,65 +32,163 @@ main: YourPluginName\YourName\Main
 Always try to use `UpperCamelCase` for plugin names.
 :::
 
-Now I'm going to explain what each keys means.
+Now I'm going to explain what each key means.
 
 ### `name:`
 
-This is where you add the name of your plugin.
+Type: `string`  
+Name of the plugin. This may contain letters, numbers, hyphens, periods and underscores. It may also contain spaces, but this is discouraged.
 
 ### `version:`
 
-This is where you declare your plugin version. It is recommended to always use semantic versioning (visit [this website](https://semver.org) for more information).
-
-### `api:`
-
-This is where you declare your PocketMine-MP API version(s) which is compatible with your plugin. It should contain the minimum API minor and patch version for every major API version supported by the plugin.
-
-For now we'll just use `4.0.0`, but if you want to support other API versions (e.g. API 3), you can add something like `[3.0.0, 4.0.0]`.
+Type: `string`  
+This is where you declare your plugin version. It is recommended to use semantic versioning (visit [semver](https://semver.org) for more information).
 
 ### `main:`
 
+Type: `string`  
+Fully-qualified name of the main class. This class must meet the following criteria:  
+- MUST NOT be abstract  
+- MUST implement the `pocketmine\plugin\Plugin` interface  
+
 This is where you declare the path to the Main class in the `src` folder. This will be explained in the next topic.
 
-## Adding Optional Information
+### `api:`
 
-Do you want to add your name, plugin description, plugin website, permissions as well as commands in your `plugin.yml` file? Fortunately, all of them are supported by PocketMine-MP.
+Type: `string` or `string[]`  
 
-This time we're going to add the plugin author, description and website in the `plugin.yml` file. The other two information will be explained in upcoming topics.
+The API version(s) that the plugin is compatible with. If the plugin’s API version is not compatible with that of the server, the server will refuse to load the plugin. More info on API versioning can be found here <api_version_spec>.
 
-Add this code into your `plugin.yml` file, replacing `YourName` with your name, `Description` with a plugin description you want to use, and `Website` with your website:
+## Optional fields
 
-```yml title="plugin.yml"
-author: YourName
-description: Description
-website: Website
+Do you want to add your name, plugin description, plugin website, prefix as well as authors in your `plugin.yml` file? Fortunately, all of them are supported by PocketMine-MP.
+
+Now I'm going to explain what each key means.
+
+### Cosmetics 
+
+#### `website:`
+
+Type: `string`  
+Website for the plugin.
+
+#### `description:`
+
+Type: `string`  
+Short description of the plugin.
+
+#### `prefix:`
+
+Type: `string`  
+Alternative prefix to use in the plugin’s log messages. Defaults to the plugin name.
+
+#### `author:`
+
+Type: `string`  
+Author name of the plugin.
+
+#### `authors:`
+
+Type: `string[]`  
+A list of author names, if there are more than one. If both `author` and `authors` are defined, a list will be formed containing both.
+
+
+### Plugin loading controls:
+
+#### `load:`
+
+Type: `string`  
+When in the startup sequence to prefer loading this plugin. Currently can be one of `STARTUP` or `POSTWORLD`. See plugin load order.
+
+#### `depend:`
+
+Type: `string` or `string[]`  
+List of plugins that this plugin depends on. Plugin will not load if any of these plugins are missing.
+
+#### `softdepend:`
+
+Type: `string` or `string[]`  
+List of plugins that the plugin can optionally depend on. Plugins in this list must load prior to the plugin soft-depending on them.
+
+#### `loadbefore:`
+
+Type: `string` or `string[]`  
+List of plugins that this plugin must load prior to. Works like a soft-dependency in reverse.
+
+#### `extensions:`
+
+Type: `array`   
+List of PHP extensions that the plugin requires. Plugin will not load if any are missing or have unmet version constraints.
+
+#### `mcpe-protocol:`
+
+Type: `int` or `int[]`  
+List of Minecraft PE network protocol versions the plugin is compatible with. Plugin will fail to load if the current server protocol version is not in this list.
+
+#### `os:`
+
+Type: `string` or `string[]`  
+List of operating systems that the plugin will run on. If not present, the plugin will load on any OS. Possible values include `win`, `mac`, `linux`, `android`, `ios`, `bsd`.
+
+### Misc
+
+#### `commands:`
+
+Type: `array`  
+Definitions of commands implemented by this plugin in the `onCommand()` of the `PluginBase`.  
+
+Example:  
+```yml
+commands:
+  # The name of the command the user will type to execute it
+  example:
+    # Description that will be shown in help command
+    description: Example command
+    # Shown to the user if they type the command in incorrectly
+    usage: "/example"
+    aliases:
+      - ex
+      - examp
+    # Permission required to run the command
+    permission: exampleperm.command.example
+    # Shown to the user if they don't have permission to run the command
+    permission-message: "You do not have permission to use this example command!"
 ```
 
-:::note
-You can remove `website:` if you don't have a website.
-:::
+#### `permissions:`
 
-Now I'm going to explain what each keys means.
+Type: `array`  
+List of permissions defined by this plugin, usually used for commands.  
 
-### `author:`
+Example: 
+```yml
+permissions:
+  exampleperm.command.example:
+    description: "Allows the user to run the example command"
+    # Default state of the permission. Explanation of each value:
+    # op: only op players have this permission by default
+    # true: everyone has this permission by default
+    # false: no one has this permission by default
+    default: true
+```
 
-This is where you declare your name as the plugin author.
+#### `src-namespace-prefix:`
 
-You can add more than one author by using `authors: [Author1, Author2]` instead.
+Type: `string`  
+Base namespace of the classes in your `src/` folder. Defaults to empty string.  
+This allows you to have a longer namespace for your classes without having to create useless nested folders in your plugin structure.  
 
-### `description:`
+Examples:
 
-This is where you declare your plugin description.
+| Value of `src-namespace-prefix` | Name of class including namespace | Path class will be loaded from |
+| ----------- | ----------- | ----------- |
+| (empty) | - `YourName\PluginName\Main` <br/> - `YourName\PluginName\SubNamespace\OtherClass` | - `src/YourName/PluginName/Main.php` <br/> - `src/YourName/PluginName/SubNamespace/OtherClass.php` |
+| `YourName\PluginName` | - `YourName\PluginName\Main` <br/> - `YourName\PluginName\SubNamespace\OtherClass` | - `src/Main.php` <br/> - `src/SubNamespace/OtherClass.php` |
 
-### `website:`
-
-This is where you declare your website.
 
 ## Further Learning and Conclusion
 
-There are a plenty of `plugin.yml` options I won't mention in this topic, but you can learn more about all the possible `plugin.yml` options in [this website](https://doc.pmmp.io/en/rtfd/developer-reference/plugin-manifest.html).
-
-Anyways, after following this topic, your final `plugin.yml` file should look something like these (remember, you don't have to add `website:` if you don't have a website):
+After following this topic, your final `plugin.yml` file should look something like these:
 
 ```yml title="plugin.yml"
 name: YourPluginName
@@ -101,7 +199,4 @@ author: YourName
 description: Description
 website: Website
 ```
-
 ___
-
-Congratulations, you've created your first `plugin.yml` file. Now you're ready to continue into the next topic!
