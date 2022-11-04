@@ -5,7 +5,7 @@ sidebar_label: Main
 ---
 ___
 
-In [plugin.yml](plugin.yml.md#main) we added a path `main`. Now depending on the path we added for this tutorial, we will first create a folder called `YourPluginName`, in this folder we will create another folder called `YourName` and in this folder we will create a file called `Main` with the extension `.php` and it will look like this `Main.php`.
+In [plugin.yml](plugin.yml.md#main) we added a path `main`. Now depending on the path we added for this tutorial, we will first create a folder called `YourPluginName` in the src folder and in this folder we will create another folder called `YourName` and in this folder we will create a file called `Main` with the extension `.php` 
 
 Now lets start adding some code to `Main.php`.
 
@@ -35,7 +35,8 @@ In the `class` we will add a function to enable your plugin and to do so we will
 ```php title="Main.php"
 class Main extends PluginBase { 
 
-    protected function onEnable() : void{  
+    protected function onEnable() : void 
+    {  
         $this->getLogger()->info("Plugin has been Enabled");
     }
 
@@ -52,7 +53,8 @@ use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase { 
 
-    protected function onEnable() : void{  
+    protected function onEnable() : void
+    {  
         $this->getLogger()->info("Plugin has been Enabled");
     }
 

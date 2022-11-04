@@ -8,14 +8,14 @@ You just learned how to add commands but you want only certain group of players 
 
 Well lets teach you how to add Permissions to your commands, it very simple
 ```php title="Main.php"
-public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
-  switch($cmd->getName()){
+public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
+  switch($cmd->getName()) {
     case "test":
-      if($player->hasPermission("test.cmd")){ // Use this to check whether the player have the permission or not (in this case we use the test.cmd permission)
-        if(!$sender instanceof Player){
+      if($player->hasPermission("test.cmd")) { // Use this to check whether the player have the permission or not (in this case we use the test.cmd permission)
+        if(!$sender instanceof Player) {
           $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
-        }else{
-          if(!isset($args[0]) or (is_int($args[0]) and $args[0] > 0)){ 
+        } else {
+          if(!isset($args[0]) or (is_int($args[0]) and $args[0] > 0)) { 
             $args[0] = 4; 
           }
           $sender->getInventory()->addItem(Item::get(364,0,$args[0]));
@@ -30,20 +30,20 @@ public function onCommand(CommandSender $sender, Command $cmd, string $label, ar
 ```
 You can do this if you want to add a message to the player who doesn't have the permission to use the command:
 ```php title="Main.php"
-public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
-   switch($cmd->getName()){
+public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool {
+   switch($cmd->getName()) {
      case "test":
-       if($sender->hasPermission("test.cmd")){
-         if(!$sender instanceof Player){
+       if($sender->hasPermission("test.cmd")) {
+         if(!$sender instanceof Player) {
            $sender->sendMessage("This Command Only Works for players! Please perform this command IN GAME!");
-         }else{
-           if(!isset($args[0]) or (is_int($args[0]) and $args[0] > 0)){ 
+         } else {
+           if(!isset($args[0]) or (is_int($args[0]) and $args[0] > 0)) { 
             $args[0] = 4; 
            }
            $sender->getInventory()->addItem(Item::get(364,0,$args[0]));
            $sender->sendMessage("You have just recieved" .count($args[0]). " steak!");
          }
-       }else{
+       } else {
          $sender->sendMessage("You don't have permission to use this command");
        }
      break;

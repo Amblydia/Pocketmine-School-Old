@@ -1,6 +1,6 @@
 module.exports = {
   htmap: {
-    "How to Make a Plugin": [
+    "Creating Plugins": [
       'htmap/introduction',
       'htmap/pluginstructure',
       'htmap/plugin.yml',

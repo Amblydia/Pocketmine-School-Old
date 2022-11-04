@@ -32,7 +32,7 @@ namespace YourPluginName\YourName;
 
 use pocketmine\event\Listener;
 
-class EventListener implements Listener{
+class EventListener implements Listener {
 
 }
 ```
@@ -50,15 +50,18 @@ use pocketmine\event\player\PlayerMoveEvent;
 Second, add a method with `PlayerMoveEvent $event` as its argument. You can use any method name you like, but the method must be public and must return `void` This time we're going to use `onPlayerMove`:
 
 ```php title="EventListener.php"
-public function onPlayerMove(PlayerMoveEvent $event): void{
+public function onPlayerMove(PlayerMoveEvent $event): void
+{
 
 }
 ```
 
 :::tip
 You can set the event priority when multiple handlers from different plugins needs to execute at the same time. For more information, please visit the [PMMP Docs page](https://doc.pmmp.io/en/rtfd/developer-reference/events/priority.html).
+:::
 
-**Note:** As of April 13, the documentation is incomplete, so if you want to know more about it, please ask in PMMP's Discord server.
+:::note 
+As of April 13, the documentation is incomplete, so if you want to know more about it, please ask in PMMP's Discord server.
 :::
 
 ## Handling the Event
@@ -68,7 +71,7 @@ In this example, we want to print the player's origin and target location in the
 Before that, we need to check if the event has been cancelled by another plugin. If it's indeed has been cancelled, we'd like to stop the event handling. To do that, add this code into the method we've just created:
 
 ```php title="EventListener.php"
-if($event->isCancelled()){ // Checks if the event has been cancelled by another plugin
+if($event->isCancelled()) { // Checks if the event has been cancelled by another plugin
     return; // Stops the event handling
 }
 ```

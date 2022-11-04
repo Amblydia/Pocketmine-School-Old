@@ -20,23 +20,23 @@ namespace YourPluginName\YourName\tasks; // Use the same namespace as in your fi
 use pocketmine\scheduler\Task; // This is the class that your task will extends to be a plugin task
 use ExampleName\Main; // This will allow us to use our main class. It is a required argument for a plugin task.
             
-class MyTask extends Task{ // Remember that your task must have the same name as your file !
+class MyTask extends Task { // Remember that your task must have the same name as your file !
 
 // First we need a __construct function which is used when you create a class to set default variables, ect...
-    public function __construct(Main $main, string $playername){ // The arguments you define here depends on what do you want to do exept for your base.
+    public function __construct(Main $main, string $playername) { // The arguments you define here depends on what do you want to do exept for your base.
        $this->main = $main; //You can retrieve your main class at anytime and use it's methods on your class by using $this->getOwner()
        $this->playername = $playername; // So we can retreive the player for later.
     }
 
 // Then we'll create an onRun funtion wich will be called when the time has past to the execution of the task
-    public function onRun(){
+    public function onRun() {
         $player = $this->getOwner()->getServer()->getPlayer($this->playername()); // This retreive the main class with $this->getOwner() then asks the server for the player with the name $this->playername
-        if($player instanceof Player){ // Basicly checks if the player we retreive is online.
+        if($player instanceof Player) { // Basicly checks if the player we retreive is online.
             $player->sendMessage("10 seconds has past!"); // Sends him a message !
         }
     }
 // Then we create a getOwner function to return the Main class
-    public function getOwner() : Main{
+    public function getOwner() : Main {
         return $this->main;
     }
 }

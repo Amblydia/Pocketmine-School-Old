@@ -19,8 +19,8 @@ use pocketmine\command\CommandSender;
 To set up the command we're going to use the default `onCommand` method and inside the method we will add the code, like this:
 
 ```php title="Main.php"
-public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
-    switch($command->getName()){
+public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
+    switch($command->getName()) {
         case "example":
             $sender->sendMessage("Hello " . $sender->getName() . "!");
 
