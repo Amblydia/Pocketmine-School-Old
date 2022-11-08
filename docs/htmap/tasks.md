@@ -1,9 +1,8 @@
 ---
-id: tasks
-title: Tasks
-sidebar_label: Tasks
+sidebar_position: 8
 ---
-___
+# Tasks
+
 ## Creating a Simple Plugin Task
 We'll take our last plugin and adding a simple task to it that tells the user when 10 seconds has past.  
 

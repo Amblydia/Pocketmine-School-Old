@@ -1,9 +1,7 @@
 ---
-id: plugin.yml
-title: plugin.yml
-sidebar_label: plugin.yml
+sidebar_position: 3
 ---
-___
+# plugin.yml
 
 <!-- TODO: Improve English explanation -->
 

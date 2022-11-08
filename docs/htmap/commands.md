@@ -1,9 +1,8 @@
 ---
-id: commands
-title: Commands
-sidebar_label: Commands
+sidebar_position: 6
 ---
-___
+# Commands
+
 Using commands in a plugin enchants your plugin! Commands can automatically and easily do things for you!  
 
 Ok lets start by importing the `Command` and `CommandSender` classes using the `use` statement.

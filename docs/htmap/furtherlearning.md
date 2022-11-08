@@ -1,9 +1,8 @@
 ---
-id: furtherlearning
-title: Further Learning
-sidebar_label: Further Learning
+sidebar_position: 9
 ---
-___
+# Further Learning
+
 Congratulations, you have reached the end of the tutorial! We really hope you understand every topic in this tutorial. If you need a good example plugin, you can see [this](https://github.com/pmmp/ExamplePlugin) or [this](https://github.com/KygekTeam/KygekExamplePlugin).
 
 But there's more you can learn. If you are interested to learn further on how PocketMine-MP plugin works, you can see the source code of [Poggit](https://poggit.pmmp.io) plugins.

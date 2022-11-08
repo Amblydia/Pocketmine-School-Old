@@ -1,9 +1,7 @@
 ---
-id: events
-title: Events
-sidebar_label: Events
+sidebar_position: 5
 ---
-___
+# Events
 <!-- TODO LATER
 PocketMine-MP has an events' system which allows plugins to react to, modify the outcome of, and prevent the result of events.
 

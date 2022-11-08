@@ -1,18 +1,78 @@
-module.exports = {
+/** @type {import('@docusaurus/preset-classic').Options} */ 
+defaultSettings = {
+  remarkPlugins: [
+    [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
+  ],
+};
+
+/**
+ * Defines a section with overridable defaults
+ * @param {string} section
+ */
+function defineSection(section) {
+  return [
+    '@docusaurus/plugin-content-docs',
+    /** @type {import('@docusaurus/plugin-content-docs').Options} */
+    ({
+      path: `docs/${section}`,
+      routeBasePath: `tutorials/${section}`,
+      id: section,
+      sidebarPath: require.resolve('./sidebars.js'),
+      breadcrumbs: false,
+      editUrl: 'https://github.com/dyte-in/docs/tree/main/',
+      ...defaultSettings,
+    }),
+  ];
+};
+
+const SECTIONS = [
+  defineSection('htmap'),
+  defineSection('form-api'),
+];
+
+const config = {
   title: 'PocketMine School',
   tagline: 'A Website To Teach Everything About PocketMine-MP',
   url: 'https://pocketmineschool.netlify.app',
   baseUrl: '/',
-  onBrokenLinks: 'ignore',
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'PocketMine School', // Usually your GitHub org/user name.
-  projectName: 'Pocketmine-School', // Usually your repo name.
+  trailingSlash: false,
+  organizationName: 'PocketMine School', 
+  projectName: 'Pocketmine-School', 
+
+  presets: [
+    [
+      'classic',
+       /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          routeBasePath: '/',
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl: 'https://github.com/PocketMine-School/Pocketmine-School/tree/master',
+          breadcrumbs: false,
+        },
+        googleAnalytics: {
+          trackingID: 'UA-179045405-3',
+          anonymizeIP: true,
+        },
+        blog: false,
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      }),
+    ],
+  ],
+
   plugins: [
+    ...SECTIONS,
     [require.resolve("@easyops-cn/docusaurus-search-local"), {
       docsRouteBasePath: "/tutorials",
       docsDir: "tutorials",
-    }]
+    }],
   ],
+
   themeConfig: {
     image: 'img/pocketmineschool.png',
     colorMode: {
@@ -93,32 +153,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} <strong><a href="https://github.com/PocketMine-School">PocketMine School</a></strong>.`,
     },
   },
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          routeBasePath: '/tutorials',
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/PocketMine-School/Pocketmine-School/tree/master',
-          showLastUpdateAuthor: false,
-          showLastUpdateTime: true,
-          sidebarCollapsible: false,
-        },
-        googleAnalytics: {
-          trackingID: 'UA-179045405-3',
-          anonymizeIP: true,
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      },
-    ],
-  ],
+
 };
+
+module.exports = config;

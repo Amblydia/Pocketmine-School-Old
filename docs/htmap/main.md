@@ -1,9 +1,7 @@
 ---
-id: main
-title: Main
-sidebar_label: Main
+sidebar_position: 4
 ---
-___
+# Main
 
 In [plugin.yml](plugin.yml.md#main) we added a path `main`. Now depending on the path we added for this tutorial, we will first create a folder called `YourPluginName` in the src folder and in this folder we will create another folder called `YourName` and in this folder we will create a file called `Main` with the extension `.php` 
 

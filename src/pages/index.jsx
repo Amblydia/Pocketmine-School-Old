@@ -24,12 +24,12 @@ export default function Home() {
 					<Card
 						title="Creating Plugins"
 						description="Learn how to make a Pocketmine Plugin"
-						to="/tutorials/htmap/introduction"
+						to="/tutorials/htmap"
 					/>
 					<Card
-						title="How to use Api"
-						description="another dummy description"
-						to="/"
+						title="FormAPI"
+						description="Learn how to use FormAPI"
+						to="/tutorials/form-api"
 					/>
 					<Card
 						title="how to use"

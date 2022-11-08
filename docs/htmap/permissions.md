@@ -1,9 +1,8 @@
 ---
-id: permissions
-title: Permissions
-sidebar_label: Permissions
+sidebar_position: 7
 ---
-___
+# Permissions
+
 You just learned how to add commands but you want only certain group of players to use it.  
 
 Well lets teach you how to add Permissions to your commands, it very simple

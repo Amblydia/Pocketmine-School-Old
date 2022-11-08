@@ -1,9 +1,7 @@
 ---
-id: pluginstructure
-title: Plugin Structure
-sidebar_label: Plugin Structure
+sidebar_position: 2
 ---
-___
+# Plugin Structure
 To make a PocketMine-MP plugin, you need a structure for your plugin. You can [generate them automatically](#generating-automatically) using DevTools or [make your own](#making-manually) plugin structure.
 
 ## Generating Automatically
