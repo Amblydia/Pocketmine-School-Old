@@ -1,35 +1,3 @@
-/** @type {import('@docusaurus/preset-classic').Options} */ 
-defaultSettings = {
-  remarkPlugins: [
-    [require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }],
-  ],
-};
-
-/**
- * Defines a section with overridable defaults
- * @param {string} section
- */
-function defineSection(section) {
-  return [
-    '@docusaurus/plugin-content-docs',
-    /** @type {import('@docusaurus/plugin-content-docs').Options} */
-    ({
-      path: `docs/${section}`,
-      routeBasePath: `tutorials/${section}`,
-      id: section,
-      sidebarPath: require.resolve('./sidebars.js'),
-      breadcrumbs: false,
-      editUrl: 'https://github.com/dyte-in/docs/tree/main/',
-      ...defaultSettings,
-    }),
-  ];
-};
-
-const SECTIONS = [
-  defineSection('htmap'),
-  defineSection('form-api'),
-];
-
 const config = {
   title: 'PocketMine School',
   tagline: 'A Website To Teach Everything About PocketMine-MP',
@@ -45,10 +13,9 @@ const config = {
   presets: [
     [
       'classic',
-       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/tutorials',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/PocketMine-School/Pocketmine-School/tree/master',
           breadcrumbs: false,
@@ -66,7 +33,6 @@ const config = {
   ],
 
   plugins: [
-    ...SECTIONS,
     [require.resolve("@easyops-cn/docusaurus-search-local"), {
       docsRouteBasePath: "/tutorials",
       docsDir: "tutorials",
