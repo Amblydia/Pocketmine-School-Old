@@ -14,21 +14,21 @@ export default function Tutorials() {
 			    <div id="hero">
 					<h2>List of Tutorials</h2>
 				</div>
-            	<Section>
+				<Section title="Tutorials">
 					<Card
-					title="How Dyte works"
-					description="Essential reading for a better understanding of how to best use Dyte SDKs"
-					to="/"
+						title="Creating Plugins"
+						description="Learn how to make a Pocketmine Plugin"
+						to="/tutorials/htmap"
 					/>
 					<Card
-					title="Guides"
-					description="Take a look at all the available guides"
-					to="/"
+						title="FormAPI"
+						description="Learn how to use FormAPI"
+						to="/tutorials/form-api"
 					/>
 					<Card
-					title="Guides"
-					description="Take a look at all the available guides"
-					to="/"
+						title="how to use"
+						description="another dummy description"
+						to="/"
 					/>
 				</Section>
             </div>
