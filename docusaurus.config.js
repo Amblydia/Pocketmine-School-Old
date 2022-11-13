@@ -57,15 +57,9 @@ const config = {
     },
     prism: {
       additionalLanguages: ['php', 'yaml'],
-      theme: require('prism-react-renderer/themes/vsDark'),
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/vsDark'),
     },
-    /*announcementBar: {
-      id: 'contribute',
-      content: 'We are looking for anyone to contribute in order to make PocketMine School. If you\'re interested, consider <a target="_blank" href="https://github.com/PocketMine-School/Pocketmine-School">forking the GitHub repository</a>, then <a target="_blank" href="https://github.com/PocketMine-School/Pocketmine-School/pulls">submit a pull request</a> and wait for a staff to review and merge your pull request.',
-      backgroundColor: '#f3f3f3',
-      textColor: '#222',
-      isCloseable: true,
-    },*/
     navbar: {
       title: '',
       logo: {

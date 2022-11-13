@@ -52,11 +52,13 @@ public function testForm($player)
     });
 
     //This sets the title of the form
-    $form->setTitle("Choose Your Title"); 
+    $form->setTitle("Your Title"); 
 
     $player->sendForm($form);
 }
 ```
+
+![modalform-title](/img/form-api/modalform-title.png)
 
 ## Description
 
@@ -73,16 +75,18 @@ public function testForm($player)
         return;
     });
 
-    $form->setTitle("Choose Your Title"); 
+    $form->setTitle("Your Title"); 
     //This adds a description to the form
-    $form->setContent("Choose Your Description");
+    $form->setContent("Your description");
     $player->sendForm($form);
 }
 ```
 
+![modalform-description](/img/form-api/modalform-description.png)
+
 ## Button
 
-Let us add a button to the form.
+Let us set the buttons to the form.
 
 ```php
 public function testForm($player)
@@ -95,10 +99,13 @@ public function testForm($player)
         return;
     });
 
-    $form->setTitle("Choose Your Title"); 
-    $form->setContent("Choose Your Description");
-    //This sets the button 
-    $form->setButton1("Button 1"); 
+    $form->setTitle("Your Title"); 
+    $form->setContent("Your description");
+    //This sets the buttons 
+    $form->setButton1("First choice");
+    $form->setButton2("Second choice"); 
     $player->sendForm($form);
 }
 ```
+
+![modalform-buttons](/img/form-api/modalform-buttons.png)

@@ -55,7 +55,7 @@ public function testForm($player)
 }
 ```
 
-![form-title](/img/form-api/simpleform-title.png)
+![simpleform-title](/img/form-api/simpleform-title.png)
 
 The Title can also have the player name in it.  
 Example:
@@ -85,7 +85,7 @@ public function testForm($player)
 }
 ```
 
-![form-description](/img/form-api/simpleform-description.png)
+![simpleform-description](/img/form-api/simpleform-description.png)
 
 ## Button
 
@@ -109,7 +109,7 @@ public function testForm($player)
 }
 ```
 
-![form-button](/img/form-api/simpleform-button.png)
+![simpleform-button](/img/form-api/simpleform-button.png)
 
 ### Multiple Buttons
 
@@ -161,7 +161,7 @@ public function testForm($player)
 }
 ```
 
-![form-button-with-image](/img/form-api/simpleform-button-with-image.png)
+![simpleform-button-with-image](/img/form-api/simpleform-button-with-image.png)
 
 Here's another example of multiple buttons with a image:
 
@@ -181,7 +181,7 @@ public function testForm($player)
 }
 ```
 
-![form-multiple-buttons-with-image](/img/form-api/simpleform-multiple-buttons-with-image.png)
+![simpleform-multiple-buttons-with-image](/img/form-api/simpleform-multiple-buttons-with-image.png)
 
 :::caution
 More info on the simple form is to be written
