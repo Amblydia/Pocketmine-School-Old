@@ -69,15 +69,14 @@ const config = {
       },
       items: [
         {
-          to: 'tutorials/', 
-          label: 'Tutorials', 
-          position: 'right'
+          href: 'https://github.com/PocketMine-School/Pocketmine-School', 
+          position: 'right',
+          className: 'github-icon pseudo-icon',
         },
         {
-          href: 'https://github.com/PocketMine-School/Pocketmine-School', 
-          label: 'Source Code', 
+          href: 'https://discord.gg/5e7PFEXgF3', 
           position: 'right',
-          className: 'github-icon',
+          className: 'discord-icon pseudo-icon',
         },
       ],
     },
@@ -104,7 +103,7 @@ const config = {
           title: 'Other Links',
           items: [
             {
-              label: 'Source Code',
+              label: 'Github',
               href: 'https://github.com/PocketMine-School/Pocketmine-School',
             },
           ],

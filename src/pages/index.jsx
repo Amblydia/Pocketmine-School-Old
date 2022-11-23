@@ -11,11 +11,11 @@ export default function Home() {
 			title={`Home`}
 			description="A Website To Teach You Everything About PocketMine-MP"
 		>
-			<div className="container">
+			<div className="container home-page">
 				<div id="hero">
 					<h2>Pocketmine School</h2>
 					<p>
-						dummy description 
+						Learn how to use the Pocketmine API!
 					</p>
 					<Button title="Get Started"></Button>
 				</div>
@@ -32,12 +32,11 @@ export default function Home() {
 						to="/tutorials/form-api"
 					/>
 					<Card
-						title="how to use"
-						description="another dummy description"
-						to="/"
+						title="BedrockEconomy"
+						description="Learn how to use BedrockEconomy"
+						to="/tutorials/bedrock-economy"
 					/>
 				</Section>
-
 			</div>
 		</Layout>
 	);
