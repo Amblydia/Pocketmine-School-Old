@@ -15,12 +15,10 @@
     "@docusaurus/plugin-ideal-image": "^2.2.0",
     "@docusaurus/preset-classic": "^2.2.0",
     "@docusaurus/remark-plugin-npm2yarn": "^2.2.0",
-    "@easyops-cn/docusaurus-search-local": "^0.33.5",
-    "@mdx-js/react": "^1.6.22",
     "@popperjs/core": "^2.11.6",
-    "clsx": "^1.1.1",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
+    "clsx": "^1.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-popper": "^2.3.0"
   },
   "browserslist": {
