@@ -11,18 +11,29 @@
     /*Hero*/
     --hero-border-color: ;
 
+    --tutorial-card-color: #222;
     --tutorial-card-border-color: #1b1b1d;
     --tutorial-card-border-hover-color: #3578e5;
 
-    /* */
-    --button-background-color: #3578e5;
-    --button-color: #fefefe;
-    --button-background-hover-color: transparent;
-    --button-hover-color: #3578e5;
-    --button-border-color: #3578e5;
+    --site-color-checkbox-checked-bg: #94bae140;
+
+    --site-primary-hue-saturation: 167 68%;
+    --site-primary-hue-saturation-light: 167 56%;
+    --site-color-favorite-background: #f6fdfd;
+    --site-color-tooltip: #fff;
+    --site-color-tooltip-background: #353738;
+    --site-color-svg-icon-favorite: #e9669e;
+    --site-color-feedback-background: #fff;
+
+    /*Button*/
+    --hero-btn-background-color: #3578e5;
+    --hero-btn-color: #fefefe;
+    --hero-btn-background-hover-color: transparent;
+    --hero-btn-hover-color: #3578e5;
+    --hero-btn-border-color: #3578e5;
 }
 
-[data-theme="dark"]:root {
+html[data-theme="dark"]:root {
     /*Tutorial Card*/
     --tutorial-card-background-color: transparent;
     --tutorial-card-color: #fefefe;
@@ -30,11 +41,14 @@
     --tutorial-card-border-color: #fefefe;
     --tutorial-card-border-hover-color: #3578e5;
     --tutorial-card-link-hover-color: #fefefe;
+
+    --site-color-checkbox-checked-bg: #94b8e11a;
+
+    --site-color-feedback-background: #f0f8ff;
+    --site-color-favorite-background: #1d1e1e;
 }
 
-
-
-html[data-theme="dark"] .github-icon::before {
+[data-theme="dark"] .github-icon::before {
     background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
 }
 
@@ -46,7 +60,7 @@ html[data-theme="dark"] .github-icon::before {
     width: 25px;
 }
 
-html[data-theme="dark"] .discord-icon::before {
+[data-theme="dark"] .discord-icon::before {
     background: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 28 22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' d='M17.967 0c-.278.497-.525 1.01-.741 1.537a20.488 20.488 0 0 0-6.401 0A14.164 14.164 0 0 0 10.085 0c-1.998.341-3.94.953-5.773 1.817A24.22 24.22 0 0 0 .12 18.015a23.2 23.2 0 0 0 7.085 3.62 18.01 18.01 0 0 0 1.552-2.432 13.48 13.48 0 0 1-2.39-1.16c.207-.138.404-.293.587-.462a16.296 16.296 0 0 0 14.143 0 8.7 8.7 0 0 0 .587.462c-.76.46-1.56.853-2.39 1.174.433.87.938 1.702 1.51 2.487a22.977 22.977 0 0 0 7.072-3.62 24.066 24.066 0 0 0-4.193-16.197A22.487 22.487 0 0 0 17.967 0ZM9.386 14.745a2.712 2.712 0 0 1-2.516-2.796 2.697 2.697 0 0 1 2.516-2.795A2.697 2.697 0 0 1 11.9 11.95a2.697 2.697 0 0 1-2.515 2.796Zm9.28 0a2.712 2.712 0 0 1-2.516-2.796 2.698 2.698 0 0 1 2.515-2.795 2.684 2.684 0 0 1 2.516 2.795 2.684 2.684 0 0 1-2.516 2.796Z'/%3E%3C/svg%3E") no-repeat;
 }
 
@@ -58,39 +72,16 @@ html[data-theme="dark"] .discord-icon::before {
     width: 32px;
 }
 
-.home-page {
-    margin-bottom: 4rem;
+.pseudo-icon {
+    padding: 8px;
 }
 
-.center {
-    text-align: center;
-}
-
-#hero {
-    margin-bottom: 4rem;
-    padding: 2rem 0 1.5rem;
+.hero {
     border-bottom: 1px solid var(--hero-border-color);
 }
 
-#hero h2 {
-    font-size: 36px;
-}
-
-.section {
-    margin-bottom: 3rem;
-}
-
-.section h3 {
-    font-weight: 600;
-}
-
-.section-content {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3,minmax(0,1fr));
-}
-
-.tutorial-card {
+/*Tutorial Card*/
+/* .tutorial-card {
     background-color: var(--tutorial-card-background-color);
     border: 1px solid var(--tutorial-card-border-color);
     color: var(--tutorial-card-color);
@@ -124,19 +115,7 @@ html[data-theme="dark"] .discord-icon::before {
     font-size: 14px;
     line-height: 1.5;
     color: var(--tutorial-card-description-color);
-}
-
-.button {
-    background-color: var(--button-background-color);
-    color: var(--button-color);
-    border: 1px solid var(--button-border-color);
-}
-
-.button:hover {
-    background-color: var(--button-background-hover-color);
-    color: var(--button-hover-color);
-    text-decoration: none;
-}
+} */
 
 .iconExternalLink_nPIU {
     display: none;
@@ -146,8 +125,15 @@ html[data-theme="dark"] .discord-icon::before {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    .section-content {
-        grid-template-columns: repeat(1,minmax(0,1fr));
-    }
+.screen-reader-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
 }

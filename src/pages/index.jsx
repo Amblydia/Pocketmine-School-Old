@@ -1,8 +1,9 @@
 import React from 'react';
+import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import { Section } from '../components/SectionComponents';
-import { Card } from '../components/CardComponents';
-import { Button } from '../components/ButtonComponents';
+
+import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 export default function Home() {
 
@@ -11,32 +12,12 @@ export default function Home() {
 			title={`Home`}
 			description="A Website To Teach You Everything About PocketMine-MP"
 		>
-			<div className="container home-page">
-				<div id="hero">
-					<h2>Pocketmine School</h2>
-					<p>
-						Learn how to use the Pocketmine API!
-					</p>
-					<Button title="Get Started"></Button>
+			<div className="hero">
+				<div class="container">
+					<h2 className="hero__title">Pocketmine School</h2>
+					<p className="hero__subtitle">Learn how to use the Pocketmine API!</p>
+					<Link href='tutorials' className={clsx('button', styles.heroBtn)}>Get Started</Link>
 				</div>
-
-				<Section title="Tutorials">
-					<Card
-						title="Creating Plugins"
-						description="Learn how to make a Pocketmine Plugin"
-						to="/tutorials/htmap"
-					/>
-					<Card
-						title="FormAPI"
-						description="Learn how to use FormAPI"
-						to="/tutorials/form-api"
-					/>
-					<Card
-						title="BedrockEconomy"
-						description="Learn how to use BedrockEconomy"
-						to="/tutorials/bedrock-economy"
-					/>
-				</Section>
 			</div>
 		</Layout>
 	);

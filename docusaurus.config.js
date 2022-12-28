@@ -12,11 +12,11 @@ const config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       ({
         docs: {
-          routeBasePath: '/tutorials',
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: 'tutorials',
+          sidebarPath: 'sidebars.js',
           editUrl: 'https://github.com/PocketMine-School/Pocketmine-School/tree/master',
           breadcrumbs: false,
         },
@@ -33,10 +33,12 @@ const config = {
   ],
 
   plugins: [
-    [require.resolve("@easyops-cn/docusaurus-search-local"), {
-      docsRouteBasePath: "/tutorials",
-      docsDir: "tutorials",
-    }],
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        disableInDev: false,
+      },
+    ],
   ],
 
   themeConfig: {
@@ -69,12 +71,17 @@ const config = {
       },
       items: [
         {
+          to: 'tutorials', 
+          position: 'right',
+          label: 'Tutorial',
+        },
+        {
           href: 'https://github.com/PocketMine-School/Pocketmine-School', 
           position: 'right',
           className: 'github-icon pseudo-icon',
         },
         {
-          href: 'https://discord.gg/5e7PFEXgF3', 
+          href: 'https://discord.gg/EpC2KFvxAd', 
           position: 'right',
           className: 'discord-icon pseudo-icon',
         },
