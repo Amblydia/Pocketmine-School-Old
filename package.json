@@ -15,7 +15,7 @@
     "@docusaurus/plugin-ideal-image": "^2.2.0",
     "@docusaurus/preset-classic": "^2.2.0",
     "@docusaurus/remark-plugin-npm2yarn": "^2.2.0",
-    "@easyops-cn/docusaurus-search-local": "^0.33.5",
+    "@easyops-cn/docusaurus-search-local": "^0.33.6",
     "@mdx-js/react": "^1.6.22",
     "@popperjs/core": "^2.11.6",
     "clsx": "^1.1.1",
