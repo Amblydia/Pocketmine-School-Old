@@ -49,7 +49,7 @@ We're open for any contributions! You can contribute by submitting [pull request
 
 ## Notes
 
-**The PocketMine School project** is maintained by [**UltraSoft**](https://github.com/TeamUltraSoft) and [**KygekTeam**](https://github.com/KygekTeam) under the [**PocketMine School**](https://github.com/PocketMine-School) organization, and licensed under the [**MIT License**](/LICENSE).
+**The PocketMine School project** is maintained by [**UltraSoft**](https://github.com/TeamUltraSoft) and [**KygekDev**](https://github.com/KygekDev) under the [**PocketMine School**](https://github.com/PocketMine-School) organization, and licensed under the [**MIT License**](/LICENSE).
 
 **Join our Discord server for help or to contact our maintainers:** https://discord.gg/5e7PFEXgF3
 
