@@ -4,7 +4,7 @@ sidebar_position: 8
 # Tasks
 
 ## Creating a Simple Plugin Task
-We'll take our last plugin and adding a simple task to it that tells the user when 10 seconds has past.  
+We'll take our last plugin and add a simple task to it that tells the user when 10 seconds have passed.  
 
 First, go to your "Main.php" folder and create a new folder called "tasks".  
 
@@ -14,23 +14,23 @@ And put those contents inside it.
 ```php title="MyTask.php"
 <?php // As always when you start a PHP file
 
-namespace YourPluginName\YourName\tasks; // Use the same namespace as in your first file but add a \tasks who symbolise that this file is in the subfolder "tasks"
+namespace YourPluginName\YourName\tasks; // Use the same namespace as in your first file but add a \tasks which symbolises that this file is in the subfolder "tasks"
 
-use pocketmine\scheduler\Task; // This is the class that your task will extends to be a plugin task
+use pocketmine\scheduler\Task; // This is the class that your task will extend to be a plugin task.
 use ExampleName\Main; // This will allow us to use our main class. It is a required argument for a plugin task.
             
-class MyTask extends Task { // Remember that your task must have the same name as your file !
+class MyTask extends Task { // Remember that your task must have the same name as your file!
 
-// First we need a __construct function which is used when you create a class to set default variables, ect...
-    public function __construct(Main $main, string $playername) { // The arguments you define here depends on what do you want to do exept for your base.
-       $this->main = $main; //You can retrieve your main class at anytime and use it's methods on your class by using $this->getOwner()
+// First we need a __construct function which is used when you create a class to set default variables, etc...
+    public function __construct(Main $main, string $playername) { // The arguments you define here depend on what you want to do, except for your base.
+       $this->main = $main; //You can retrieve your main class at anytime and use its methods on your class by using $this->getOwner()
        $this->playername = $playername; // So we can retreive the player for later.
     }
 
-// Then we'll create an onRun funtion wich will be called when the time has past to the execution of the task
+// Then we'll create an onRun function that will be called when the time has passed for the execution of the task.
     public function onRun() {
-        $player = $this->getOwner()->getServer()->getPlayer($this->playername()); // This retreive the main class with $this->getOwner() then asks the server for the player with the name $this->playername
-        if($player instanceof Player) { // Basicly checks if the player we retreive is online.
+        $player = $this->getOwner()->getServer()->getPlayer($this->playername()); // This retreives the main class with $this->getOwner() then asks the server for the player with the name $this->playername
+        if($player instanceof Player) { // Basically checks if the player we retreive is online.
             $player->sendMessage("10 seconds has past!"); // Sends him a message !
         }
     }
@@ -42,7 +42,7 @@ class MyTask extends Task { // Remember that your task must have the same name a
 ```
 That's it you created a task ! Now we'll see how to execute it.  
 
-First we will make it execute 1 time, but delayed  
+First we will make it execute 1 time, but delayed. 
 
 In your main class, where you did your "example" command.  
 ```php title="Main.php"
